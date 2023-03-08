@@ -23,8 +23,13 @@ Given that the training data for language models (LLMs) extensively covers Wikip
 | GrailQA     | [download_url](https://dki-lab.github.io/GrailQA/)     | [paper_url](https://arxiv.org/pdf/2011.07743v6.pdf)     |
 | KQApro     | [download_url](http://thukeg.gitee.io/kqa-pro/leaderboard.html)     | [paper_url](https://arxiv.org/abs/2007.03875)     |
 
+Multilingual dataset
 
 | Multilingual datasets      | Source     | Paper     |
 | ---------- | :-----------:  | :-----------: |
-| QALD-9 | [download_url]((https://github.com/ag-sc/QALD))| [paper_url](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9815253)|
-| MKQA     | [download_url](https://github.com/apple/ml-mkqa)|[paper_url](https://arxiv.org/pdf/2007.15207v2.pdf)|
+| QALD-9             | [download_url]((https://github.com/ag-sc/QALD))| [paper_url](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9815253)|
+| MKQA               | [download_url](https://github.com/apple/ml-mkqa)|[paper_url](https://arxiv.org/pdf/2007.15207v2.pdf)|
+
+We make the resources of datasets public and classify them according to dataset type and model type.  
+Please visit this [folder]() for specific information classified by dataset and this [folder]() for specific information classified by model.
+
