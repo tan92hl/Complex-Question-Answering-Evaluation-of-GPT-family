@@ -41,23 +41,23 @@ We have processed the 8 datasets mentioned in [Datasets we use](#Datasets-we-use
 
 Given that the training data of the Language Model (LLM) covers Wikipedia extensively, we have opted to evaluate our model using open-domain complex question-answering datasets related to Wikipedia. Specifically, we have curated a set of 8 distinct datasets for this purpose, as follows:
 
-:collision: Please note : the links in the `Source` section below refer to the original datasets as published by their respective authors. For our experiments in this paper, we have processed these datasets accordingly, including random sampling and formatting. Please download the datasets used in our experiments from this folder: [datasets](datasets).
+:collision: Please note : The links in the `Source` section below refer to the original datasets as published by their respective authors. For our experiments in this paper, we have processed these datasets accordingly, including random sampling and formatting. Please download the datasets used in our experiments from this folder: [datasets](datasets).
 
 
 | Monolingual datasets      | Source     | Paper     |
 | ---------- | :-----------:  | :-----------: |
-| WebQuestionSP(WQSP) | [download_url](https://www.microsoft.com/en-us/download/details.aspx?id=52763)| [paper_url](https://arxiv.org/pdf/2210.00063.pdf)|
-| ComplexWebQuestion(CWQ)     | [download_url](https://allenai.org/data/complexwebquestions)|[paper_url](https://aclanthology.org/2022.coling-1.145.pdf)|
-| GraphQuestions    | [download_url](https://github.com/ysu1989/GraphQuestions)     | [paper_url](https://openreview.net/pdf?id=HyxgBerKwB)     |
-| GrailQA     | [download_url](https://dki-lab.github.io/GrailQA/)     | [paper_url](https://arxiv.org/pdf/2011.07743v6.pdf)     |
-| KQApro     | [download_url](http://thukeg.gitee.io/kqa-pro/leaderboard.html)     | [paper_url](https://arxiv.org/abs/2007.03875)     |
+| WebQuestionSP(WQSP) | [Download_url](https://www.microsoft.com/en-us/download/details.aspx?id=52763)| [Paper_url](https://arxiv.org/pdf/2210.00063.pdf)|
+| ComplexWebQuestion(CWQ)     | [Download_url](https://allenai.org/data/complexwebquestions)|[Paper_url](https://aclanthology.org/2022.coling-1.145.pdf)|
+| GraphQuestions    | [Download_url](https://github.com/ysu1989/GraphQuestions)     | [Paper_url](https://openreview.net/pdf?id=HyxgBerKwB)     |
+| GrailQA     | [Download_url](https://dki-lab.github.io/GrailQA/)     | [Paper_url](https://arxiv.org/pdf/2011.07743v6.pdf)     |
+| KQApro     | [Download_url](http://thukeg.gitee.io/kqa-pro/leaderboard.html)     | [Paper_url](https://arxiv.org/abs/2007.03875)     |
 
 Multilingual dataset
 
 | Multilingual datasets      | Source     | Paper     |
 | ---------- | :-----------:  | :-----------: |
-| QALD-9             | [download_url](https://github.com/ag-sc/QALD)| [paper_url](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9815253)|
-| MKQA               | [download_url](https://github.com/apple/ml-mkqa)|[paper_url](https://arxiv.org/pdf/2007.15207v2.pdf)|
+| QALD-9             | [Download_url](https://github.com/ag-sc/QALD)| [Paper_url](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9815253)|
+| MKQA               | [Download_url](https://github.com/apple/ml-mkqa)|[Paper_url](https://arxiv.org/pdf/2007.15207v2.pdf)|
 
 
 
