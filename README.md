@@ -20,7 +20,16 @@ Secondly, following the black-box test specification of [CheckList](https://arxi
 Our evaluation uses 8 real complex question answering datasets, including six English datasets and two multilingual datasets, to further analyze the potential impact of language bias.
 We compared the evaluation results of ChatGPT, GPT3.5, GPT3, and T5 to identify persistent historical issues in LLMs. All data and results are available for further analysis.  
 
-# Datasets
+# Datasets we publish
+
+We release the answers of these models to the KBQA dataset mentioned above and classify them according to dataset and model.  
+
+[answers_from_models]() : The responses of these models(Chatgpt, Gpt3/Gpt3.5, T5) to the QA datasets mentioned in [Datasets we use]().
+
+[datasets]() : The datasets with unified format for question_id, question, ground_truth, sparql and our added labels. In addition, there are also alias dictionaries for the ground truth of dataset that we used during the evaluation.
+
+
+# Datasets we use 
 
 Given that the training data for language models (LLMs) extensively covers Wikipedia, we choose to evaluate our model using an open-domain complex question answering dataset related to Wikipedia. Specifically, we curated a set of 7 different datasets for this purpose: WebQuestionSP, ComplexWebQuestion, GraphQA, GrailQA, KQApro, QALD-9, MKQA, and the comparison models used include: GPT3 davinci-1, GPT3.5 davinci-2/davinci-3, T5.
 
@@ -39,8 +48,6 @@ Multilingual dataset
 | QALD-9             | [download_url](https://github.com/ag-sc/QALD)| [paper_url](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9815253)|
 | MKQA               | [download_url](https://github.com/apple/ml-mkqa)|[paper_url](https://arxiv.org/pdf/2007.15207v2.pdf)|
 
-We make the resources of datasets public and classify them according to dataset type and model type.  
-Please visit this [folder]() for specific information classified by dataset and this [folder]() for specific information classified by model.The folder contains the detailed structure and organization of our dataset.
 
 
 # CheckList Model
