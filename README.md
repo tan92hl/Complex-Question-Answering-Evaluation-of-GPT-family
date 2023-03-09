@@ -39,7 +39,10 @@ We have processed the 8 datasets mentioned in [Datasets we use](#Datasets-we-use
 
 # Datasets we use 
 
-Given that the training data for language models (LLMs) extensively covers Wikipedia, we choose to evaluate our model using an open-domain complex question answering dataset related to Wikipedia. Specifically, we curated a set of 7 different datasets for this purpose: WebQuestionSP, ComplexWebQuestion, GraphQA, GrailQA, KQApro, QALD-9, MKQA, and the comparison models used include: GPT3 davinci-1, GPT3.5 davinci-2/davinci-3, T5.
+Given that the training data of the Language Model (LLM) covers Wikipedia extensively, we have opted to evaluate our model using open-domain complex question-answering datasets related to Wikipedia. Specifically, we have curated a set of 8 distinct datasets for this purpose, as follows:
+
+:collision: Please note : the links in the `Source` section below refer to the original datasets as published by their respective authors. For our experiments in this paper, we have processed these datasets accordingly, including random sampling and formatting. Please download the datasets used in our experiments from this folder: [datasets](datasets).
+
 
 | Monolingual datasets      | Source     | Paper     |
 | ---------- | :-----------:  | :-----------: |
