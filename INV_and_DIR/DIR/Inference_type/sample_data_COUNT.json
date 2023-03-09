@@ -1,0 +1,1976 @@
+[
+  [
+    {
+      "ID": 97859,
+      "question": "What number of metropolitan boroughs reside within Nauru?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"metropolitan borough\" . ?e <country> ?e_1 . ?e_1 <pred:name> \"Nauru\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 100519,
+      "question": "How many string instruments do we know whose Hornbostel-Sachs classification is 314.122-6-8 and that are used by a harpsichordist ?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"string instrument\" . ?e <used_by> ?e_1 . ?e_1 <pred:name> \"harpsichordist\" .  ?e <Hornbostel-Sachs_classification> ?pv . ?pv <pred:value> \"314.122-6-8\" .  }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 94283,
+      "question": "What is the number of woodwind instruments that have famous people Wayne Shorter",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"woodwind instrument\" . ?e <famous_people> ?e_1 . ?e_1 <pred:name> \"Wayne Shorter\" .   }",
+      "ans": [
+        "2"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 2184,
+      "question": "What physically interacts with food?",
+      "sparql": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P129 wd:Q2095 }",
+      "ans": [
+        15.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 72062,
+      "question": "How many public offices are held by the head of government of Cape Town?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"public office\" . ?e_1 <office_held_by_head_of_government> ?e . ?e_1 <pred:name> \"Cape Town\" .   }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 1245,
+      "question": "How many participants are playing with Steffi Graf?",
+      "sparql": "SELECT (COUNT(?obj) AS ?value ) { wd:Q11662 wdt:P1344 ?obj }",
+      "ans": [
+        5.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 97029,
+      "question": "Jews have how many different religious practices?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"religion\" . ?e <practiced_by> ?e_1 . ?e_1 <pred:name> \"Jewish people\" .   }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 68697,
+      "question": "How many contemporary folk music renditions originate in the sovereign state that is the country of Florence (whose population is 37056)?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"contemporary folk music\" . ?e <country_of_origin> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"sovereign state\" . ?e_2 <country> ?e_1 . ?e_2 <pred:name> \"Florence\" . ?e_2 <population> ?pv . ?pv <pred:unit> \"1\" . ?pv <pred:value> \"37056\"^^xsd:double .   }",
+      "ans": [
+        "2"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 2330,
+      "question": "How many places of publication are in Bras00edlia?",
+      "sparql": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P291 wd:Q2844 }",
+      "ans": [
+        26.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 1932,
+      "question": "How many deepest point to Indian Ocean?",
+      "sparql": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P1589 wd:Q1239 }",
+      "ans": [
+        15.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 32747,
+      "question": "What number of MTV Video Music Awards did Chris Isaak win?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"MTV Video Music Award\" . ?e <winner> ?e_1 . ?e_1 <pred:name> \"Chris Isaak\" .   }",
+      "ans": [
+        "2"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 56405,
+      "question": "Washoe County borders how many Oregon counties?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Oregon\" . ?e <shares_border_with> ?e_1 . ?e_1 <pred:name> \"Washoe County\" .   }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 79274,
+      "question": "How many University of Oxford colleges are in the  country of the United Kingdom and are a subsidiary of the University of Marburg?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"college of the University of Oxford\" . ?e <country> ?e_1 . ?e_1 <pred:name> \"United Kingdom\" .  ?e_2 <subsidiary> ?e . ?e_2 <pred:name> \"University of Marburg\" .  }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 69021,
+      "question": "The producer of Rear Window, with Alfred Hitchcock as a cast member, directed how many visual artworks?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"visual artwork\" . ?e <director> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"human\" . ?e_2 <producer> ?e_1 . ?e_2 <pred:name> \"Rear Window\" . ?e_2 <cast_member> ?e_3 . ?e_3 <pred:name> \"Alfred Hitchcock\" .   }",
+      "ans": [
+        "19"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 82348,
+      "question": "How many United States colleges and universities have the significant event of mixed-sex education and are the school from which the 2002 Major League Baseball draft was picked from?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"colleges and universities in the United States\" . ?e <significant_event> ?e_1 . ?e_1 <pred:name> \"mixed-sex education\" .  ?e_2 <draft_pick_from_school> ?e . ?e_2 <pred:name> \"2002 Major League Baseball draft\" .  }",
+      "ans": [
+        "2"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 1348,
+      "question": "What is the genetic association with the {post-traumatic stress disorder} ?",
+      "sparql": "SELECT (COUNT(?obj) AS ?value ) { wd:Q202387 wdt:P2293 ?obj }",
+      "ans": [
+        12.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 98355,
+      "question": "How many associations have an ISNI of 0000 0001 2248 733X and the native label Royal Academy of Arts?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"association\" . ?e <ISNI> ?pv . ?pv <pred:value> \"0000 0001 2248 733X\" . ?e <native_label> ?pv_1 . ?pv_1 <pred:value> \"Royal Academy of Arts\" .  }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 86290,
+      "question": "How many market towns have postal code SG4?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"market town\" . ?e <postal_code> ?pv . ?pv <pred:value> \"SG4\" .  }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 58452,
+      "question": "How many market towns are the twinned administrative body of the city whose native label is בֵּית לֶחֶם?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"market town\" . ?e <twinned_administrative_body> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"city\" . ?e_1 <native_label> ?pv . ?pv <pred:value> \"בֵּית לֶחֶם\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 49589,
+      "question": "How many capitals in Suriname have the Dewey Decimal Classification of 2--45351?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"city\" . ?e_1 <capital> ?e . ?e_1 <pred:name> \"Suriname\" .  ?e <Dewey_Decimal_Classification> ?pv . ?pv <pred:value> \"2--45351\" .  }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 84786,
+      "question": "What number of medicines have OSM tag or key of Tag:healthcare:speciality=internal?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"medicine\" . ?e <OSM_tag_or_key> ?pv . ?pv <pred:value> \"Tag:healthcare:speciality=internal\" .  }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 313,
+      "question": "How many programming languages influenced Julia (the one with the operating system Microsoft Windows)?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"programming language\" . ?e_1 <influenced_by> ?e . ?e_1 <pred:name> \"Julia\" . ?e_1 <operating_system> ?e_2 . ?e_2 <pred:name> \"Microsoft Windows\" .   }",
+      "ans": [
+        "2"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 80872,
+      "question": "What is the number of German states that is the origin of where the association football club with the CVR number 31085179 came from.",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"state of Germany\" . ?e_1 <named_after> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"association football club\" . ?e_1 <CVR_number> ?pv . ?pv <pred:value> \"31085179\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 102471,
+      "question": "How many Summer Olympic Games were officially opened by the person whose Munzinger IBA is 00000000073?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"Summer Olympic Games\" . ?e <officially_opened_by> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"human\" . ?e_1 <Munzinger_IBA> ?pv . ?pv <pred:value> \"00000000073\" .   }",
+      "ans": [
+        "2"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 42378,
+      "question": "How many American football positions are related to the type of sport with a Dewey Decimal Classification of 796.332?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"American football position\" . ?e <sport> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"type of sport\" . ?e_1 <Dewey_Decimal_Classification> ?pv . ?pv <pred:value> \"796.332\" .   }",
+      "ans": [
+        "15"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 100225,
+      "question": "How many association football clubs have the official website https://www.dundeeunitedfc.co.uk/?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"association football club\" . ?e <official_website> ?pv . ?pv <pred:value> \"https://www.dundeeunitedfc.co.uk/\" .  }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 91029,
+      "question": "Jason Alexander founded what number of boarding schools?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"boarding school\" . ?e_1 <found> ?e . ?e_1 <pred:name> \"Jason Alexander\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 1835,
+      "question": "How many product statistics to cider?",
+      "sparql": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P2746 wd:Q167296 }",
+      "ans": [
+        6.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 53543,
+      "question": "How many fictional universes are the universe of the Green Lantern?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"fictional universe\" . ?e_1 <takes_place_in_fictional_universe> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"visual artwork\" . ?e_1 <title> ?pv . ?pv <pred:value> \"Green Lantern\" .   }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 65814,
+      "question": "For the academic discipline whose IPTC Newscode is mediatopic/20000718, how many scientists work in its field?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"scientist\" . ?e <field_of_this_occupation> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"academic discipline\" . ?e_1 <IPTC_Newscode> ?pv . ?pv <pred:value> \"mediatopic/20000718\" .   }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 71550,
+      "question": "How many architectural styles are in the country having a population of 93038902 (the point in time of this statement is 2010)?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"architectural style\" . ?e <country> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"sovereign state\" . ?e_1 <population> ?pv . ?pv <pred:unit> \"1\" . ?pv <pred:value> \"93038902\"^^xsd:double . [ <pred:fact_h> ?e_1 ; <pred:fact_r> <population> ; <pred:fact_t> ?pv ] <point_in_time> ?qpv . ?qpv <pred:year> 2010 .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 10937,
+      "question": "How many market towns contain Burnley F. C.?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"market town\" . ?e_1 <located_in_the_administrative_territorial_entity> ?e . ?e_1 <pred:name> \"Burnley F.C.\" .   }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 20383,
+      "question": "IPv4 routing prefix 155.128.0.0/15 designates what number of organizations?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"organization\" . ?e <IPv4_routing_prefix> ?pv . ?pv <pred:value> \"155.128.0.0/15\" .  }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 97602,
+      "question": "How many literary awards have the official website http://www.locusmag.com/SFAwards/Db/Locus.html?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"literary award\" . ?e <official_website> ?pv . ?pv <pred:value> \"http://www.locusmag.com/SFAwards/Db/Locus.html\" .  }",
+      "ans": [
+        "2"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 9619,
+      "question": "How many operating systems follow Windows Vista?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"operating system\" . ?e <follows> ?e_1 . ?e_1 <pred:name> \"Windows Vista\" .   }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 22718,
+      "question": "How many institutions of higher education received the award received by Roots  (the one whose genre is film based on literature)(the winner of this statement is American Broadcasting Company)   ?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"higher education institution\" . ?e <award_received> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"award\" . ?e_2 <award_received> ?e_1 . ?e_2 <pred:name> \"Roots\" . ?e_2 <genre> ?e_3 . ?e_3 <pred:name> \"film based on literature\" . [ <pred:fact_h> ?e_2 ; <pred:fact_r> <award_received> ; <pred:fact_t> ?e_1 ] <winner> ?qpv . ?qpv <pred:value> \"American Broadcasting Company\" .   }",
+      "ans": [
+        "2"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 2012,
+      "question": "How many platforms does {x86} has?",
+      "sparql": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P400 wd:Q182933 }",
+      "ans": [
+        240.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 36585,
+      "question": "How many US colleges and universities match the school where the National Basketball Association Draft followed the 2003 NBA draft ?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"colleges and universities in the United States\" . ?e_1 <draft_pick_from_school> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"National Basketball Association Draft\" . ?e_2 <followed_by> ?e_1 . ?e_2 <pred:name> \"2003 NBA Draft\" .   }",
+      "ans": [
+        "4"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 967,
+      "question": "How many markets towns are in a country, a sovereign state, has UK as its FIPS 10-4 (countries and regions)?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"market town\" . ?e <country> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"sovereign state\" . ?e_1 <FIPS_10-4_(countries_and_regions)> ?pv . ?pv <pred:value> \"UK\" .   }",
+      "ans": [
+        "6"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 81406,
+      "question": "the sovereign state whose demonym is polsk (the involved part of this statement is common gender)   followed what types of governmented",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"form of government\" . ?e <followed_by> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"sovereign state\" . ?e_1 <demonym> ?pv . ?pv <pred:value> \"polsk\" . [ <pred:fact_h> ?e_1 ; <pred:fact_r> <demonym> ; <pred:fact_t> ?pv ] <applies_to_part> ?qpv . ?qpv <pred:value> \"common gender\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 1444,
+      "question": "How many artists made the storyboards for The Lion King?",
+      "sparql": "SELECT (COUNT(?obj) AS ?value ) { wd:Q36479 wdt:P3275 ?obj }",
+      "ans": [
+        27.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 88911,
+      "question": "How many political parties do we know whose official color matches the color whose sRGB color hex triplet is 000000 ?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"political party\" . ?e <official_color> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"color\" . ?e_1 <sRGB_color_hex_triplet> ?pv . ?pv <pred:value> \"000000\" .   }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 2369,
+      "question": "How many people are appointed by the pope?",
+      "sparql": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P748 wd:Q19546 }",
+      "ans": [
+        28.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 54108,
+      "question": "What number of movies are distributed in the United Kingdom?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"film\" . ?e <film_distribute_region> ?e_1 . ?e_1 <pred:name> \"United Kingdom\" .   }",
+      "ans": [
+        "120"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 58678,
+      "question": "What is the number of sounds that come from the sovereign state that has a population equal to 311582600",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"sound\" . ?e <country_of_origin> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"sovereign state\" . ?e_1 <population> ?pv . ?pv <pred:unit> \"1\" . ?pv <pred:value> \"311582600\"^^xsd:double .   }",
+      "ans": [
+        "102"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 77861,
+      "question": "How many geographic regions do we know that consist of a continent, where we can find Botswana, and whose detail map is  Europe countries map en 2.png ?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"geographic region\" . ?e_1 <continent> ?e . ?e_1 <pred:name> \"Botswana\" .  ?e <detail_map> ?pv . ?pv <pred:value> \"Europe countries map en 2.png\" .  }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 72506,
+      "question": "What number of movies in the genre with IAB code 334?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"feature film\" . ?e <genre> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"film\" . ?e_1 <IAB_code> ?pv . ?pv <pred:value> \"334\" .   }",
+      "ans": [
+        "14"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 9979,
+      "question": "Portland, home of Ursula K. Le Guin, is located in how many Oregon counties?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Oregon\" . ?e_1 <located_in_the_administrative_territorial_entity> ?e . ?e_1 <pred:name> \"Portland\" . ?e_2 <residence> ?e_1 . ?e_2 <pred:name> \"Ursula K. Le Guin\" .   }",
+      "ans": [
+        "3"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 88790,
+      "question": "How many agents were involved in  Six-Day War conflict?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"agent\" . ?e <conflict> ?e_1 . ?e_1 <pred:name> \"Six-Day War\" .   }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 4452,
+      "question": "How many U.S. cities have a population of 25000?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"city of the United States\" . ?e <population> ?pv . ?pv <pred:unit> \"1\" . ?pv <pred:value> \"25000\"^^xsd:double .  }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 30718,
+      "question": "How many infectious diseases were to blame for the death of the person with Libris-URI gdsw4nx01qddsn2?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"infectious disease\" . ?e_1 <cause_of_death> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"human\" . ?e_1 <Libris-URI> ?pv . ?pv <pred:value> \"gdsw4nx01qddsn2\" .   }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 45391,
+      "question": "How many short films are the predecessors of anime TV series that served as a basis for series titled Speed Racer ?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"short film\" . ?e <followed_by> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"anime television series\" . ?e_3 <based_on> ?e_1 . ?e_3 <pred:name> \"Speed Racer\" . ?e_3 <title> ?pv . ?pv <pred:value> \"Speed Racer\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 101,
+      "question": "How many high schools are there whose country is the sovereign state that has Germany-Guinea diplomatic relations with Germany?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"high school\" . ?e <country> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"sovereign state\" . ?e_1 <diplomatic_relation> ?e_2 . ?e_2 <pred:name> \"Germany\" . [ <pred:fact_h> ?e_1 ; <pred:fact_r> <diplomatic_relation> ; <pred:fact_t> ?e_2 ] <statement_is_subject_of> ?qpv . ?qpv <pred:value> \"Germany-Guinea relations\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 56900,
+      "question": "What number of county towns have the official name of Reading?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county town\" . ?e <official_name> ?pv . ?pv <pred:value> \"Reading\" .  }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 1569,
+      "question": "Count the natural languages that have the country of Iran and that use the language that is used in Australia (which has a gs1 country code of 931)",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"natural language\" . ?e <country> ?e_1 . ?e_1 <pred:name> \"Iran\" .  ?e_2 <language_used> ?e . ?e_2 <pred:name> \"Australia\" . ?e_2 <GS1_country_code> ?pv . ?pv <pred:value> \"931\" .  }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 7033,
+      "question": "How many female given names are Elizabeth Hurley's given name?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"female given name\" . ?e_1 <given_name> ?e . ?e_1 <pred:name> \"Elizabeth Hurley\" .   }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 2243,
+      "question": "How many states of Germany are where the person known by the pseudonym of Franz Walsch live?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"state of Germany\" . ?e_1 <residence> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"human\" . ?e_1 <pseudonym> ?pv . ?pv <pred:value> \"Franz Walsch\" .   }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 4997,
+      "question": "How many sovereign states have the sound that is equal to the origin of the name mathcore?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"sovereign state\" . ?e_1 <indigenous_to> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"sound\" . ?e_2 <named_after> ?e_1 . ?e_2 <pred:name> \"mathcore\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 33590,
+      "question": "How many languages have the native label suomi and is a dialect of Tagalog?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"language\" . ?e <native_label> ?pv . ?pv <pred:value> \"suomi\" . ?e_1 <has_dialect_(DEPRECATED)> ?e . ?e_1 <pred:name> \"Tagalog\" .  }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 13893,
+      "question": "What number of infectious diseases have ICD-9-CM of 045.90?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"infectious disease\" . ?e <ICD-9-CM> ?pv . ?pv <pred:value> \"045.90\" .  }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 39556,
+      "question": "Countries with Germany's form of government are home to how many political parties?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"political party\" . ?e <country> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"form of government\" . ?e_1 <country> ?e_2 . ?e_2 <pred:name> \"Germany\" .   }",
+      "ans": [
+        "5"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 78246,
+      "question": "What number of association football clubs are nicknamed Το Τριφύλλι?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"association football club\" . ?e <nickname> ?pv . ?pv <pred:value> \"Το Τριφύλλι\" .  }",
+      "ans": [
+        "2"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 69465,
+      "question": "How many talk shows have had Kareem Abdul-Jabbar as a guest?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"television series\" . ?e <talk_show_guest> ?e_1 . ?e_1 <pred:name> \"Kareem Abdul-Jabbar\" .   }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 26944,
+      "question": "The visual artwork titled Platoon earned how many Academy Awards?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"Academy Awards\" . ?e_1 <award_received> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"visual artwork\" . ?e_1 <title> ?pv . ?pv <pred:value> \"Platoon\" .   }",
+      "ans": [
+        "4"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 2403,
+      "question": "How many choreographs are by George Balanchine?",
+      "sparql": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P1809 wd:Q310184 }",
+      "ans": [
+        76.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 5845,
+      "question": "Count the number of cemeteries in Asheville that are a child organization of Warner Bros. Animation.",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"cemetery\" . ?e <located_in_the_administrative_territorial_entity> ?e_1 . ?e_1 <pred:name> \"Asheville\" .  ?e <parent_organization> ?e_2 . ?e_2 <pred:name> \"Warner Bros. Animation\" .  }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 32240,
+      "question": "How many industries contain another industry that serves as the platform for Transformers: Revenge of the Fallen (released for PlayStation 2) ?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"industry\" . ?e_1 <part_of_the_series> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"industry\" . ?e_2 <platform> ?e_1 . ?e_2 <pred:name> \"Transformers: Revenge of the Fallen\" . ?e_2 <platform> ?e_3 . ?e_3 <pred:name> \"PlayStation 2\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 1002,
+      "question": "Pompeu Fabra University has how many rectors?",
+      "sparql": "SELECT (COUNT(?obj) AS ?value ) { wd:Q24543 wdt:P1075 ?obj }",
+      "ans": [
+        1.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 2360,
+      "question": "How many films did edit George Lucas?",
+      "sparql": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P1040 wd:Q38222 }",
+      "ans": [
+        5.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 37650,
+      "question": "How many unitary states have a diplomatic relation with Saudi Arabia?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"unitary state\" . ?e <diplomatic_relation> ?e_1 . ?e_1 <pred:name> \"Saudi Arabia\" .   }",
+      "ans": [
+        "7"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 2438,
+      "question": "What is the number of chemical compound that is a nutrient of Allium cepa ?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"chemical compound\" . ?e_1 <nutrient> ?e . ?e_1 <pred:name> \"Allium cepa\" .   }",
+      "ans": [
+        "29"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 74509,
+      "question": "What is the number of agents that belongs to the jurisdiction of speaker of the United States House of Representatives",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"agent\" . ?e_1 <applies_to_jurisdiction> ?e . ?e_1 <pred:name> \"speaker of the United States House of Representatives\" .   }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 1575,
+      "question": "How many production designers are for the {The Wizard of Oz} ?",
+      "sparql": "SELECT (COUNT(?obj) AS ?value ) { wd:Q193695 wdt:P2554 ?obj }",
+      "ans": [
+        4.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 75202,
+      "question": "How many big cities are in the country of the Weimar Republic?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"big city\" . ?e <country> ?e_1 . ?e_1 <pred:name> \"Weimar Republic\" .   }",
+      "ans": [
+        "17"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 81973,
+      "question": "953 Danby Road, Ithaca, New York, zip code 14850-7002, is the street address of what number of private universities?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"private university\" . ?e <located_at_street_address_(DEPRECATED)> ?pv . ?pv <pred:value> \"953 Danby Rd, Ithaca, NY, 14850-7002\" .  }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 30309,
+      "question": "What math fields have a Classification of Instructional Programs code of 27.03 or a Universal Decimal Classification of 514?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"mathematics\" . ?e <Universal_Decimal_Classification> ?pv . ?pv <pred:value> \"514\" . ?e <Classification_of_Instructional_Programs_code> ?pv_1 . ?pv_1 <pred:value> \"27.03\" .  }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 1525,
+      "question": "Yilan County replaces how many ?",
+      "sparql": "SELECT (COUNT(?obj) AS ?value ) { wd:Q237258 wdt:P1365 ?obj }",
+      "ans": [
+        5.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 11068,
+      "question": "What number of real properties does Xavier University own?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"real property\" . ?e <owned_by> ?e_1 . ?e_1 <pred:name> \"Xavier University\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 81706,
+      "question": "Iconclass notation 46A613 applies to how many business people?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"businessperson\" . ?e <Iconclass_notation> ?pv . ?pv <pred:value> \"46A613\" .  }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 56052,
+      "question": "How many alternative rocks are named after the academic discipline that are on the record label Columbia Records?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"alternative rock\" . ?e <named_after> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"academic discipline\" . ?e_1 <record_label> ?e_3 . ?e_3 <pred:name> \"Columbia Records\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 80179,
+      "question": "How many nonprofits are in the United States?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"nonprofit organization\" . ?e <country> ?e_1 . ?e_1 <pred:name> \"United States of America\" .   }",
+      "ans": [
+        "5"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 50519,
+      "question": "How many Washington counties belong to the sovereign country where Chris Bauer has citizenship?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Washington\" . ?e <country> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"sovereign state\" . ?e_2 <country_of_citizenship> ?e_1 . ?e_2 <pred:name> \"Chris Bauer\" .   }",
+      "ans": [
+        "16"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 1082,
+      "question": "How many theater awards were received by the person that has an ISNI of 0000 0001 1507 2371?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"theatre award\" . ?e_1 <award_received> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"human\" . ?e_1 <ISNI> ?pv . ?pv <pred:value> \"0000 0001 1507 2371\" .   }",
+      "ans": [
+        "2"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 25375,
+      "question": "How many first-level administrative country subdivision are contained in Nicaragua ?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"first-level administrative country subdivision\" . ?e <part_of> ?e_1 . ?e_1 <pred:name> \"Nicaragua\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 1215,
+      "question": "Canada contains administrative territorial entity of how many?",
+      "sparql": "SELECT (COUNT(?obj) AS ?value ) { wd:Q16 wdt:P150 ?obj }",
+      "ans": [
+        13.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 59043,
+      "question": "How many cable channels' country is the sovereign state whose citizens are the nord-americana people?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"cable channel\" . ?e <country> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"sovereign state\" . ?e_1 <demonym> ?pv . ?pv <pred:value> \"nord-americana\" .   }",
+      "ans": [
+        "5"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 27796,
+      "question": "What is the number of filmmaking occupations that is the occupation of Michelangelo Antonioni and that works in the filmmaking field.",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"filmmaking occupation\" . ?e_1 <occupation> ?e . ?e_1 <pred:name> \"Michelangelo Antonioni\" .  ?e <field_of_this_occupation> ?e_2 . ?e_2 <pred:name> \"filmmaking\" .  }",
+      "ans": [
+        "2"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 46024,
+      "question": "How many video game developers does The Walt Disney Company own?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"video game developer\" . ?e <owned_by> ?e_1 . ?e_1 <pred:name> \"The Walt Disney Company\" .   }",
+      "ans": [
+        "2"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 10802,
+      "question": "P.S. I Love You, with lyrics by John Lennon, is composed for how many string instruments?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"string instrument\" . ?e_1 <instrumentation> ?e . ?e_1 <pred:name> \"P.S. I Love You\" . ?e_1 <lyrics_by> ?e_2 . ?e_2 <pred:name> \"John Lennon\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 30066,
+      "question": "How many science awards were nominated to Ernest Rutherford?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"science award\" . ?e_1 <nominated_for> ?e . ?e_1 <pred:name> \"Ernest Rutherford\" .   }",
+      "ans": [
+        "2"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 1571,
+      "question": "How many people have been educated and taught by Jagadish Chandra Bose?",
+      "sparql": "SELECT (COUNT(?obj) AS ?value ) { wd:Q314267 wdt:P69 ?obj }",
+      "ans": [
+        5.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 62861,
+      "question": "How many non-metropolitan districts surround the enclave of the non-metropolitan district that contains Barrow-in-Furness (that is the headquarters location of Barrow A.F.C.)?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"non-metropolitan district\" . ?e_1 <enclave_within> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"non-metropolitan district\" . ?e_2 <located_in_the_administrative_territorial_entity> ?e_1 . ?e_2 <pred:name> \"Barrow-in-Furness\" . ?e_3 <headquarters_location> ?e_2 . ?e_3 <pred:name> \"Barrow A.F.C.\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 105891,
+      "question": "How many filmmaking occupations are different from cinematographer and have the ISCO occupation code 2455?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"filmmaking occupation\" . ?e_1 <different_from> ?e . ?e_1 <pred:name> \"cinematographer\" .  ?e <ISCO_occupation_code> ?pv . ?pv <pred:value> \"2455\" .  }",
+      "ans": [
+        "1"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 1813,
+      "question": "What are the grants for the {Master of Business Administration} ?",
+      "sparql": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P5460 wd:Q191701 }",
+      "ans": [
+        8.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 94430,
+      "question": "How many independent cities are an administrative division of the United States state that contains Portsmouth (whose official website is http://www.portsmouthva.gov/)?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"independent city\" . ?e_1 <contains_administrative_territorial_entity> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"state of the United States\" . ?e_3 <located_in_the_administrative_territorial_entity> ?e_1 . ?e_3 <pred:name> \"Portsmouth\" . ?e_3 <official_website> ?pv . ?pv <pred:value> \"http://www.portsmouthva.gov/\" .   }",
+      "ans": [
+        "20"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 12289,
+      "question": "What number of Screen Actors Guild Awards were nominated to Ally McBeal?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"Screen Actors Guild Award\" . ?e_1 <nominated_for> ?e . ?e_1 <pred:name> \"Ally McBeal\" .   }",
+      "ans": [
+        "2"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 4920,
+      "question": "The sovereign state corresponding to the pronunciation audio En-us-Malaysia.ogg is the source of how many natural languages?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"natural language\" . ?e <country_of_origin> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"sovereign state\" . ?e_1 <pronunciation_audio> ?pv . ?pv <pred:value> \"En-us-Malaysia.ogg\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 36353,
+      "question": "How many communes in Italy are the headquarters location for Hellas Verona F.C.?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"comune of Italy\" . ?e_1 <headquarters_location> ?e . ?e_1 <pred:name> \"Hellas Verona F.C.\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 2004,
+      "question": "The Kingdom of Sicily has how many capitals?",
+      "sparql": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P1376 wd:Q188586 }",
+      "ans": [
+        3.0
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null
+      ],
+      "answertype": "number"
+    },
+    {
+      "ID": 78370,
+      "question": "How many saxophones are the instrument used by the human that has a Deutsche Synchronkartei actor-ID of 19794?",
+      "sparql": "SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"saxophone\" . ?e_1 <instrument> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"human\" . ?e_1 <Deutsche_Synchronkartei_actor-ID> ?pv . ?pv <pred:value> \"19794\" .   }",
+      "ans": [
+        "0"
+      ],
+      "type_label": [
+        6,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+]

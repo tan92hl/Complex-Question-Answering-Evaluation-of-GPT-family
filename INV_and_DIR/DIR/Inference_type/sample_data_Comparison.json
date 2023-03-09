@@ -1,0 +1,1906 @@
+[
+  [
+    {
+      "ID": 86811,
+      "question": "Among the Texas counties that are an administrative division of Texas (the one that contains the administrative division Fort Bend County), which one has the largest area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Texas\" . ?e_1 <contains_administrative_territorial_entity> ?e . ?e_1 <pred:name> \"Texas\" . ?e_1 <contains_administrative_territorial_entity> ?e_2 . ?e_2 <pred:name> \"Fort Bend County\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Harris County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 91458,
+      "question": "Which city in New Jersey that shares a border with Manhattan, in New York city, has the smallest area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"city in New Jersey\" . ?e <shares_border_with> ?e_1 . ?e_1 <pred:name> \"Manhattan\" . ?e_1 <located_in_the_administrative_territorial_entity> ?e_2 . ?e_2 <pred:name> \"New York City\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Hoboken"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 68014,
+      "question": "Of human settlements bordering Orange, which has a common border with Montclair, which boasts the highest population count?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human settlement\" . ?e_1 <shares_border_with> ?e . ?e_1 <pred:name> \"Orange\" . ?e_2 <shares_border_with> ?e_1 . ?e_2 <pred:name> \"Montclair\" .  ?e <population> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "West Orange"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 58834,
+      "question": "Which sea having Croatia as a basin country has the largest vertical depth?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"sea\" . ?e <basin_country> ?e_1 . ?e_1 <pred:name> \"Croatia\" .  ?e <vertical_depth> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Mediterranean Sea"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 63767,
+      "question": "Which one of the US states, where The Flowers of War was released, lies the highest above sea level ?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"state of the United States\" . ?e_1 <film_release_region> ?e . ?e_1 <pred:name> \"The Flowers of War\" .  ?e <elevation_above_sea_level> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Hawaii"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 27509,
+      "question": "Among the independent cities located in Virginia (the one whose short name is VA),which one has the smallest area ?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"independent city\" . ?e <located_in_the_administrative_territorial_entity> ?e_1 . ?e_1 <pred:name> \"Virginia\" . ?e_1 <short_name> ?pv_1 . ?pv_1 <pred:value> \"VA\" . ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Falls Church"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 40566,
+      "question": "Of all the television films done in black-and-white, which is the longest in duration?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"television film\" . ?e <color> ?e_1 . ?e_1 <pred:name> \"black-and-white\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Germany in Autumn"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 27651,
+      "question": "Which has the longest duration among the films that use time travel?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"film\" . ?e <uses> ?e_1 . ?e_1 <pred:name> \"time travel\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "The Butterfly Effect"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 52107,
+      "question": "Among the feature films that have Steven Spielberg as an executive producer, which has the largest duration?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"feature film\" . ?e <executive_producer> ?e_1 . ?e_1 <pred:name> \"Steven Spielberg\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Back to the Future Part III"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 46544,
+      "question": "Of Alabama counties bordering Franklin County (population 41052), which boasts the greatest area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Alabama\" . ?e_1 <shares_border_with> ?e . ?e_1 <pred:name> \"Franklin County\" . ?e_1 <population> ?pv_1 . ?pv_1 <pred:unit> \"1\" . ?pv_1 <pred:value> \"41052\"^^xsd:double . ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Jackson County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 34923,
+      "question": "I'd like to know the one with the tiniest area within the government form that is the origin county of Frank Herbert's Dune.",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"form of government\" . ?e_1 <country_of_origin> ?e . ?e_1 <pred:name> \"Frank Herbert's Dune\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Italy"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 13953,
+      "question": "What is the longest movie with a script written by Harold Pinter?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"film\" . ?e <screenwriter> ?e_1 . ?e_1 <pred:name> \"Harold Pinter\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "The Remains of the Day"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 60094,
+      "question": "Among the sovereign states that partially contains Danube,which one has the largest real gross domestic product growth rate ?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"sovereign state\" . ?e <partially_contains> ?e_1 . ?e_1 <pred:name> \"Danube\" .  ?e <real_gross_domestic_product_growth_rate> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Romania"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 38683,
+      "question": "Which republic that is located on the continent of Asia (that is the continent where the Middle East is situated) has the most area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"republic\" . ?e <continent> ?e_1 . ?e_1 <pred:name> \"Asia\" . ?e_2 <continent> ?e_1 . ?e_2 <pred:name> \"Middle East\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "India"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 60189,
+      "question": "I want to know the one with the least density within the medication that is a pork nutrient.",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"medication\" . ?e_1 <nutrient> ?e . ?e_1 <pred:name> \"pork\" .  ?e <density> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "iron"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 13449,
+      "question": "Which country is at the location in which Vulgaria is, and has the most land area?",
+      "sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n                ?c ns:base.locations.continents.countries_within ?x .\n                ?x ns:location.location.area ?y .\n}\nORDER BY DESC(xsd:float(?y))\nLIMIT 1",
+      "ans": [
+        "Russian Federation",
+        "Россия",
+        "Russia"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 5795,
+      "question": "Which studio album whose genre is folk rock has the shortest duration?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"studio album\" . ?e <genre> ?e_1 . ?e_1 <pred:name> \"folk rock\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Neil Young"
+      ],
+      "type_label": [
+        4,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 25733,
+      "question": "What news film or TV show with English as their original language has the shortest duration?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"news\" . ?e <original_language_of_film_or_TV_show> ?e_1 . ?e_1 <pred:name> \"English\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "The Daily Show"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 28748,
+      "question": "Among the rivers located in the North America continent, which one has the smallest discharge?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"river\" . ?e <continent> ?e_1 . ?e_1 <pred:name> \"North America\" .  ?e <discharge> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Hudson River"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 53572,
+      "question": "Which of the agencies comprising the US Congress has the most seats?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"agent\" . ?e_1 <has_part> ?e . ?e_1 <pred:name> \"United States Congress\" .  ?e <number_of_seats> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "United States House of Representatives"
+      ],
+      "type_label": [
+        7,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 103039,
+      "question": "Which one of the Texas counties, that is the administrative division of Texas (where Texas A&M University is located), covers the largest area ?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Texas\" . ?e_1 <contains_administrative_territorial_entity> ?e . ?e_1 <pred:name> \"Texas\" . ?e_2 <located_in_the_administrative_territorial_entity> ?e_1 . ?e_2 <pred:name> \"Texas A&M University\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Harris County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 24712,
+      "question": "Among the comedies that use English language,which one has the smallest number of seasons ?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"comedy\" . ?e <language_of_work_or_name> ?e_1 . ?e_1 <pred:name> \"English\" .  ?e <number_of_seasons> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Mr. Smith Goes to Washington"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 40479,
+      "question": "Which of the Michigan counties, sharing a border with Macomb County, has the smallest land area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Michigan\" . ?e_1 <shares_border_with> ?e . ?e_1 <pred:name> \"Macomb County\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Wayne County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 49583,
+      "question": "Among the animated feature films that take place in Shrek (the one whose official website is http://www.shrek.com), which one has the smallest duration?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"animated feature film\" . ?e <takes_place_in_fictional_universe> ?e_1 . ?e_1 <pred:name> \"Shrek\" . ?e_1 <official_website> ?pv_1 . ?pv_1 <pred:value> \"http://www.shrek.com\" . ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Shrek"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 53869,
+      "question": "Which state of India that shares a border with Uttarakhand (whose official name is Уттаранчал) has the smallest rural population?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"state of India\" . ?e <shares_border_with> ?e_1 . ?e_1 <pred:name> \"Uttarakhand\" . ?e_1 <official_name> ?pv_1 . ?pv_1 <pred:value> \"Уттаранчал\" . ?e <rural_population> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Himachal Pradesh"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 899,
+      "question": "Which one of visual artwork that match a model item film is the shortest ?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"visual artwork\" . ?e_1 <model_item> ?e . ?e_1 <pred:name> \"film\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Citizen Kane"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 1998,
+      "question": "Which work with a script by Richard Matheson was the longest?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"visual artwork\" . ?e <screenwriter> ?e_1 . ?e_1 <pred:name> \"Richard Matheson\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Real Steel"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 48594,
+      "question": "Of the animated films, collected in Museum of Modern Art, which one has the smallest budget ?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"animated film\" . ?e <collection> ?e_1 . ?e_1 <pred:name> \"Museum of Modern Art\" .  ?e <budget> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "The Nightmare Before Christmas"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 69318,
+      "question": "Which ceremonial county of England, established on 1974-04-01, has the smallest land area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"ceremonial county of England\" . ?e <inception> ?pv_1 . ?pv_1 <pred:date> \"1974-04-01\"^^xsd:date . ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Tyne and Wear"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 41860,
+      "question": "Which Texas county bordered by Collin County covers the least area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Texas\" . ?e <shares_border_with> ?e_1 . ?e_1 <pred:name> \"Collin County\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Dallas County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 44353,
+      "question": "Of the animated feature films, produced by Walt Disney Pictures, which one's running time is the longest ?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"animated feature film\" . ?e <production_company> ?e_1 . ?e_1 <pred:name> \"Walt Disney Pictures\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Cars"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 69467,
+      "question": "Which animated series in the sit-com genre ran for the most seasons?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"animated series\" . ?e <genre> ?e_1 . ?e_1 <pred:name> \"situation comedy\" .  ?e <number_of_seasons> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "The Simpsons"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 14986,
+      "question": "Which Texas county that is located in Texas (that is located in the United States of America) has the largest area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Texas\" . ?e <located_in_the_administrative_territorial_entity> ?e_1 . ?e_1 <pred:name> \"Texas\" . ?e_1 <located_in_the_administrative_territorial_entity> ?e_2 . ?e_2 <pred:name> \"United States of America\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Harris County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 15240,
+      "question": "Tell me the one with the least area within the historical country that has military conflicts with Dominion of New Zealand",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"historical country\" . ?e_1 <military_conflicts> ?e . ?e_1 <pred:name> \"Dominion of New Zealand\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "German Empire"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 20133,
+      "question": "Which form of government in the Central European time zone has the highest PPP GDP per capita?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"form of government\" . ?e <located_in_time_zone> ?e_1 . ?e_1 <pred:name> \"Central European Time\" .  ?e <PPP_GDP_per_capita> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Austria"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 7020,
+      "question": "Of the visual artworks produced by Michael G. Wilson, which is the longest in duration?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"visual artwork\" . ?e <producer> ?e_1 . ?e_1 <pred:name> \"Michael G. Wilson\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Casino Royale"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 83394,
+      "question": "Of theatrical genres originating in the USA, which genre includes the fewest episodes?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"theatrical genre\" . ?e <country_of_origin> ?e_1 . ?e_1 <pred:name> \"United States of America\" .  ?e <number_of_episodes> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Mr. Smith Goes to Washington"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 60608,
+      "question": "Among the television series that has Alex Borstein as a voice actor,which one has the smallest number of seasons ?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"television series\" . ?e <voice_actor> ?e_1 . ?e_1 <pred:name> \"Alex Borstein\" .  ?e <number_of_seasons> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "The Cleveland Show"
+      ],
+      "type_label": [
+        4,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 42207,
+      "question": "Of the New York counties that share a border with Monroe County (the one whose inception time is 1821-02-23), which is the largest in area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of New York\" . ?e <shares_border_with> ?e_1 . ?e_1 <pred:name> \"Monroe County\" . ?e_1 <inception> ?pv_1 . ?pv_1 <pred:date> \"1821-02-23\"^^xsd:date . ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Wayne County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 57631,
+      "question": "Among the films with a Brooklyn (the one that is the residence of Paul Giamatti) narrative location, which one has the longest duration?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"visual artwork\" . ?e <narrative_location> ?e_1 . ?e_1 <pred:name> \"Brooklyn\" . ?e_2 <residence> ?e_1 . ?e_2 <pred:name> \"Paul Giamatti\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Once Upon a Time in America"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 16712,
+      "question": "Which area is the smallest among the county of New Jersey that shares border with Mercer County (the one that contains Trenton)?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of New Jersey\" . ?e_1 <shares_border_with> ?e . ?e_1 <pred:name> \"Mercer County\" . ?e_2 <located_in_the_administrative_territorial_entity> ?e_1 . ?e_2 <pred:name> \"Trenton\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Somerset County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 42483,
+      "question": "Which one of the former french region, replaced by Normandy (the one that replaces Upper Normandy) has the largest population?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"former French region\" . ?e <replaced_by> ?e_1 . ?e_1 <pred:name> \"Normandy\" . ?e_2 <replaced_by> ?e_1 . ?e_2 <pred:name> \"Upper Normandy\" .  ?e <population> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Upper Normandy"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 34925,
+      "question": "Among the county of Oregon that is an administrative division of Oregon (the one whose elevation (above sea level) is 1005 metre), which one has the largest area ?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Oregon\" . ?e_1 <contains_administrative_territorial_entity> ?e . ?e_1 <pred:name> \"Oregon\" . ?e_1 <elevation_above_sea_level> ?pv_1 . ?pv_1 <pred:unit> \"metre\" . ?pv_1 <pred:value> \"1005\"^^xsd:double . ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Lake County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 73762,
+      "question": "Which one has more area among the counties of Oregon that contains the administrative division of Portland (the one that is the twinned administrative body of Sapporo)?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Oregon\" . ?e <contains_administrative_territorial_entity> ?e_1 . ?e_1 <pred:name> \"Portland\" . ?e_1 <twinned_administrative_body> ?e_2 . ?e_2 <pred:name> \"Sapporo\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Washington County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 98881,
+      "question": "Which anime TV series first broadcast on Fuji Television contains the most episodes?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"anime television series\" . ?e <original_network> ?e_1 . ?e_1 <pred:name> \"Fuji Television\" .  ?e <number_of_episodes> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Dragon Ball"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 563,
+      "question": "Which has the fewest episodes among the television series composed by musician Walter Murphy?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"television series\" . ?e <composer> ?e_1 . ?e_1 <pred:name> \"Walter Murphy\" . ?e_1 <occupation> ?e_2 . ?e_2 <pred:name> \"musician\" .  ?e <number_of_episodes> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "The Cleveland Show"
+      ],
+      "type_label": [
+        4,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 25286,
+      "question": "For NJ cities sharing a border with Elizabeth—which has a postal code of 07201—which one has the least amount of area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"city in New Jersey\" . ?e <shares_border_with> ?e_1 . ?e_1 <pred:name> \"Elizabeth\" . ?e_1 <postal_code> ?pv_1 . ?pv_1 <pred:value> \"07201\" . ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Bayonne"
+      ],
+      "type_label": [
+        7,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 72486,
+      "question": "Of the animate films in the \"film based on literature\" genre, which has the longest duration?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"animated film\" . ?e <genre> ?e_1 . ?e_1 <pred:name> \"film based on literature\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Howl's Moving Castle"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 104212,
+      "question": "What is the longest action film?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"feature film\" . ?e <genre> ?e_1 . ?e_1 <pred:name> \"action film\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Pirates of the Caribbean: At World's End"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 94344,
+      "question": "Of Italian communes belonging to the Austrian Empire, which has the lowest elevation relative to sea level?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"comune of Italy\" . ?e <country> ?e_1 . ?e_1 <pred:name> \"Austrian Empire\" .  ?e <elevation_above_sea_level> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Mantua"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 47773,
+      "question": "Which has the smallest real gross domestic product growth rate among the republics that are a narrative location of Rock Band 2?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"republic\" . ?e_1 <narrative_location> ?e . ?e_1 <pred:name> \"Rock Band 2\" .  ?e <real_gross_domestic_product_growth_rate> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Italy"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 17611,
+      "question": "Of pharmaceutical formulations that are the nutrient in eggs, which possesses the highest thermal conductivity?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"medication\" . ?e_1 <nutrient> ?e . ?e_1 <pred:name> \"egg\" .  ?e <thermal_conductivity> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "copper"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 101309,
+      "question": "Which one has more elevation above sea level among the human settlement that shares border with Verona (the one whose area is 2.776 square miles)?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human settlement\" . ?e_1 <shares_border_with> ?e . ?e_1 <pred:name> \"Verona\" . ?e_1 <area> ?pv_1 . ?pv_1 <pred:unit> \"square mile\" . ?pv_1 <pred:value> \"2.776\"^^xsd:double . ?e <elevation_above_sea_level> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "West Orange"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 36880,
+      "question": "What is the smallest county/administrative division in California (the state which contains Fresno County)",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of California\" . ?e_1 <contains_administrative_territorial_entity> ?e . ?e_1 <pred:name> \"California\" . ?e_2 <located_in_the_administrative_territorial_entity> ?e_1 . ?e_2 <pred:name> \"Fresno County\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Santa Cruz County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 93553,
+      "question": "Which one has the largest area among the counties of Alabama (the one that is the filming location of Mississippi Burning)?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Alabama\" . ?e_1 <contains_administrative_territorial_entity> ?e . ?e_1 <pred:name> \"Alabama\" . ?e_2 <filming_location> ?e_1 . ?e_2 <pred:name> \"Mississippi Burning\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Baldwin County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 95603,
+      "question": "Which sea with Italy as a basin country is shallowest?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"sea\" . ?e <basin_country> ?e_1 . ?e_1 <pred:name> \"Italy\" .  ?e <vertical_depth> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Adriatic Sea"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 43324,
+      "question": "Which has the most area among the Illinois counties that border Kane County which was founded on 1836-01-16?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Illinois\" . ?e <shares_border_with> ?e_1 . ?e_1 <pred:name> \"Kane County\" . ?e_1 <inception> ?pv_1 . ?pv_1 <pred:date> \"1836-01-16\"^^xsd:date . ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Cook County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 61528,
+      "question": "Which Comedy Central newscast has the most seasons?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"newscast\" . ?e <original_network> ?e_1 . ?e_1 <pred:name> \"Comedy Central\" .  ?e <number_of_seasons> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "The Daily Show"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 95860,
+      "question": "Which Oregon county that contains Portland (the birthplace of Kirk Thornton) has the largest land area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Oregon\" . ?e_1 <located_in_the_administrative_territorial_entity> ?e . ?e_1 <pred:name> \"Portland\" . ?e_2 <place_of_birth> ?e_1 . ?e_2 <pred:name> \"Kirk Thornton\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Clackamas County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 105565,
+      "question": "What animated film released in New Zealand had the highest cost?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"animated film\" . ?e <film_release_region> ?e_1 . ?e_1 <pred:name> \"New Zealand\" .  ?e <cost> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Wreck-It Ralph"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 27628,
+      "question": "Which has the smallest population among the France departments that are an administrative division of Alsace?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"departments of France\" . ?e_1 <contains_administrative_territorial_entity> ?e . ?e_1 <pred:name> \"Alsace\" .  ?e <population> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Haut-Rhin"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 13990,
+      "question": "What is the longest feature film distributed by Universal Pictures, distributor of Snow White and the Huntsman?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"feature film\" . ?e <distributor> ?e_1 . ?e_1 <pred:name> \"Universal Pictures\" . ?e_2 <distributor> ?e_1 . ?e_2 <pred:name> \"Snow White and the Huntsman\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Back to the Future Part II"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 53457,
+      "question": "Of animated films directed by Hayao Miyazaki, which is shortest in length?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"animated film\" . ?e <director> ?e_1 . ?e_1 <pred:name> \"Hayao Miyazaki\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "My Neighbor Totoro"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 82375,
+      "question": "Which one has the largest area among the county of Oregon (USA)?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Oregon\" . ?e <located_in_the_administrative_territorial_entity> ?e_1 . ?e_1 <pred:name> \"Oregon\" . ?e_2 <contains_administrative_territorial_entity> ?e_1 . ?e_2 <pred:name> \"United States of America\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Lake County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 92705,
+      "question": "Of all rivers in the country of Germany, which is shortest?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"river\" . ?e <country> ?e_1 . ?e_1 <pred:name> \"Germany\" .  ?e <length> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Rhine"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 4582,
+      "question": "Which movie that mainly depicts American football has the longest runtime?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"feature film\" . ?e <main_subject> ?e_1 . ?e_1 <pred:name> \"American football\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Remember the Titans"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 25094,
+      "question": "Among the independent German cities which have Weimar Republic as their country, which one has the smallest elevation (above sea level)?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"independent city of Germany\" . ?e <country> ?e_1 . ?e_1 <pred:name> \"Weimar Republic\" .  ?e <elevation_above_sea_level> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Frankfurt (Oder)"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 93889,
+      "question": "Among the feature films that were nominated for an Academy Award for Best Visual Effects, which has the smallest duration?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"feature film\" . ?e <nominated_for> ?e_1 . ?e_1 <pred:name> \"Academy Award for Best Visual Effects\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Ghostbusters"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 60262,
+      "question": "Which has the most seasons among the industry whose genre is television comedy?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"industry\" . ?e <genre> ?e_1 . ?e_1 <pred:name> \"television comedy\" .  ?e <number_of_seasons> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "The Daily Show"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 13482,
+      "question": "Which has the most area among the Illinois counties that border McHenry County?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Illinois\" . ?e <shares_border_with> ?e_1 . ?e_1 <pred:name> \"McHenry County\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Cook County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 52146,
+      "question": "Of mountain ranges, located in Appalachian Mountains, which one lies the highest in relation to the sea level ?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"mountain range\" . ?e <mountain_range> ?e_1 . ?e_1 <pred:name> \"Appalachian Mountains\" .  ?e <elevation_above_sea_level> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Blue Ridge Mountains"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 51334,
+      "question": "Of news programs that were Primetime Emmy Award nominees for an Individual Performance in a Variety or Music Program, which has the lowest episode count?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"news\" . ?e <nominated_for> ?e_1 . ?e_1 <pred:name> \"Primetime Emmy Award for Individual Performance in a Variety or Music Program\" .  ?e <number_of_episodes> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "The Colbert Report"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 22952,
+      "question": "Among the states that are the origin countries of Viking metal, which has the smallest unemployment rate?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"state\" . ?e_1 <country_of_origin> ?e . ?e_1 <pred:name> \"Viking metal\" .  ?e <unemployment_rate> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Sweden"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 28345,
+      "question": "Which first-level administrative country subdivision of Mexico has the largest area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"first-level administrative country subdivision\" . ?e_1 <contains_administrative_territorial_entity> ?e . ?e_1 <pred:name> \"Mexico\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Chihuahua"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 36285,
+      "question": "What state of India that uses Hindi as its official language has the smallest rural population?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"state of India\" . ?e <official_language> ?e_1 . ?e_1 <pred:name> \"Hindi\" .  ?e <rural_population> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Haryana"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 101923,
+      "question": "Which one has more elevation above sea level among the human settlements that shares border with Verona (the one that shares border with Montclair)?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human settlement\" . ?e_1 <shares_border_with> ?e . ?e_1 <pred:name> \"Verona\" . ?e_1 <shares_border_with> ?e_2 . ?e_2 <pred:name> \"Montclair\" .  ?e <elevation_above_sea_level> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "West Orange"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 45956,
+      "question": "Among the forms of government that share a border with Chad, which has the largest PPP GDP per capita?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"form of government\" . ?e_1 <shares_border_with> ?e . ?e_1 <pred:name> \"Chad\" .  ?e <PPP_GDP_per_capita> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Sudan"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 51656,
+      "question": "Regarding silent films, whose narrative location is Paris (whose postal code is 75002), which one's running time is the longest ?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"silent film\" . ?e <narrative_location> ?e_1 . ?e_1 <pred:name> \"Paris\" . ?e_1 <postal_code> ?pv_1 . ?pv_1 <pred:value> \"75002\" . ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "The Hunchback of Notre Dame"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 68226,
+      "question": "Which film, created by Dante Ferretti, has the shortest duration?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"film\" . ?e <production_designer> ?e_1 . ?e_1 <pred:name> \"Dante Ferretti\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Sweeney Todd: The Demon Barber of Fleet Street"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 56548,
+      "question": "Which is the longest among the animated films that have John Lasseter as an executive producer?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"animated film\" . ?e <executive_producer> ?e_1 . ?e_1 <pred:name> \"John Lasseter\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Howl's Moving Castle"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 84483,
+      "question": "Among the states of the United States that is The Flowers of War's release region, which one has the smallest percent of water area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"state of the United States\" . ?e_1 <film_release_region> ?e . ?e_1 <pred:name> \"The Flowers of War\" .  ?e <water_as_percent_of_area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Virginia"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 97256,
+      "question": "Which Texas county containing Fort Worth (that is the twinned administrative body of Bandung) has the smallest area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Texas\" . ?e_1 <located_in_the_administrative_territorial_entity> ?e . ?e_1 <pred:name> \"Fort Worth\" . ?e_1 <twinned_administrative_body> ?e_2 . ?e_2 <pred:name> \"Bandung\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Tarrant County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 93869,
+      "question": "Which is the shortest among the films whose director of photography is Roger Deakins?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"film\" . ?e <director_of_photography> ?e_1 . ?e_1 <pred:name> \"Roger Deakins\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Intolerable Cruelty"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 101648,
+      "question": "Which has the largest population among the non-metropolitan districts that are an administrative division of Norfolk which is the origin of the name Norfolk County?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"non-metropolitan district\" . ?e_1 <contains_administrative_territorial_entity> ?e . ?e_1 <pred:name> \"Norfolk\" . ?e_2 <named_after> ?e_1 . ?e_2 <pred:name> \"Norfolk County\" .  ?e <population> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "King's Lynn and West Norfolk"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 87407,
+      "question": "Of Ohio counties bordering Warren County, population 217310, which occupies the most area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Ohio\" . ?e_1 <shares_border_with> ?e . ?e_1 <pred:name> \"Warren County\" . ?e_1 <population> ?pv_1 . ?pv_1 <pred:unit> \"1\" . ?pv_1 <pred:value> \"217310\"^^xsd:double . ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Butler County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 25580,
+      "question": "Of films with Warren Beatty as scriptwriter, which is the longest?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"film\" . ?e <screenwriter> ?e_1 . ?e_1 <pred:name> \"Warren Beatty\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Reds"
+      ],
+      "type_label": [
+        7,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 38238,
+      "question": "Which comune of the Kingdom of Italy (which includes the country of Turin) has the largest elevation above sea level?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"comune of Italy\" . ?e <country> ?e_1 . ?e_1 <pred:name> \"Kingdom of Italy\" . ?e_2 <country> ?e_1 . ?e_2 <pred:name> \"Turin\" .  ?e <elevation_above_sea_level> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Pavia"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 68675,
+      "question": "Which one of the first-level administrative county subdivisions within Australia (the release region of Kiss of the Spider Woman) are situated on the highest place above sea level ?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"first-level administrative country subdivision\" . ?e <part_of> ?e_1 . ?e_1 <pred:name> \"Australia\" . ?e_2 <film_release_region> ?e_1 . ?e_2 <pred:name> \"Kiss of the Spider Woman\" .  ?e <elevation_above_sea_level> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Western Australia"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 69440,
+      "question": "Which first-level administrative country subdivision abutting the Czech Republic has the smallest land area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"first-level administrative country subdivision\" . ?e <shares_border_with> ?e_1 . ?e_1 <pred:name> \"Czech Republic\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Upper Austria"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 96216,
+      "question": "Which feature film produced by Universal Studios Home Entertainment is the longest?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"feature film\" . ?e <production_company> ?e_1 . ?e_1 <pred:name> \"Universal Studios Home Entertainment\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Back to the Future Part III"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 4074,
+      "question": "Which Alabama county that is an administrative division of Alabama (that partially holds the Appalachian Mountains) has the largest land area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Alabama\" . ?e_1 <contains_administrative_territorial_entity> ?e . ?e_1 <pred:name> \"Alabama\" . ?e_1 <partially_contains> ?e_2 . ?e_2 <pred:name> \"Appalachian Mountains\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Baldwin County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 39336,
+      "question": "Which one of Indian states, sharing a border with  Uttar Pradesh (the one that shares border with Delhi), has the largest urban population?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"state of India\" . ?e_1 <shares_border_with> ?e . ?e_1 <pred:name> \"Uttar Pradesh\" . ?e_2 <shares_border_with> ?e_1 . ?e_2 <pred:name> \"Delhi\" .  ?e <urban_population> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Rajasthan"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 28662,
+      "question": "OF Maryland counties bordering Carroll County (subreddit CarrollCountyMaryland), which takes up the least area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Maryland\" . ?e <shares_border_with> ?e_1 . ?e_1 <pred:name> \"Carroll County\" . ?e_1 <subreddit> ?pv_1 . ?pv_1 <pred:value> \"CarrollCountyMaryland\" . ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Howard County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 60589,
+      "question": "Which, among the administrative territorial entities named after Thomas Jefferson (the one whose children number is 6), has the smallest area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"administrative territorial entity\" . ?e <named_after> ?e_1 . ?e_1 <pred:name> \"Thomas Jefferson\" . ?e_1 <number_of_children> ?pv_1 . ?pv_1 <pred:unit> \"1\" . ?pv_1 <pred:value> \"6\"^^xsd:double . ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Jefferson County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 89205,
+      "question": "Which has the smallest real gross domestic product growth rate among the form of government from an ethnic group of Jewish people?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"form of government\" . ?e <ethnic_group> ?e_1 . ?e_1 <pred:name> \"Jewish people\" .  ?e <real_gross_domestic_product_growth_rate> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Tunisia"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 89292,
+      "question": "Which independent city located in Virginia (the one that contains Chesapeake) has the smallest area?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"independent city\" . ?e <located_in_the_administrative_territorial_entity> ?e_1 . ?e_1 <pred:name> \"Virginia\" . ?e_2 <located_in_the_administrative_territorial_entity> ?e_1 . ?e_2 <pred:name> \"Chesapeake\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Falls Church"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 34539,
+      "question": "Which news program whose genre is political satire has the most seasons?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"news\" . ?e <genre> ?e_1 . ?e_1 <pred:name> \"political satire\" .  ?e <number_of_seasons> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "The Daily Show"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 31387,
+      "question": "Tell me the one with the least duration among the 3D film that has Frank Welker as a voice actor.",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"3D film\" . ?e <voice_actor> ?e_1 . ?e_1 <pred:name> \"Frank Welker\" .  ?e <duration> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Frankenweenie"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 41039,
+      "question": "Which television series which debuted in 1993 has the smallest number of episodes?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"television series\" . ?e <start_time> ?pv_1 . ?pv_1 <pred:year> 1993 . ?e <number_of_episodes> ?pv . ?pv <pred:value> ?v .  } ORDER BY ?v LIMIT 1",
+      "ans": [
+        "Sonic the Hedgehog"
+      ],
+      "type_label": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 103104,
+      "question": "Which one of Californian counties, located in Pacific Time Zone, covers the largest area ?",
+      "sparql": "SELECT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of California\" . ?e <located_in_time_zone> ?e_1 . ?e_1 <pred:name> \"Pacific Time Zone\" .  ?e <area> ?pv . ?pv <pred:value> ?v .  } ORDER BY DESC(?v) LIMIT 1",
+      "ans": [
+        "Los Angeles County"
+      ],
+      "type_label": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+]

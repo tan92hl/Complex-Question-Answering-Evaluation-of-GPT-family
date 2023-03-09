@@ -1,0 +1,2444 @@
+[
+  [
+    {
+      "ID": 14912,
+      "question": "Who was the spouse of the person Norman Mailer dedicated his work to?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:media_common.dedicatee.dedications ?k .\n?k ns:media_common.dedication.dedicated_by ns:m.019z7q . \n?c ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\n}\n",
+      "ans": [
+        "Lady Bird",
+        "Claudia Alta Taylor Johnson",
+        "Claudia Alta \"Lady Bird\" Taylor Johnson",
+        "Claudia Alta Taylor",
+        "First lady Lady Bird Johnson",
+        "Lady Bird Johnson"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 23884,
+      "question": "What are the legal order which start with the letter sharia",
+      "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q858700 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'sharia')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25 ",
+      "ans": [
+        "sharia",
+        "sharia"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        null,
+        "Q482752"
+      ],
+      "answertype": "None"
+    },
+    {
+      "ID": 19628,
+      "question": "name the brother of the person nominated for the Young Hollywood Award for Newcomer of the Year.?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:award.award_nominee.award_nominations ?k .\n?k ns:award.award_nomination.award ns:m.0y54wmq . \n?c ns:people.person.sibling_s ?y .\n?y ns:people.sibling_relationship.sibling ?x .\n?x ns:people.person.gender ns:m.05zppz .\n}\n",
+      "ans": [
+        "Jaxon Bieber"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 2257,
+      "question": "who was the leader of the soviet union in 1945",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05vz3zq)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05vz3zq ns:government.governmental_jurisdiction.governing_officials ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.basic_title ns:m.0fkx3 .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"1945-12-31\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"1945-01-01\"^^xsd:dateTime) })\n}\n",
+      "ans": [
+        "Joseph Stalin"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 22096,
+      "question": "What James Franco film had I.J. Van Perre as a crew member?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:film.film.other_crew ?k .\n?k ns:film.film_crew_gig.crewmember ns:m.0bjc694 . \n?c ns:film.film.starring ?y .\n?y ns:film.performance.character ?x .\n?y ns:film.performance.actor ns:m.05bnp0 .\n}\n",
+      "ans": [
+        "Scott Smith"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 55111,
+      "question": "Was the popular music that is the genre of Southern Lord Records founded after 1888?",
+      "sparql": "ASK { ?e <pred:instance_of> ?c . ?c <pred:name> \"popular music\" . ?e_1 <genre> ?e . ?e_1 <pred:name> \"Southern Lord Records\" .  ?e <inception> ?pv . ?pv <pred:year> ?v . FILTER ( ?v > 1888 ) .  }",
+      "ans": [
+        "yes"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 30458,
+      "question": "Which television station created \"Arthur\" and produced \"Crisis in Central America\"?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0px0r)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0px0r ns:tv.tv_program.program_creator ?x .\n?x ns:tv.tv_producer.tv_episodes_produced ?c .\n?c ns:tv.tv_producer_episode_credit.episode ns:m.05v2gyc . \n}",
+      "ans": [
+        "WGBH-TV",
+        "WGBH"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 11729,
+      "question": "Regarding the person whose name in native language is மனோரமா, was he or she born other than 1970?",
+      "sparql": "ASK { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <name_in_native_language> ?pv_1 . ?pv_1 <pred:value> \"மனோரமா\" . ?e <date_of_birth> ?pv . ?pv <pred:year> ?v . FILTER ( ?v != 1970 ) .  }",
+      "ans": [
+        "yes"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 24756,
+      "question": "Where did The Wild, Wild World of Jayne Mansfield actor die?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:film.actor.film ?k .\n?k ns:film.performance.film ns:m.0h56h84 . \n?c ns:people.deceased_person.place_of_death ?x .\n}\n",
+      "ans": [
+        "Slidell, Louisiana",
+        "St. Tammany Parish / Slidell city",
+        "Slidell"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 82831,
+      "question": "Was the county of Oregon having the population of 25422 founded before 1958?",
+      "sparql": "ASK { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Oregon\" . ?e <population> ?pv_1 . ?pv_1 <pred:unit> \"1\" . ?pv_1 <pred:value> \"25422\"^^xsd:double . ?e <inception> ?pv . ?pv <pred:year> ?v . FILTER ( ?v < 1958 ) .  }",
+      "ans": [
+        "yes"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 23988,
+      "question": "What are the love deity which contains the word inanna in their name",
+      "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q1670614 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'inanna')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25 ",
+      "ans": [
+        "Inanna",
+        "Inanna"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        "Q272523",
+        null
+      ],
+      "answertype": "None"
+    },
+    {
+      "ID": 23700,
+      "question": "What College attended by Margaret Hoover hosted the 2012 Charlotte Jewish Film Festival event?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03m6921)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03m6921 ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n?x ns:location.location.events ns:m.010c_jb1 . \n}",
+      "ans": [
+        "Davidson College, main campus",
+        "DC",
+        "Davidson",
+        "Davidson College"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1752,
+      "question": "What languages are spoken in the place containing the second level division Choapa Province?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:location.country.second_level_divisions ns:m.027m6xw . \n?c ns:location.country.languages_spoken ?x .\n}\n",
+      "ans": [
+        "Aymara",
+        "Aymara language",
+        "Mapuche",
+        "Mapudungu",
+        "Mapudungun",
+        "Araucano",
+        "Maputongo",
+        "Mapudungun Language",
+        "Easter Island",
+        "Pascuense",
+        "Rapa Nui",
+        "Rapa Nui Language",
+        "Español",
+        "Spanish language",
+        "Castillian",
+        "Spanish",
+        "The language of Cervantes",
+        "Castellano",
+        "Castillan",
+        "Castilian",
+        "Spanish Language",
+        "Puquina",
+        "Puquina Language"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "ID": 69754,
+      "question": "Is the population of the New York county containing the Kingston administrative division (whose official website is http://kingston-ny.gov/) higher than 2.4 on the date 2010-07-01?",
+      "sparql": "ASK { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of New York\" . ?e <contains_administrative_territorial_entity> ?e_1 . ?e_1 <pred:name> \"Kingston\" . ?e_1 <official_website> ?pv_1 . ?pv_1 <pred:value> \"http://kingston-ny.gov/\" . ?e <population> ?pv . ?pv <pred:unit> \"1\" . ?pv <pred:value> ?v . FILTER ( ?v > \"2.4\"^^xsd:double ) . [ <pred:fact_h> ?e ; <pred:fact_r> <population> ; <pred:fact_t> ?pv ] <point_in_time> ?qpv . ?qpv <pred:date> \"2010-07-01\"^^xsd:date .  }",
+      "ans": [
+        "yes"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 2657,
+      "question": "where is mallorca",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0g52z)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0g52z ns:geography.island.body_of_water ?x .\n}\n",
+      "ans": [
+        "Mediterranean Sea"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 8361,
+      "question": "What city is run by a mayor and was the location of the Gettysburg war?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01jnm)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01jnm ns:time.event.locations ?x .\n?x ns:government.governmental_jurisdiction.governing_officials ?c .\n?c ns:government.government_position_held.basic_title ns:m.0pqc5 . \n}",
+      "ans": [
+        "Gettysburg, Pennsylvania",
+        "Adams County / Gettysburg borough",
+        "Gettysburg"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 3808,
+      "question": "What company did people with bookkeeping degree work for?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:people.person.education ?k .\n?k ns:education.education.major_field_of_study ns:m.01h5g . \n?c ns:people.person.employment_history ?y .\n?y ns:business.employment_tenure.company ?x .\n}\n",
+      "ans": [
+        "Henry Ford Company",
+        "Ford",
+        "Ford Motor Company",
+        "Detroit Dry Dock Co",
+        "James F. Flower & Bros",
+        "Edison Illuminating Company"
+      ],
+      "type_label": [
+        7,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 22438,
+      "question": "What college is Brian Williams almamater and also publishes the GW Review?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.030p0z)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.030p0z ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n?x ns:book.periodical_publisher.periodicals_published ?c .\n?c ns:book.periodical_publisher_period.periodical ns:m.0263dbz . \n}",
+      "ans": [
+        "GW",
+        "GWU",
+        "George Washington",
+        "The George Washington University",
+        "George Washington University"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3045,
+      "question": "where was the earthquake in christchurch",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0gg9kfr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0gg9kfr ns:time.event.locations ?x .\n}\n",
+      "ans": [
+        "Christchurch"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 28235,
+      "question": "Where did the Turkish people originate from and was also ruled by Christian IV of Denmark?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0hb7h_z)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0hb7h_z ns:people.ethnicity.geographic_distribution ?x .\n?x ns:royalty.kingdom.rulers ns:m.013jcq . \n}",
+      "ans": [
+        "Norge",
+        "Kingdom of Norway",
+        "Norway",
+        "Dänemark",
+        "Kingdom of Denmark",
+        "Kongeriget Danmark",
+        "丹麦",
+        "Denmark"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 73594,
+      "question": "Was the person that received the Grammy Award for Record of the Year with Santana born before 1957?",
+      "sparql": "ASK { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <award_received> ?e_1 . ?e_1 <pred:name> \"Grammy Award for Record of the Year\" .  [ <pred:fact_h> ?e ; <pred:fact_r> <award_received> ; <pred:fact_t> ?e_1 ] <together_with> ?qpv . ?qpv <pred:value> \"Santana\" . ?e <date_of_birth> ?pv . ?pv <pred:year> ?v . FILTER ( ?v < 1957 ) .  }",
+      "ans": [
+        "no"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 2181,
+      "question": "where does joey king live",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03yk4pb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03yk4pb ns:people.person.places_lived ?y .\n?y ns:people.place_lived.location ?x .\n}\n",
+      "ans": [
+        "Los Angeles",
+        "Las Vegas"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 8710,
+      "question": "What movie was Albert Brenner the production designer on that starred Taylor Lautner?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07ldhs)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07ldhs ns:film.actor.film ?y .\n?y ns:film.performance.film ?x .\n?x ns:film.film.film_production_design_by ns:m.05b5_tj . \n}",
+      "ans": [
+        "Valentine's Day"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 3084,
+      "question": "Did someone with the native name Sid James begin working sometime other than 1961 ?",
+      "sparql": "ASK { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <name_in_native_language> ?pv_1 . ?pv_1 <pred:value> \"Sid James\" . ?e <work_period_(start)> ?pv . ?pv <pred:year> ?v . FILTER ( ?v != 1961 ) .  }",
+      "ans": [
+        "yes"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 28693,
+      "question": "Where is the Angolan kwanza located?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:location.country.currency_used ns:m.03c7mb . \n?c ns:base.locations.countries.continent ?x .\n}\n",
+      "ans": [
+        "Afrique",
+        "Africa"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "ID": 20643,
+      "question": "Is the elevation of Port-au-Prince not 6100 metres?",
+      "sparql": "ASK { ?e <pred:name> \"Port-au-Prince\" . ?e <elevation_above_sea_level> ?pv . ?pv <pred:unit> \"metre\" . ?pv <pred:value> ?v . FILTER ( ?v != \"6100\"^^xsd:double ) .  }",
+      "ans": [
+        "yes"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 57170,
+      "question": "Did the person whose name in kana is ジェリー・ネルソン die after 1274?",
+      "sparql": "ASK { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <name_in_kana> ?pv_1 . ?pv_1 <pred:value> \"ジェリー・ネルソン\" . ?e <date_of_death> ?pv . ?pv <pred:year> ?v . FILTER ( ?v > 1274 ) .  }",
+      "ans": [
+        "yes"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 47152,
+      "question": "Did the Summer Olympic Games whose start time is on 1968-10-12 not start in 2012?",
+      "sparql": "ASK { ?e <pred:instance_of> ?c . ?c <pred:name> \"Summer Olympic Games\" . ?e <start_time> ?pv_1 . ?pv_1 <pred:date> \"1968-10-12\"^^xsd:date . ?e <point_in_time> ?pv . ?pv <pred:year> ?v . FILTER ( ?v != 2012 ) .  }",
+      "ans": [
+        "yes"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 2752,
+      "question": "where did laura ingalls wilder live",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01bt87)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01bt87 ns:people.person.places_lived ?y .\n?y ns:people.place_lived.location ?x .\n}\n",
+      "ans": [
+        "De Smet",
+        "Pepin",
+        "Kansas",
+        "Burr Oak",
+        "Walnut Grove",
+        "Mansfield"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 840,
+      "question": "What college was attended by the actor who played in the movie \"Do You Believe in Magic\"?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:film.actor.film ?k .\n?k ns:film.performance.film ns:m.011jpz_r . \n?c ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+      "ans": [
+        "Michigan State University, East Lansing",
+        "MSU",
+        "Michigan State",
+        "Michigan State University, main campus",
+        "Michigan State University"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 6791,
+      "question": "What is the type of government of the country whose capital is Nassau?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:location.country.capital ns:m.05hcy . \n?c ns:location.country.form_of_government ?x .\n}\n",
+      "ans": [
+        "Parliamentary",
+        "Parliamentary Democracy",
+        "Parliamentary system",
+        "Unitary republic",
+        "Unitary",
+        "Unitary state",
+        "Parliamentary monarchy",
+        "Constitutional monarchy"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "ID": 5142,
+      "question": "what unit of magnetic flux density represents the maximum density in teslas?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :measurement_unit.magnetic_flux_density_unit . \n{\nSELECT (MAX(?y1) AS ?x1)  WHERE { \n?y0 :type.object.type :measurement_unit.magnetic_flux_density_unit . \n?y0 :measurement_unit.magnetic_flux_density_unit.density_in_teslas ?y1 . \nFILTER ( ?y0 != ?y1  )\n}\n}\n?x0 :measurement_unit.magnetic_flux_density_unit.density_in_teslas ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Tesla",
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 71445,
+      "question": "Does the person with a birth date on 1885-02-11, have a death date not in 2009?",
+      "sparql": "ASK { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <date_of_birth> ?pv_1 . ?pv_1 <pred:date> \"1885-02-11\"^^xsd:date . ?e <date_of_death> ?pv . ?pv <pred:year> ?v . FILTER ( ?v != 2009 ) .  }",
+      "ans": [
+        "yes"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 6866,
+      "question": "Which country with religious leader Cornelius has adopted the Euro as its currency (1 point)?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02l6h)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02l6h ns:finance.currency.countries_used ?x .\n?x ns:base.biblioness.bibs_location.loc_type ?sk0 .\nFILTER (str(?sk0) = \"Country\")\n?x ns:religion.religious_leadership_jurisdiction.leader ?c .\n?c ns:religion.religious_organization_leadership.leader ns:m.0w343p9 . \n}",
+      "ans": [
+        "Estland",
+        "Republic of Estonia",
+        "Estonia"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 23202,
+      "question": "Tell me the brain region that contains the word thalamus in their name",
+      "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q1620186 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'thalamus')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25 ",
+      "ans": [
+        "subthalamus",
+        "paraventricular nucleus of hypothalamus",
+        "epithalamus",
+        "human thalamus",
+        "human thalamus",
+        "lateral hypothalamus",
+        "lateral hypothalamus",
+        "thalamus",
+        "epithalamus",
+        "subthalamus"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        "Q1066549",
+        "Q444192",
+        null,
+        "Q3519438",
+        null,
+        null,
+        "Q17125841",
+        "Q184215",
+        "Q849277",
+        null
+      ],
+      "answertype": "None"
+    },
+    {
+      "ID": 25321,
+      "question": "What is the Zero-marking language that starts with letter I ?",
+      "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q34770 . ?sbj wdt:P4132 wd:Q17141330 . ?sbj rdfs:label ?sbj_label . FILTER(STRSTARTS(lcase(?sbj_label), 'i')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25 ",
+      "ans": [
+        "Indonesian",
+        "Indonesian"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        "Q9240",
+        null
+      ],
+      "answertype": "None"
+    },
+    {
+      "ID": 26284,
+      "question": "What movies starring Nick Cannon were released after 06-06-2004?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01d1st)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01d1st ns:film.actor.film ?y .\n?y ns:film.performance.film ?x .\n?x ns:film.film.initial_release_date ?num .\nFILTER (?num > \"2004-06-06\"^^xsd:dateTime) . \n}",
+      "ans": [
+        "The Adventures of Brer Rabbit",
+        "Goal II",
+        "Underclassman",
+        "A Very School Gyrls Holla-Day",
+        "Day of the Dead: The Need to Feed",
+        "Bobby",
+        "A gyilkos szoba",
+        "Killing Room",
+        "Ölüm odasi",
+        "Комната смерти",
+        "Manipulador de Cérebros",
+        "Manbreak",
+        "The Killing Room - Sala de Morte",
+        "Experiment Killing Room",
+        "To domatio tou tromou",
+        "Day of the Dead",
+        "Even Money",
+        "Shall We Dance?",
+        "American Son",
+        "Goal II: Living the Dream",
+        "Bobby - Die Ermordung von Robert F. Kennedy",
+        "Bobby Kennedy",
+        "Bobby Kennedy - A végzetes nap",
+        "Bobby - Sie alle hatten einen Traum",
+        "Weapons",
+        "Ball Don't Lie",
+        "Roll Bounce",
+        "The Killing Room",
+        "Monster House"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 6798,
+      "question": "When was the last pennant won by the team with the fight song \"Meet the Mets\"?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:sports.sports_team.fight_song ns:m.0bqwsw . \n?c ns:sports.sports_team.championships ?x .\n}\n",
+      "ans": [
+        "1986 World",
+        "1986 World Series",
+        "1969 World",
+        "1969 World Series"
+      ],
+      "type_label": [
+        3,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "ID": 16393,
+      "question": "What political systems are in place for the system that contains the State Administration of Foreign Exchange?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:government.governmental_jurisdiction.governing_officials ?k .\n?k ns:government.government_position_held.governmental_body ns:m.02639ym . \n?c ns:location.country.form_of_government ?x .\n}\n",
+      "ans": [
+        "Communist",
+        "Communist state",
+        "Socialist",
+        "Socialist Republic",
+        "Socialist state",
+        "Single-party",
+        "Single-party state"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 7909,
+      "question": "Which Dunfermline native died prior to 2004?",
+      "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <place_of_birth> ?e_1 . ?e_1 <pred:name> \"Dunfermline\" .  ?e <date_of_death> ?pv . ?pv <pred:year> ?v . FILTER ( ?v < 2004 ) .  }",
+      "ans": [
+        "Gordon Brown"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 18928,
+      "question": "What artist who died in Giverny influenced Vincent van Gogh?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07_m2)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07_m2 ns:influence.influence_node.influenced_by ?x .\n?x ns:people.deceased_person.place_of_death ns:m.03sd00 . \n}",
+      "ans": [
+        "Claude Oscar Monet",
+        "Monet",
+        "Oscar-Claude Monet",
+        "Claude Monet"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 16868,
+      "question": "What country was once ruled by Queen Elizabeth II and has Peel as a second level divison?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d1_f)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d1_f ns:government.politician.government_positions_held ?y .\n?y ns:government.government_position_held.jurisdiction_of_office ?x .\n?x ns:location.country.second_level_divisions ns:m.023l31 . \n}",
+      "ans": [
+        "Mann",
+        "Ellan Vannin",
+        "Isle of Man"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 30344,
+      "question": "Which award in a category established after January 1954 was won by Marilyn Monroe?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04wqr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04wqr ns:award.award_winner.awards_won ?y .\n?y ns:award.award_honor.award ?x .\n?x ns:award.award_category.date_established ?num .\nFILTER (?num > \"1954-01\"^^xsd:dateTime) . \n}",
+      "ans": [
+        "David di Donatello Targa d'Oro",
+        "David di Donatello Golden Plate Award"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 16832,
+      "question": "Jesus Christ was the founder of which religion practiced by the Ottoman Turks?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05kyr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05kyr ns:location.statistical_region.religions ?y .\n?y ns:location.religion_percentage.religion ?x .\n?x ns:religion.religion.founding_figures ns:m.045m1_ . \n}",
+      "ans": [
+        "Christian",
+        "Christianity"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 104747,
+      "question": "Which individual born as Durante di Alighiero degli Alighieri did not die in 1977?",
+      "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <date_of_death> ?pv . ?pv <pred:year> ?v . FILTER ( ?v != 1977 ) . ?e <birth_name> ?pv_1 . ?pv_1 <pred:value> \"Durante di Alighiero degli Alighieri\" .  }",
+      "ans": [
+        "Dante Alighieri"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 8284,
+      "question": "What state was the person who spoke about Education Reform born in?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:event.public_speaker.speeches_or_presentations ?k .\n?k ns:event.speech_or_presentation.speech_topic ns:m.02mdg . \n?c ns:people.person.place_of_birth ?x .\n}\n",
+      "ans": [
+        "Honolulu, Hawaii",
+        "Honolulu County / Honolulu CDP",
+        "Honolulu CDP",
+        "Honolulu"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 2915,
+      "question": "who voice acts peter griffin",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03n6jv)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03n6jv ns:tv.tv_character.appeared_in_tv_program ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n?y ns:tv.regular_tv_appearance.special_performance_type ns:m.02nsjvf .\n}\n",
+      "ans": [
+        "Seth MacFarlane"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 12380,
+      "question": "What years did the topic of the image Los Angeles Lakers logo.png win the championship?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:common.topic.image ns:m.022qk60 . \n?c ns:sports.sports_team.championships ?x .\n}\n",
+      "ans": [
+        "2009 NBA Finals",
+        "1980 NBA World Championship Series",
+        "1980 NBA Finals",
+        "2002 NBA Finals",
+        "2000 NBA Finals",
+        "2001 NBA Finals",
+        "1988 NBA Finals",
+        "1987 NBA Finals",
+        "1985 NBA Finals",
+        "1982 NBA Finals",
+        "2010 NBA Finals",
+        "1972 NBA Finals",
+        "1954 NBA Finals",
+        "1953 NBA Finals",
+        "1952 NBA Finals",
+        "1950 NBA Finals",
+        "1949 BAA Finals",
+        "1948 NBL Finals"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "ID": 2985,
+      "question": "In which territory, did Sam Shepard live in, where the population is 101,846?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.016yzz)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.016yzz ns:people.person.places_lived ?y .\n?y ns:people.place_lived.location ?x .\nFILTER(NOT EXISTS {?y ns:people.place_lived.end_date ?sk0} || \nEXISTS {?y ns:people.place_lived.end_date ?sk1 . \nFILTER(xsd:datetime(?sk1) >= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:people.place_lived.start_date ?sk2} || \nEXISTS {?y ns:people.place_lived.start_date ?sk3 . \nFILTER(xsd:datetime(?sk3) <= \"2015-08-10\"^^xsd:dateTime) })\n?x ns:topic_server.population_number \"101846\" . \n}",
+      "ans": [
+        "Guam"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 503,
+      "question": "what year did the bulls get rodman",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01ztgm)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01ztgm ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.from ?x .\n?y ns:sports.sports_team_roster.team ns:m.0jm74 .\n}\n",
+      "ans": [
+        "1995"
+      ],
+      "type_label": [
+        6,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 23348,
+      "question": "tell me jurisdiction that name has the word viguerie in it",
+      "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q471855 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'viguerie')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25 ",
+      "ans": [
+        "Viguerie",
+        "Viguerie"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        "Q17108217",
+        null
+      ],
+      "answertype": "None"
+    },
+    {
+      "ID": 25251,
+      "question": "What job did Barack Obama and a member of the Alaska Senate both hold?",
+      "sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  {\n    SELECT ?pFrom \n    WHERE {\n      ns:m.02mjmr ns:government.politician.government_positions_held ?y . # Barack Obama \n      ?y ns:government.government_position_held.office_position_or_title ?x ; \n         ns:government.government_position_held.basic_title ns:m.060c4 ; # President\n         ns:government.government_position_held.from ?pFrom .\n    }\n  }\n  ns:m.02mjmr ns:government.politician.government_positions_held ?y . # Barack Obama \n  ?y ns:government.government_position_held.office_position_or_title ?x ; \n     ns:government.government_position_held.from ?from .\n  \n  FILTER(xsd:dateTime(?pFrom) - xsd:dateTime(?from) > 0)?x ns:government.government_office_or_title.office_holders ?c .\n?c ns:government.government_position_held.governmental_body ns:m.043gp3 . \n}",
+      "ans": [
+        "U.S. Senator",
+        "United States Senator"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 30646,
+      "question": "Which book by Aristotle has the ISBN 9780824069018?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0gz_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0gz_ ns:book.author.book_editions_published ?x .\n?x ns:book.book_edition.isbn ns:m.077893x . \n}",
+      "ans": [
+        "Nicomachean ethics"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 25605,
+      "question": "What what is American football team home venue Soldier Field and also which starts with letter c",
+      "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q17156793 . ?sbj wdt:P115 wd:Q1132413 . ?sbj rdfs:label ?sbj_label . FILTER(STRSTARTS(lcase(?sbj_label), 'c')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25 ",
+      "ans": [
+        "Chicago Fire",
+        "Chicago Fire",
+        "Chicago Bears",
+        "Chicago Winds",
+        "Chicago Bears",
+        "Chicago Winds"
+      ],
+      "type_label": [
+        7,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        "Q5095601",
+        null,
+        "Q205033",
+        "Q5095840",
+        null,
+        null
+      ],
+      "answertype": "None"
+    },
+    {
+      "ID": 17745,
+      "question": "Which actor from Army of Darkness played Emperor Palpatine?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03_5s0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03_5s0 ns:film.film_character.portrayed_in_films ?y .\n?y ns:film.performance.actor ?x .\n?x ns:film.actor.film ?c .\n?c ns:film.performance.film ns:m.014hr . \n}",
+      "ans": [
+        "Ian Ambercrombie",
+        "Ian Abercrombie"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 61664,
+      "question": "Is the duration of the film whose publication date is on 1913-01-01 less than 780 minute ?",
+      "sparql": "ASK { ?e <pred:instance_of> ?c . ?c <pred:name> \"film\" . ?e <publication_date> ?pv_1 . ?pv_1 <pred:date> \"1913-01-01\"^^xsd:date . ?e <duration> ?pv . ?pv <pred:unit> \"minute\" . ?pv <pred:value> ?v . FILTER ( ?v < \"780\"^^xsd:double ) .  }",
+      "ans": [
+        "yes"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 369,
+      "question": "what language brazil speak",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.015fr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.015fr ns:location.country.languages_spoken ?x .\n}\n",
+      "ans": [
+        "Italian Language",
+        "Brazilian Portuguese",
+        "Portuguese Language"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 17074,
+      "question": "What high school was attended by the person who wrote \"I Know Why The Caged Bird Sings?\"?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:book.author.book_editions_published ns:m.04v0gd2 . \n?c ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?y ns:education.education.degree ns:m.0bpgx .\n}\n",
+      "ans": [
+        "George Washington High",
+        "George Washington High School"
+      ],
+      "type_label": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 19459,
+      "question": "What Taylor Lautner movie had a run time less than 60?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07ldhs)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07ldhs ns:film.actor.film ?y .\n?y ns:film.performance.film ?x .\n?x ns:tv.tv_program.episode_running_time ?num .\nFILTER (xsd:integer(?num) < 60) . \n}",
+      "ans": [
+        "He's a Bully Charlie Brown",
+        "He's a Bully, Charlie Brown"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 28006,
+      "question": "Is Carinthia's elevation (above sea level) less than 6000 metres?",
+      "sparql": "ASK { ?e <pred:name> \"Carinthia\" . ?e <elevation_above_sea_level> ?pv . ?pv <pred:unit> \"metre\" . ?pv <pred:value> ?v . FILTER ( ?v < \"6000\"^^xsd:double ) .  }",
+      "ans": [
+        "yes"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 61298,
+      "question": "Did the video game based on Transformers: Revenge of the Fallen, with Shia LaBeouf as a cast member, have a pre-2004 release?",
+      "sparql": "ASK { ?e <pred:instance_of> ?c . ?c <pred:name> \"video game\" . ?e_1 <derivative_work> ?e . ?e_1 <pred:name> \"Transformers: Revenge of the Fallen\" . ?e_1 <cast_member> ?e_2 . ?e_2 <pred:name> \"Shia LaBeouf\" .  ?e <publication_date> ?pv . ?pv <pred:year> ?v . FILTER ( ?v < 2004 ) .  }",
+      "ans": [
+        "no"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 96719,
+      "question": "Was Grammy Award for Best Spoken Word Album for Children created in a year other than 1771 ?",
+      "sparql": "ASK { ?e <pred:name> \"Grammy Award for Best Spoken Word Album for Children\" . ?e <inception> ?pv . ?pv <pred:year> ?v . FILTER ( ?v != 1771 ) .  }",
+      "ans": [
+        "yes"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 89340,
+      "question": "Was Etta James not born in 1927?",
+      "sparql": "ASK { ?e <pred:name> \"Etta James\" . ?e <date_of_birth> ?pv . ?pv <pred:year> ?v . FILTER ( ?v != 1927 ) .  }",
+      "ans": [
+        "yes"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 15807,
+      "question": "What attraction is located at 1060 West Addison Street in Chicago Illinois?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01_d4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01_d4 ns:travel.travel_destination.tourist_attractions ?x .\n?x ns:location.location.containedby ns:m.01_d4 .\n?x ns:location.location.street_address ?c .\n?c ns:location.mailing_address.street_address \"1060 West Addison Street\"@en . \n}\n",
+      "ans": [
+        "Wrigley Field, Chicago",
+        "The Friendly Confines",
+        "Wrigley Field"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4585,
+      "question": "where did alex smith play high school football",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05dfhp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05dfhp ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hn6 .\n}\n",
+      "ans": [
+        "Helix High School"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 5985,
+      "question": "What is the language used for communication in the nation where the unit of currency is the Argentine peso yahoo?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:location.country.currency_used ns:m.024nzm . \n?c ns:location.country.languages_spoken ?x .\n}\n",
+      "ans": [
+        "Italiano",
+        "Italian",
+        "Italian Language",
+        "Guaraní",
+        "Guaraní language",
+        "Runasimi",
+        "Quechua language",
+        "Quechua, Ayacucho Language",
+        "Quechua",
+        "Quechua languages",
+        "Chanka",
+        "Quechuan languages",
+        "Español",
+        "Spanish language",
+        "Castillian",
+        "Spanish",
+        "The language of Cervantes",
+        "Castellano",
+        "Castillan",
+        "Castilian",
+        "Spanish Language",
+        "Yiddish",
+        "Yiddish Language"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "ID": 542,
+      "question": "what sort of government does nigeria have",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05cgv)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05cgv ns:location.country.form_of_government ?x .\n}\n",
+      "ans": [
+        "Presidential system",
+        "Federal republic"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 24534,
+      "question": "What is the best vacation spot in the country where Samara English is spoken?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:location.country.languages_spoken ns:m.06jsg0 . \n?c ns:travel.travel_destination.tourist_attractions ?x .\n}\n",
+      "ans": [
+        "Samaná Bay",
+        "Los Haitises National",
+        "Los Haitises National Park",
+        "Pico Duarte",
+        "Punta Espada Golf Course",
+        "The Colombus Lighthouse",
+        "Faro a Colón",
+        "Columbus Lighthouse",
+        "National Palace",
+        "Macao Beach",
+        "Volunteer Vacation Abroad",
+        "Haitian Batey",
+        "27 Waterfalls",
+        "27 Charcos of Damajaqua",
+        "Damajaqua Cascades",
+        "Playa Fronton"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "ID": 6836,
+      "question": "Who held their governmental position from before January 3, 2011 and were Speakers of the House of Representatives in 2011?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0cgqx)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0cgqx ns:government.government_office_or_title.office_holders ?y .\n?y ns:government.government_position_held.office_holder ?x .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2011-12-31\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2011-01-01\"^^xsd:dateTime) })\n?x ns:government.politician.government_positions_held ?c .\n?c ns:government.government_position_held.from ?num .\nFILTER (?num < \"2011-01-03\"^^xsd:dateTime) . \n}",
+      "ans": [
+        "John Andrew Boehner",
+        "John A. Boehner",
+        "John Boehner",
+        "Hon. Nancy Pelosi",
+        "Rep. Nancy Pelosi",
+        "Rep Nancy Pelosi",
+        "Nancy Patricia D'Alesandro",
+        "Nancy Patricia D'Alesandro Pelosi",
+        "Speaker Nancy Pelosi",
+        "Petunia",
+        "Nancy Pelosi"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 34035,
+      "question": "regarding the crematory that has the National Heritage list for England number is 1064865 the official opening date prior to 1929?",
+      "sparql": "ASK { ?e <pred:instance_of> ?c . ?c <pred:name> \"crematory\" . ?e <National_Heritage_List_for_England_number> ?pv_1 . ?pv_1 <pred:value> \"1064865\" . ?e <date_of_official_opening> ?pv . ?pv <pred:year> ?v . FILTER ( ?v < 1929 ) .  }",
+      "ans": [
+        "yes"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 12669,
+      "question": "What college did the person who said \"To build up a future you have to know the past\" attend?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:people.person.quotations ns:m.0gggwfx . \n?c ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+      "ans": [
+        "Heidelberg College, main campus",
+        "Heidelberg University",
+        "Heidelberg",
+        "Heidelberg College",
+        "Heidelberg University"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 2806,
+      "question": "What other books did the author of \"I Felt a Funeral\" write?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:music.lyricist.lyrics_written ns:m.0zrb2gn . \n?c ns:book.author.works_written ?x .\n}\n",
+      "ans": [
+        "I taste a liquor never brewed",
+        "\\\"Hope\\\" is the thing with feathers",
+        "Acts of light",
+        "Acts of Light: The World of Emily Dickinson",
+        "The complete poems of Emily Dickinson",
+        "The complete poems",
+        "The letters",
+        "Poems",
+        "Success",
+        "Two poems",
+        "Emily Dickinson's open folios",
+        "The letters of Emily Dickinson 1845-1886",
+        "Selected poetry of Emily Dickinson",
+        "The selected poems of Emily Dickinson",
+        "Final harvest",
+        "Emily Dickinson's herbarium",
+        "Letters of Emily Dickinson",
+        "The life and letters of Emily Dickinson",
+        "Unpublished poems of Emily Dickinson",
+        "Selected poems",
+        "Further poems of Emily Dickinson withheld from publication by her sister Lavinia",
+        "Bolts of melody",
+        "14 by Emily Dickinson, with selected criticism",
+        "Sampler",
+        "New poems of Emily Dickinson",
+        "Selected letters",
+        "Letters to Dr. and Mrs. Josiah Gilbert Holland",
+        "Poems, 1890-1896"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "ID": 28361,
+      "question": "What language is spoken in the neighborhood of Kallang?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:location.place_with_neighborhoods.neighborhoods ns:m.03wxbj . \n?c ns:location.country.languages_spoken ?x .\n}\n",
+      "ans": [
+        "Sinitic language family",
+        "Chinese language family",
+        "Chinese",
+        "Chinese language",
+        "Sekgoa",
+        "Anglit",
+        "English language",
+        "English",
+        "English Language",
+        "Thamizh",
+        "Tamal",
+        "Damulian",
+        "Tamili",
+        "Tamalsan",
+        "Tambul",
+        "Tamil",
+        "Tamil Language"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "ID": 16797,
+      "question": "What language is spoken in the home of the Icelandic horse breed?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:biology.breed_origin.breeds_originating_here ns:m.02qtjj . \n?c ns:location.country.languages_spoken ?x .\n}\n",
+      "ans": [
+        "Íslenska",
+        "Icelandic",
+        "Islenska",
+        "Icelandic Language"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "ID": 14616,
+      "question": "What celebirty is married to the actor who played the character Coolidge Chickadee player?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:film.actor.film ?k .\n?k ns:film.performance.character ns:m.0vn1m1b . \n?c ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\nFILTER(NOT EXISTS {?y ns:people.marriage.from ?sk0} || \nEXISTS {?y ns:people.marriage.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:people.marriage.to ?sk2} || \nEXISTS {?y ns:people.marriage.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+      "ans": [
+        "khloe_kardashian",
+        "Khloe Kardashian Odom",
+        "Khloe Alexandra Kardashian",
+        "Khloe Kardashian",
+        "Khloé Kardashian"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 17987,
+      "question": "Which language is spoken in the area that circulates the Royal Thai Government Gazette?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:periodicals.newspaper_circulation_area.newspapers ns:m.03gyjdb . \n?c ns:location.country.languages_spoken ?x .\n}\n",
+      "ans": [
+        "Lào",
+        "Laotian Tai",
+        "Lao",
+        "Lao-tai",
+        "Lao Kao",
+        "Lao Wiang",
+        "Tai Lao",
+        "Phou Lao",
+        "Eastern Thai",
+        "Laotian",
+        "Lao-lum",
+        "Lao-noi",
+        "Rong Kong",
+        "Lum Lao",
+        "Lao Language",
+        "Khmer",
+        "Kho Me",
+        "Krom",
+        "Khome",
+        "Khmer, Central",
+        "Cambodian",
+        "Viet Go Mien",
+        "Cu Tho",
+        "Khmer, Central Language",
+        "Cur Cul",
+        "Khmer language",
+        "Ikaw",
+        "Khako",
+        "Kha Ko",
+        "Ikor",
+        "Ko",
+        "Aini",
+        "Hka Ko",
+        "Khao Ikor",
+        "Ekaw",
+        "Akha",
+        "Ak'a",
+        "Kaw",
+        "Aka",
+        "Ahka",
+        "Khao Kha Ko",
+        "Yani",
+        "Akha Language",
+        "Mrabri",
+        "Mla",
+        "Ma Ku",
+        "Mabri",
+        "Yellow Leaf",
+        "Mla Bri",
+        "Mlabri",
+        "Phi Thong Luang",
+        "Mla-bri",
+        "Yumbri",
+        "Mlabri Language",
+        "Hmong",
+        "Hmong language",
+        "Saek",
+        "Tai Sek",
+        "Set",
+        "Sek",
+        "Saek Language",
+        "Saek language",
+        "Malay, Pattani",
+        "Thai Islam",
+        "Malay, Pattani Language",
+        "Jing",
+        "Vietnamese",
+        "Annamese",
+        "Kinh",
+        "Ching",
+        "Gin",
+        "Viet",
+        "Vietnamese Language",
+        "Nyaw",
+        "Nyoh",
+        "Jo",
+        "Nyo",
+        "Yo",
+        "Nyaw Language",
+        "Puthay",
+        "Puthai",
+        "Phu Thai Language",
+        "Phuu Thai",
+        "Phu Thai",
+        "Phutai",
+        "Putai",
+        "Phu Thai language",
+        "Cham",
+        "Cham language",
+        "Aleng",
+        "Peguan",
+        "Taleng",
+        "Talaing",
+        "Mon",
+        "Takanoon",
+        "Mun",
+        "Mon Language",
+        "Siamese",
+        "Thaiklang",
+        "Thai",
+        "Standard Thai",
+        "Central Tai",
+        "Thai Language"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "ID": 20456,
+      "question": "What is the state bird of the place you'd find the Government of Illinois?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:government.governmental_jurisdiction.governing_officials ?k .\n?k ns:government.government_position_held.governmental_body ns:m.072nky . \n?c ns:government.governmental_jurisdiction.official_symbols ?y .\n?y ns:location.location_symbol_relationship.symbol ?x .\n?y ns:location.location_symbol_relationship.Kind_of_symbol ns:m.04627hw .\n}\n",
+      "ans": [
+        "NOCA",
+        "Northern cardinal"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 74,
+      "question": "what continent does armenia belong to",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jgx)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jgx ns:base.locations.countries.continent ?x .\n}\n",
+      "ans": [
+        "Europe"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 23397,
+      "question": "Which is the ethnic group which contains the word zambo in it's name?",
+      "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q41710 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'zambo')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25 ",
+      "ans": [
+        "Zamboangueño people",
+        "zambo",
+        "Zamboangueño",
+        "zambo"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        "Q526428",
+        null,
+        null,
+        "Q145573"
+      ],
+      "answertype": "None"
+    },
+    {
+      "ID": 1266,
+      "question": "What Daedalus language is spoken in Japan?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03_3d)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03_3d ns:location.country.languages_spoken ?x .\n?x ns:fictional_universe.fictional_language.where_spoken ns:g.113qbfr8j . \n}",
+      "ans": [
+        "Sekgoa",
+        "Anglit",
+        "English language",
+        "English",
+        "English Language"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 23743,
+      "question": "Which peer of Himanshu Suri founded Google?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0387r)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0387r ns:law.invention.inventor ?x .\n?x ns:influence.influence_node.peers ?c .\n?c ns:influence.peer_relationship.peers ns:m.012vnkfv . \n}",
+      "ans": [
+        "Lawrence Page",
+        "Lawrence Edward Page",
+        "Larry Page"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 23504,
+      "question": "Name a color that contain the word \"yellow \" in its name",
+      "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q1075 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'yellow')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25 ",
+      "ans": [
+        "yellow-white",
+        "yellow-orange",
+        "yellow-brown",
+        "Mikado yellow",
+        "Naples yellow",
+        "selective yellow",
+        "yellow",
+        "Microsoft yellow",
+        "NCS yellow",
+        "selective yellow"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ans_id": [
+        "Q21864159",
+        "Q16645086",
+        null,
+        null,
+        null,
+        "Q2293227",
+        null,
+        "Q84437365",
+        "Q69914970",
+        null
+      ],
+      "answertype": "None"
+    },
+    {
+      "ID": 94682,
+      "question": "What is the name of the person born before 1968 with the Twitter username doctorgraffin?",
+      "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <Twitter_username> ?pv . ?pv <pred:value> \"doctorgraffin\" . ?e <date_of_birth> ?pv_1 . ?pv_1 <pred:year> ?v . FILTER ( ?v < 1968 ) .  }",
+      "ans": [
+        "Greg Graffin"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 24082,
+      "question": "What offices did Theodore Roosevelt hold and held a position until 2005?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07hyk)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07hyk ns:government.politician.government_positions_held ?y .\n?y ns:government.government_position_held.basic_title ?x .\n?x ns:government.political_appointer.appointees ?c .\n?c ns:government.government_position_held.to \"2005\"^^xsd:dateTime . \n}",
+      "ans": [
+        "Chairman",
+        "President"
+      ],
+      "type_label": [
+        7,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 20479,
+      "question": "What language does the 54th Brazilian National Congress speak?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:government.governmental_jurisdiction.governing_officials ?k .\n?k ns:government.government_position_held.legislative_sessions ns:m.010lcr_q . \n?c ns:location.country.languages_spoken ?x .\n}\n",
+      "ans": [
+        "Italiano",
+        "Italian",
+        "Italian Language",
+        "Brazilian Portuguese",
+        "Portuguese",
+        "Portugese",
+        "Portuguese language",
+        "Português",
+        "Portuguese Language"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 28873,
+      "question": "Who is the current ruler of the country where Kaesong is?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:location.country.administrative_divisions ns:m.022gb9 . \n?c ns:government.governmental_jurisdiction.governing_officials ?y .\n?y ns:government.government_position_held.office_holder ?x .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+      "ans": [
+        "Pak Pong-ju",
+        "Kim Il Sung",
+        "Il-sŏng Kim",
+        "Kim Sung",
+        "Il Sung Kim",
+        "Kim Sŏng-ju",
+        "Kim Il-sung",
+        "Gim Jeong(-)eun",
+        "Kim Jong-eun",
+        "Great Successor",
+        "Kim Jong Un",
+        "Outstanding Leader",
+        "Kim Jung Woon",
+        "Kim Jong Eun",
+        "Young master",
+        "Brilliant Comrade",
+        "Kim Jong-woon",
+        "Lil Kim",
+        "Kim Chŏngŭn",
+        "Yŏngmyŏng-han Tongji",
+        "김정은",
+        "Young General",
+        "Kim Jung-eun",
+        "金正恩",
+        "Kim Jong-un"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 30804,
+      "question": "Which literary award was received by Roger Zelazny for The Doors of His Face, The Lamps of His Mouth and began before 1973?",
+      "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"literary award\" . ?e_1 <award_received> ?e . ?e_1 <pred:name> \"Roger Zelazny\" .  [ <pred:fact_h> ?e_1 ; <pred:fact_r> <award_received> ; <pred:fact_t> ?e ] <for_work> ?qpv . ?qpv <pred:value> \"The Doors of His Face, The Lamps of His Mouth\" . ?e <inception> ?pv . ?pv <pred:year> ?v . FILTER ( ?v < 1973 ) .  }",
+      "ans": [
+        "Nebula Award for Best Novelette"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 3190,
+      "question": "Which currency is used in the country where Sultani, is located?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:location.country.currency_used ns:m.0b5zvq . \n?c ns:location.location.containedby ?x .\n}\n",
+      "ans": [
+        "Near East"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "ID": 4270,
+      "question": "what money should i bring to dominican",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.027rn)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.027rn ns:location.country.currency_used ?x .\n}\n",
+      "ans": [
+        "Dominican peso"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 1667,
+      "question": "On which continent is Knesset a governmental body?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:government.governmental_jurisdiction.governing_officials ?k .\n?k ns:government.government_position_held.governmental_body ns:m.0jxlq . \n?c ns:base.locations.countries.continent ?x .\n}\n",
+      "ans": [
+        "Asia"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 6914,
+      "question": "With a major field of study in perspective work, what influenced this person?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:people.person.education ?k .\n?k ns:education.education.major_field_of_study ns:m.021hz5 . \n?c ns:influence.influence_node.influenced_by ?x .\n}\n",
+      "ans": [
+        "Eugène Delacroix",
+        "Eugne Delacroix",
+        "Eugene Delacroix",
+        "Eugène Delacroix",
+        "Claude Oscar Monet",
+        "Monet",
+        "Oscar-Claude Monet",
+        "Claude Monet",
+        "Jean-Francois Millet",
+        "Jean Franois Millet",
+        "Jean-François Millet",
+        "Jean-François Millet",
+        "Jozef Israels",
+        "Jozef Israëls",
+        "Anton Mauve",
+        "Paul Cézanne",
+        "Paul Czanne",
+        "Cezanne",
+        "Paul Cezanne",
+        "Paul Cézanne",
+        "Fernand Cormon",
+        "Rembrandt van Rijn",
+        "Rembrandt Harmenszoon van Rijn",
+        "Rembrandt Harmenszoon van Rijn (Workshop of)",
+        "Rembrandt",
+        "Willem Roelofs",
+        "Peter Paul Rubens, follower of",
+        "Pedro Pablo Rubens",
+        "Peter Paul Rubens"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 361,
+      "question": "At what educational institution with a sports team called LSU Tigers men's basketball team was David Duke educated?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02bpjk)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02bpjk ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n?x ns:education.educational_institution.sports_teams ns:m.026dqjm . \n}",
+      "ans": [
+        "Louisiana State University and Agricultural & Mechanical College",
+        "Louisiana State",
+        "Louisiana State University and Agricultural and Mechanical College",
+        "Baton Rouge Louisiana State University",
+        "LSU",
+        "Louisiana State University, main campus",
+        "Louisiana State University"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 19020,
+      "question": "What three countries border the Federal Electoral Tribunal?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:law.court_jurisdiction_area.courts ns:m.0fd5rf . \n?c ns:location.location.adjoin_s ?y .\n?y ns:location.adjoining_relationship.adjoins ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
+      "ans": [
+        "Belize",
+        "Guatemala.",
+        "Guatemala",
+        "U.S. of A.",
+        "Estats Units d'Amèrica",
+        "USA",
+        "U.S.A.",
+        "U.S.",
+        "The States",
+        "US",
+        "United States",
+        "America",
+        "United States of America"
+      ],
+      "type_label": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 6205,
+      "question": "What recording companies did the artist who went on The AgÃ¡pÄ Tour signed with?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:music.artist.concert_tours ns:m.0wzx61k . \n?c ns:music.artist.label ?x .\n}\n",
+      "ans": [
+        "Interscope Records",
+        "Mercury Living Presence",
+        "Mercury Records",
+        "Edel Enter",
+        "Edel AG",
+        "Universal Records",
+        "Universal Motown Republic Group",
+        "Blackground Records",
+        "Atlantic Recording Corp",
+        "Atlantic",
+        "Atlantic Recording Corporation",
+        "Atlantic Records"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "ID": 983,
+      "question": "what business did andrew carnegie dominate",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0vdk)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0vdk ns:base.kwebbase.kwtopic.disciplines ?x .\n}\n",
+      "ans": [
+        "financier",
+        "steel"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 13366,
+      "question": "What is the timezone in the location of the film \"Barking Water\"?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ?c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\n?c ns:film.film_location.featured_in_films ns:m.05c09b5 . \n?c ns:location.location.time_zones ?x .\n}\n",
+      "ans": [
+        "Central Standard Time",
+        "Central Time",
+        "Central Daylight Time",
+        "Central Standard Time Zone",
+        "Central Time Zone"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "ID": 15585,
+      "question": "Which film did James Frey write, that was produced by Chris Free?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06w054)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06w054 ns:film.writer.film ?x .\n?x ns:film.film.produced_by ns:m.011__2mt . \n}",
+      "ans": [
+        "Kissing a Fool"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "ID": 32489,
+      "question": "Did the director of Cheyenne (the one whose duration is 99 minute not die in 1949?",
+      "sparql": "ASK { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e_1 <director> ?e . ?e_1 <pred:name> \"Cheyenne\" . ?e_1 <duration> ?pv_1 . ?pv_1 <pred:unit> \"minute\" . ?pv_1 <pred:value> \"99\"^^xsd:double . ?e <date_of_death> ?pv . ?pv <pred:year> ?v . FILTER ( ?v != 1949 ) .  }",
+      "ans": [
+        "yes"
+      ],
+      "type_label": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 8129,
+      "question": "Who held his governmental position from January 3, 1983 and is one of the two current senators of Illinois?",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03v0t)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03v0t ns:government.political_district.representatives ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.governmental_body ns:m.07t58 .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n?x ns:government.politician.government_positions_held ?c .\n?c ns:government.government_position_held.from \"1983-01-03\"^^xsd:dateTime . \n}",
+      "ans": [
+        "Richard Joseph Durbin",
+        "Dick Durbin"
+      ],
+      "type_label": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3103,
+      "question": "what do people from spain speak",
+      "sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06mkj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06mkj ns:location.country.official_language ?x .\n}\n",
+      "ans": [
+        "Spanish Language"
+      ],
+      "type_label": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+]

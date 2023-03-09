@@ -1,0 +1,2034 @@
+[
+  [
+    {
+      "ID": 4048,
+      "question": "in the restaurant of avi bikszer, what facilities are available?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :base.services.restaurant_amenities . \n?x1 :type.object.type :base.services.restaurant_additions . \nVALUES ?x2 { :m.0dl9dd6 } \n?x0 :base.services.restaurant_amenities.restaurants_with_amenity ?x1 . \n?x1 :base.services.restaurant_additions.chef ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": [
+        "Kid Friendly",
+        "Take-out food"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1050,
+      "question": "find the hospital projects of shepley, rutan and coolidge.",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :medicine.hospital . \nVALUES ?x1 { :m.0ksx3t } \n?x1 :architecture.architecture_firm.projects ?x0 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Medfield State Hospital"
+      ],
+      "type_label": [
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 6621,
+      "question": "1066.8 (mm) is the gauge of which locomotive class?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :rail.locomotive_class . \nVALUES ?x1 { \"1066.8\"^^<http://www.w3.org/2001/XMLSchema#float> } \n?x0 :rail.locomotive_class.gauge_mm ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Queensland D17 class locomotive",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1256,
+      "question": "embarcadero is the language used to write which software?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :computer.software . \nVALUES ?x1 { :m.01z1nj } \n?x0 :computer.software.languages_used ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "FL Studio",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4010,
+      "question": "symphony no.9 is used as a theme song for what types of television programs?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :tv.tv_genre . \n?x1 :type.object.type :tv.tv_program . \nVALUES ?x2 { :m.015xn } \n?x1 :tv.tv_program.genre ?x0 . \n?x2 :tv.tv_theme_song.theme_song_for ?x1 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": [
+        "Comedy",
+        "Sitcom"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1162,
+      "question": "16 is the minimum typical age for which grade level?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :education.grade_level . \nVALUES ?x1 { \"16\"^^<http://www.w3.org/2001/XMLSchema#integer> } \n?x0 :education.grade_level.typical_age_minimum ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Year Twelve",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4595,
+      "question": "which pet diseases caused by infection can be diagnosed using ecg?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :base.pethealth.pet_disease_or_medical_condition . \nVALUES ?x1 { :m.098s1 } \nVALUES ?x2 { :m.0k6pp } \n?x1 :base.pethealth.pet_disease_risk_factor.pet_diseases_with_this_risk_factor ?x0 . \n?x0 :base.pethealth.pet_disease_or_medical_condition.diagnosis ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": [
+        "Congestive Heart Failure in Dogs"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4300,
+      "question": "becquerels is a radioctivity unit within which system of measurement?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :measurement_unit.measurement_system . \nVALUES ?x1 { :m.014fcr } \n?x0 :measurement_unit.measurement_system.radioactivity_units ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "International System of Units",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 157,
+      "question": "find aircraft models which are uav.",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :aviation.aircraft_model . \nVALUES ?x1 { :m.0g2bc } \n?x0 :aviation.aircraft_model.aircraft_type ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Nimbus EosXi",
+        "Boeing YQM-94",
+        "Irkut-60",
+        "Northrop BQM-74 Chukar",
+        "Aisheng ASN-9",
+        "AAI Corporation Aerosonde",
+        "Aisheng ASN-7",
+        "General Atomics MQ-1C Gray Eagle",
+        "Black Hornet Nano",
+        "Draganflyer X6",
+        "Aisheng ASN-1",
+        "Boeing Insitu ScanEagle",
+        "AeroVironment SkyTote",
+        "ADM-20 Quail",
+        "Yasir",
+        "Aisheng ASN-212",
+        "Aisheng ASN-205",
+        "Aisheng Drone-2",
+        "Griffon Aerospace MQM-170 Outlaw",
+        "MQ-1B Predator",
+        "MQ-1A Predator",
+        "SmartBird",
+        "SkyJack",
+        "Ryan Firebee"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 758,
+      "question": "nintendo gamecube controller supports what video game?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :cvg.computer_videogame . \nVALUES ?x1 { :m.03nvqmk } \n?x0 :cvg.computer_videogame.peripherals_supported ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Super Smash Bros. Melee",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 368,
+      "question": "which department is ehrlich affiliated with?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :education.department . \nVALUES ?x1 { :m.01_8tz } \n?x1 :education.academic.departments_old ?x0 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Stanford Biological Sciences"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 2721,
+      "question": "what is the name of the unit of length that is associated with a measurement system whose mass units include candareen?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :measurement_unit.distance_unit . \n?x1 :type.object.type :measurement_unit.measurement_system . \nVALUES ?x2 { :m.0gcsf7 } \n?x0 :measurement_unit.distance_unit.measurement_system ?x1 . \n?x1 :measurement_unit.measurement_system.weight_units ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": "Cun",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 2742,
+      "question": "what is the primary use of chicken leghorn?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :base.petbreeds.chicken_primary_use . \nVALUES ?x1 { :m.029dmc } \n?x1 :base.petbreeds.chicken_breed.primary_use ?x0 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Egg"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1347,
+      "question": "cr are what species?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :base.conservation.protected_species . \n?x1 :type.object.type :base.conservation.protected_species_status . \nVALUES ?x2 { :m.0cgnb7 } \n?x1 :base.conservation.protected_species_status.protected_species ?x0 . \n?x1 :base.conservation.protected_species_status.status_designation ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": [
+        "Cuban kite"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 6139,
+      "question": "pascal is the subject of which written work?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :book.written_work . \nVALUES ?x1 { :m.01b0x } \n?x0 :book.written_work.subjects ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "The Science of Conjecture: Evidence and Probability before Pascal",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 2043,
+      "question": "rezidor hotel group is known to own what hotel brand?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :travel.hotel_brand . \nVALUES ?x1 { :m.0fsbbs } \n?x0 :travel.hotel_brand.owned_by ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Country Inns & Suites",
+      "type_label": [
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 2614,
+      "question": "what is the rank of the marvel character iron-man?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :fictional_universe.character_rank . \nVALUES ?x1 { :m.0hnws } \n?x0 :fictional_universe.character_rank.characters_of_this_rank ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "CEO"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4523,
+      "question": "list every game that was put out by the same company that released d&d.",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :games.game . \n?x1 :type.object.type :games.game_publisher . \nVALUES ?x2 { :m.026q9 } \n?x0 :games.game.publisher ?x1 . \n?x1 :games.game_publisher.games_published ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": [
+        "Dungeons & Dragons Basic Set",
+        "Advanced Dungeons & Dragons 2nd Edition",
+        "Duel Masters Trading Card Game",
+        "Dungeons & Dragons (4th Edition)",
+        "Advanced Dungeons & Dragons",
+        "Dungeons & Dragons (3rd Edition)",
+        "Magic: The Gathering",
+        "Dune",
+        "Dreamblade",
+        "BattleTech Collectible Card Game",
+        "RoboRally",
+        "Axis & Allies: Europe",
+        "Axis & Allies: D-Day",
+        "Neopets Trading Card Game",
+        "NBA Showdown",
+        "d20 Modern",
+        "Conan Role-Playing Game",
+        "Dungeons & Dragons Expert Set",
+        "Amazing Engine",
+        "Castle Ravenloft Board Game",
+        "d20 System",
+        "The Simpsons Trading Card Game",
+        "Metamorphosis Alpha",
+        "Boot Hill",
+        "Dungeons & Dragons Basic Game",
+        "Star Wars Miniatures",
+        "Indiana Jones",
+        "Filthy Rich",
+        "Pivot",
+        "Top Secret",
+        "Dungeons & Dragons Miniatures Game",
+        "Star Wars Trading Card Game",
+        "Escape from New York",
+        "Xiaolin Showdown Trading Card Game",
+        "Hecatomb",
+        "Netrunner",
+        "Blackmoor",
+        "First Quest",
+        "The Awful Green Things from Outer Space",
+        "Gamma World",
+        "NFL Showdown",
+        "Cavaliers and Roundheads",
+        "Codename: Kids Next Door Trading Card Game",
+        "Blood Wars",
+        "Pokémon Trading Card Game",
+        "MLB Showdown",
+        "Doomtown",
+        "Star Frontiers",
+        "Don't Give Up the Ship!",
+        "Chainmail"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3869,
+      "question": "which video game developer created a video game mod that uses game engine source?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :cvg.cvg_developer . \n?x1 :type.object.type :cvg.computer_game_mod . \nVALUES ?x2 { :m.0328kl } \n?x1 :cvg.computer_videogame.developer ?x0 . \n?x1 :cvg.computer_videogame.uses_game_engine ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": "Facepunch Studios",
+      "type_label": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3633,
+      "question": "the genres analytics and business intelligence are part of which software/",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :computer.software . \nVALUES ?x1 { :m.02gcn9 } \nVALUES ?x2 { :m.016jq3 } \n?x0 :computer.software.software_genre ?x1 . \n?x0 :computer.software.software_genre ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": "Logentries",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 2920,
+      "question": "find the tv rating systems that use tv-pg.",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :tv.tv_rating_system . \nVALUES ?x1 { :m.030p0gj } \n?x1 :tv.tv_rating.tv_rating_system ?x0 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "TV Parental Guidelines"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1558,
+      "question": "what labels has ralph lauren made?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :fashion.fashion_label . \n?x1 :type.object.type :fashion.designer_label_association . \nVALUES ?x2 { :m.02c748 } \n?x1 :fashion.designer_label_association.label ?x0 . \n?x1 :fashion.designer_label_association.designer ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": [
+        "Ralph Lauren"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1616,
+      "question": "language is used as a descriptive word in which video game rating system?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :cvg.computer_game_rating_system . \nVALUES ?x1 { :m.042zls7 } \n?x0 :cvg.computer_game_rating_system.content_descriptors ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Entertainment Software Rating Board",
+      "type_label": [
+        7,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3330,
+      "question": "zelda games supports what video games?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :cvg.computer_videogame . \nVALUES ?x1 { :m.07d5v } \n?x0 :cvg.computer_videogame.game_series ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "The Legend of Zelda",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 2465,
+      "question": "find customers of gamesys.",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :business.customer . \nVALUES ?x1 { :m.027xyg_ } \n?x0 :business.customer.supplier ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "News UK",
+        "Heart",
+        "Caesars Entertainment Corporation",
+        "The Sun"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 424,
+      "question": "the twin series vol. 3 – konchuu monster/super chinese labyrinth and ultra baken game were developed by which developer?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :cvg.cvg_developer . \nVALUES ?x1 { :m.0kymmyr } \nVALUES ?x2 { :m.04n3vk6 } \n?x0 :cvg.cvg_developer.game_versions_developed ?x1 . \n?x0 :cvg.cvg_developer.games_developed ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": "Culture Brain",
+      "type_label": [
+        7,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3684,
+      "question": "56.0 is the mean wind speed for which beaufort wind force?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :meteorology.beaufort_wind_force . \nVALUES ?x1 { \"56.0\"^^<http://www.w3.org/2001/XMLSchema#float> } \n?x0 :meteorology.beaufort_wind_force.mean_wind_speed_km_h ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Beaufort force 7",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 29,
+      "question": "who published naruto?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :comic_books.comic_book_publisher . \nVALUES ?x1 { :m.01hryy } \n?x1 :comic_books.comic_book_series.publisher ?x0 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Shueisha"
+      ],
+      "type_label": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3879,
+      "question": "in which shape was the point montara light station built?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :architecture.tower_shape . \nVALUES ?x1 { :m.0h4hjy } \n?x0 :architecture.tower_shape.lighthouse_has_shape ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Conical"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 2245,
+      "question": "activity in katals of 1.667e-08 are represented by which unit of catalytic activity?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :measurement_unit.catalytic_activity_unit . \nVALUES ?x1 { \"1.667e-08\"^^<http://www.w3.org/2001/XMLSchema#float> } \n?x0 :measurement_unit.catalytic_activity_unit.activity_in_katals ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Enzyme unit",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1230,
+      "question": "what unit does the international system of units use to measure magnetic flux density?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :measurement_unit.magnetic_flux_density_unit . \nVALUES ?x1 { :m.0c13h } \n?x0 :measurement_unit.magnetic_flux_density_unit.measurement_system ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Tesla",
+      "type_label": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 6376,
+      "question": "what is the measurement system that uses abampere for electric current?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :measurement_unit.measurement_system . \nVALUES ?x1 { :m.07k0gj } \n?x0 :measurement_unit.measurement_system.current_units ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Centimetre–gram–second system of units",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 2635,
+      "question": "which video game version is released on the platform of ique?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :cvg.game_version . \nVALUES ?x1 { :m.05gzb4 } \n?x0 :cvg.game_version.platform ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "F-Zero X",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 6686,
+      "question": "what is the name of an adaption that was adapted from background to danger?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :media_common.adaptation . \nVALUES ?x1 { :m.04t2359 } \n?x0 :media_common.adaptation.adapted_from ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Background to Danger",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 5374,
+      "question": "the report for the geologic story of gunnison gorge national conservation area, colorado was issued by whom?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :book.report_issuing_institution . \nVALUES ?x1 { :m.05gmqr0 } \n?x0 :book.report_issuing_institution.technical_reports_issued ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "United States Geological Survey",
+      "type_label": [
+        7,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 2492,
+      "question": "what stance does mike tyson use?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :sports.boxing_stance . \nVALUES ?x1 { :m.09qvs } \n?x0 :sports.boxing_stance.boxers_with_this_stance ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Orthodox stance"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4066,
+      "question": "what are the nourishing substances which coke consists of ?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :food.nutrient . \n?x1 :type.object.type :food.nutrition_fact . \nVALUES ?x2 { :m.01yvs } \n?x1 :food.nutrition_fact.nutrient ?x0 . \n?x1 :food.nutrition_fact.food ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": [
+        "Protein",
+        "Caffeine",
+        "Carbohydrate",
+        "Fluoride",
+        "Iron",
+        "Manganese",
+        "Potassium",
+        "Phosphorus",
+        "Calcium",
+        "Lipid",
+        "Ash",
+        "Sugar",
+        "Water",
+        "Copper",
+        "Sodium",
+        "Selenium",
+        "Zinc",
+        "Choline",
+        "Betaine"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 203,
+      "question": "which file format came before multiple-image network graphics?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :computer.file_format . \nVALUES ?x1 { :m.052fr } \n?x1 :computer.file_format.extended_from ?x0 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Portable Network Graphics"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1326,
+      "question": "rob elam designed what video game?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :cvg.computer_videogame . \nVALUES ?x1 { :m.02hpvgb } \n?x0 :cvg.computer_videogame.designers ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "One Must Fall: 2097",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4016,
+      "question": "mol is what kind of unit?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :measurement_unit.dimension . \nVALUES ?x1 { :m.09b4v } \n?x0 :measurement_unit.dimension.si_base_unit ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Amount of substance",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 237,
+      "question": "search for bipropellant rocket engines using hydrogen peroxide as oxidizer.",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :spaceflight.bipropellant_rocket_engine . \nVALUES ?x1 { :m.03q_p } \n?x0 :spaceflight.bipropellant_rocket_engine.oxidizer ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "RD-550",
+        "RD-512",
+        "RD-511",
+        "RD-510",
+        "RD-502",
+        "RD-161P"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1921,
+      "question": "both heroes chronicles: the sword of frost and heroes chronicles: revolt of the beastmasters were designed by what video game designer?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :cvg.cvg_designer . \nVALUES ?x1 { :m.0104v247 } \nVALUES ?x2 { :m.0104rpmg } \n?x1 :cvg.computer_videogame.designers ?x0 . \n?x2 :cvg.computer_videogame.designers ?x0 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": "Jon Van Caneghem",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 106,
+      "question": "which siphers did francis bacon make?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :base.cryptography.cipher . \nVALUES ?x1 { :m.030dr } \n?x1 :base.cryptography.cryptographer.ciphers_created ?x0 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Bacon's cipher"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4293,
+      "question": "1.0 lux is the illuminance unit of?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :measurement_unit.illuminance_unit . \nVALUES ?x1 { \"1.0\"^^<http://www.w3.org/2001/XMLSchema#float> } \n?x0 :measurement_unit.illuminance_unit.illuminance_in_lux ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Lux",
+      "type_label": [
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1322,
+      "question": "which songs are included on the odelay album?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :music.release_track . \nVALUES ?x1 { :m.0333fjt } \n?x1 :music.release.track_list ?x0 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Ramshackle",
+        "Derelict",
+        "Minus",
+        "Jack‐Ass",
+        "Sissyneck",
+        "The New Pollution",
+        "Novacane",
+        "Lord Only Knows",
+        "Readymade",
+        "High 5 (Rock the Catskills)",
+        "Devils Haircut",
+        "Where It’s At",
+        "Hotwax"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1244,
+      "question": "of which veterinary drug is gold the active moiety?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :base.veterinarymedicine.veterinary_drug . \nVALUES ?x1 { :m.025rs2z } \n?x0 :medicine.drug.active_moieties ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Sodium aurothiomalate"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 6660,
+      "question": "cepheus is a constellation in which star system?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :astronomy.star_system . \nVALUES ?x1 { :m.01p3ps } \n?x0 :astronomy.star_system.constellation ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Delta Cephei",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1444,
+      "question": "who wrote a orpheus ballet.",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :base.ballet.ballet_composer . \n?x1 :type.object.type :base.ballet.ballet . \nVALUES ?x2 { :m.0kv0c } \n?x0 :base.ballet.ballet_composer.ballets_composed ?x1 . \n?x1 :base.ballet.ballet.characters ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": [
+        "Igor Stravinsky"
+      ],
+      "type_label": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 861,
+      "question": "1.0 jouls per cubic meter is demonstrated by what unit of energy density?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :measurement_unit.energy_density_unit . \nVALUES ?x1 { \"1.0\"^^<http://www.w3.org/2001/XMLSchema#float> } \n?x0 :measurement_unit.energy_density_unit.density_in_joules_per_cubic_meter ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Joule per cubic metre",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 6206,
+      "question": "the ique platform has which video game version released?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :cvg.game_version . \nVALUES ?x1 { :m.05gzb4 } \n?x0 :cvg.game_version.platform ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "F-Zero X",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3845,
+      "question": "what type of fictional setting is mark of cain, part one in?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :fictional_universe.type_of_fictional_setting . \n?x1 :type.object.type :fictional_universe.fictional_setting . \nVALUES ?x2 { :m.030rkkq } \n?x1 :fictional_universe.fictional_setting.setting_type ?x0 . \n?x1 :fictional_universe.fictional_setting.works_set_here ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": "City",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 5640,
+      "question": "supreme commander has influenced what?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :cvg.computer_videogame . \nVALUES ?x1 { :m.07jxfk } \n?x0 :cvg.computer_videogame.influenced_by ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Planetary Annihilation",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 21135,
+      "question": "What country trades with south Africa and has a politician in office named Morgan Tsvangirai?",
+      "sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x \nWHERE {\nFILTER (?x != ns:m.0hzlz)\n{ \n  ns:m.0hzlz ns:location.statistical_region.places_exported_to ?y .\n  ?y ns:location.imports_and_exports.exported_to ?x . \n}\nUNION\n{\n  ns:m.0hzlz ns:location.statistical_region.places_imported_from ?y .\n  ?y ns:location.imports_and_exports.imported_from ?x . \n}?x ns:government.governmental_jurisdiction.governing_officials ?c .\n?c ns:government.government_position_held.office_holder ns:m.0185gs . \n}",
+      "ans": [
+        "The Republic of Zimbabwe",
+        "Zimbabwe"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 5087,
+      "question": "what medical trial has been tested for azidothymidine?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :medicine.medical_trial . \nVALUES ?x1 { :m.01bqth } \n?x0 :medicine.medical_trial.treatment_being_tested ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "A Phase I Evaluation of Azidothymidine (AZT) in Children with Acquired Immune Deficiency Syndrome (AIDS) or AIDS Related Complex (ARC)",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4184,
+      "question": "what type of transportation is provided by ual?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :travel.transportation_mode . \n?x1 :type.object.type :travel.transportation . \nVALUES ?x2 { :m.07y2s } \n?x1 :travel.transportation.mode_of_transportation ?x0 . \n?x1 :travel.transportation.transport_operator ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": [
+        "Air travel"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3268,
+      "question": "what gameplay mode is the video game that supports the peripheral zapper?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :cvg.gameplay_mode . \n?x1 :type.object.type :cvg.computer_videogame . \nVALUES ?x2 { :m.01s065 } \n?x0 :cvg.gameplay_mode.games_with_this_mode ?x1 . \n?x1 :cvg.computer_videogame.peripherals_supported ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": "Single-player video game",
+      "type_label": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3670,
+      "question": "heathrow international airport is the city of focus for which airline?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :aviation.airline . \nVALUES ?x1 { :m.03jn4 } \n?x0 :aviation.airline.focus_cities ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Singapore Airlines",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 6239,
+      "question": "lek pharmaceuticals manufactures a drug with what shape?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :medicine.drug_form_shape . \n?x1 :type.object.type :medicine.manufactured_drug_form . \nVALUES ?x2 { :m.0hqyvmf } \n?x1 :medicine.manufactured_drug_form.shape ?x0 . \n?x2 :medicine.drug_manufacturer.drugs_manufactured ?x1 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": "Circle",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 788,
+      "question": "which basketball coaches are jews?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :basketball.basketball_coach . \nVALUES ?x1 { :m.041rx } \n?x0 :people.person.ethnicity ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Dolph Schayes",
+        "Bruce Pearl",
+        "Alexander Gomelsky"
+      ],
+      "type_label": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3141,
+      "question": "the sega model 2 platform has which video game version released?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :cvg.game_version . \nVALUES ?x1 { :m.06hwkb } \n?x0 :cvg.game_version.platform ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Zero Gunner",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3702,
+      "question": "what video game version have been released in pal?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :cvg.game_version . \nVALUES ?x1 { :m.075lf4x } \n?x0 :cvg.game_version.regions ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Wii Chess",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4772,
+      "question": "which military units participated in the battle of gettysburg are from the same place as 1st louisiana native guard?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :base.americancivilwar.military_unit . \n?x1 :type.object.type :military.military_unit_place_of_origin . \nVALUES ?x2 { :m.01jnm } \nVALUES ?x3 { :m.0hr6dl9 } \n?x0 :military.military_unit.place_of_origin ?x1 . \n?x0 :base.americancivilwar.military_unit.conflicts_participated_in ?x2 . \n?x3 :military.military_unit.place_of_origin ?x1 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x0 != ?x3 && ?x1 != ?x2 && ?x1 != ?x3 && ?x2 != ?x3  )\n}\n}",
+      "ans": [
+        "10th Louisiana Infantry",
+        "15th Louisiana Infantry Regiment",
+        "14th Louisiana Infantry Regiment"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 411,
+      "question": "what is the unit of magnetic field strength of a measurement system that contains the data rate units of terabit per second?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :measurement_unit.magnetic_field_strength_unit . \n?x1 :type.object.type :measurement_unit.measurement_system . \nVALUES ?x2 { :g.121mkm81 } \n?x0 :measurement_unit.magnetic_field_strength_unit.measurement_system ?x1 . \n?x1 :measurement_unit.measurement_system.data_rate_units ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": "Ampere per metre",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1021,
+      "question": "what was the unit of heat capacity that is used in the international system of units system?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :measurement_unit.heat_capacity_unit . \nVALUES ?x1 { :m.0c13h } \n?x0 :measurement_unit.heat_capacity_unit.measurement_system ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Joule per kelvin",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 5904,
+      "question": "what is the wine that belongs to sonoma wines, has 14.9 percentage of alcohol?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :wine.wine . \nVALUES ?x1 { :m.0l35f } \nVALUES ?x2 { \"14.9\"^^<http://www.w3.org/2001/XMLSchema#float> } \n?x1 :wine.wine_sub_region.wines ?x0 . \n?x0 :wine.wine.percentage_alcohol ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": "2005 Bella \"Big River Ranch\" Alexander Valley Zinfandel",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 2390,
+      "question": "of the characters in for your eyes only, which one is based on thatcher?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :film.film_character . \n?x1 :type.object.type :film.performance . \nVALUES ?x2 { :m.03f5vvx } \nVALUES ?x3 { :m.0g5pv3 } \n?x1 :film.performance.character ?x0 . \n?x0 :fictional_universe.fictional_character.based_on ?x2 . \n?x1 :film.performance.film ?x3 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x0 != ?x3 && ?x1 != ?x2 && ?x1 != ?x3 && ?x2 != ?x3  )\n}\n}",
+      "ans": [
+        "Margaret Thatcher"
+      ],
+      "type_label": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4405,
+      "question": "unreal engine 4 is the successor to which video game engine?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :cvg.computer_game_engine . \nVALUES ?x1 { :m.04sh_j_ } \n?x0 :cvg.computer_game_engine.successor_engine ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Unreal Engine 3",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3891,
+      "question": "which winery made 2005 claudia springs \"valenti ranch\" mendocino ridge zinfandel?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :wine.vineyard . \nVALUES ?x1 { :m.03hd18s } \n?x0 :wine.vineyard.wines ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Valenti Ranch",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3728,
+      "question": "name the engine with a horsepower of 372.0.",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :automotive.engine . \nVALUES ?x1 { \"372.0\"^^<http://www.w3.org/2001/XMLSchema#float> } \n?x0 :automotive.engine.horsepower ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Audi 4.2L 8 Cylinder 372 hp 328 ft-lbs",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1576,
+      "question": "who has been a sponsor of educational short films covering the subject of menstruation?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :business.sponsor . \n?x1 :type.object.type :base.educationalshortfilm.educational_short_film . \nVALUES ?x2 { :m.025swc8 } \n?x1 :base.educationalshortfilm.educational_short_film.sponsor ?x0 . \n?x1 :base.educationalshortfilm.educational_short_film.subject ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": [
+        "Kimberly-Clark"
+      ],
+      "type_label": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3443,
+      "question": "magic flute, has what literature subject?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :book.book_subject . \nVALUES ?x1 { :m.09g7g } \n?x0 :book.book_subject.musical_compositions_about_this_topic ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Continental Freemasonry",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4287,
+      "question": "the us customs and border protection is maintained by what government service?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :government.government_service . \nVALUES ?x1 { :m.038r8p } \n?x0 :government.government_service.providing_agency ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Global Entry",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3810,
+      "question": "who developed the ms windows os?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :computer.operating_system_developer . \nVALUES ?x1 { :m.04r_8 } \n?x0 :computer.operating_system_developer.operating_systems_developed ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Microsoft Corporation"
+      ],
+      "type_label": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 2384,
+      "question": "sting symphonicity tour, concord was held where?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :music.performance_venue . \nVALUES ?x1 { :m.0bx75zw } \n?x0 :music.performance_venue.concerts ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Concord Pavilion",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 138,
+      "question": "who is the proposer of the first amendment to the us constitution?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :law.constitutional_amendment_proposer . \nVALUES ?x1 { :m.07sgz } \n?x1 :law.constitutional_amendment.proposed_by ?x0 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "James Madison"
+      ],
+      "type_label": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1522,
+      "question": "who is toyota motor corporation endorsed by?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :business.product_endorser . \n?x1 :type.object.type :business.product_endorsement . \nVALUES ?x2 { :m.07mb6 } \n?x2 :business.product_endorsee.endorsements ?x1 . \n?x1 :business.product_endorsement.endorser ?x0 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": [
+        "Greg Lutzka"
+      ],
+      "type_label": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 5962,
+      "question": "what is the name of the hebrew language and literature channel?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :broadcast.tv_channel . \nVALUES ?x1 { :m.03hkp } \n?x0 :broadcast.tv_channel.language ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Viva",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 11663,
+      "question": "What country trades with Mexico and have an ISO Alpah 3 of PRT?",
+      "sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x \nWHERE {\nFILTER (?x != ns:m.0b90_r)\n{ \n  ns:m.0b90_r ns:location.statistical_region.places_exported_to ?y .\n  ?y ns:location.imports_and_exports.exported_to ?x . \n}\nUNION\n{\n  ns:m.0b90_r ns:location.statistical_region.places_imported_from ?y .\n  ?y ns:location.imports_and_exports.imported_from ?x . \n}?x ns:location.country.iso_alpha_3 \"PRT\" . \n}",
+      "ans": [
+        "Portuguese Republic",
+        "Portugal"
+      ],
+      "type_label": [
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 975,
+      "question": "who are both a model and a professional tennis player?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :base.schemastaging.tennis_player_extra . \nVALUES ?x1 { :m.0d1pc } \n?x0 :people.person.profession ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Maria Sharapova"
+      ],
+      "type_label": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4285,
+      "question": "which catalytic concentration unit is used to show the concentration in 1.0 katal per cubic meter?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :measurement_unit.catalytic_concentration_unit . \nVALUES ?x1 { \"1.0\"^^<http://www.w3.org/2001/XMLSchema#float> } \n?x0 :measurement_unit.catalytic_concentration_unit.concentration_in_katals_per_cubic_meter ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Katal per cubic metre",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 875,
+      "question": "which of mark twain's inventions have been patented?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :law.us_patent . \nVALUES ?x1 { :m.014635 } \n?x0 :law.us_patent.inventor ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Improvement in Adjustable and Detachable Straps for Garments",
+        "Mark Twain's Scrapbook",
+        "Memory Builder"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 6748,
+      "question": "university of louisiana at lafayette can provide the what type of education?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :spaceflight.astronaut . \n?x1 :type.object.type :education.education . \nVALUES ?x2 { :m.02zccd } \n?x0 :people.person.education ?x1 . \n?x1 :education.education.institution ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": "Albert H. Crews",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 5850,
+      "question": "rhythmic adult contemporary are played on which radio station?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :broadcast.radio_station . \nVALUES ?x1 { :m.09t_sh } \n?x0 :broadcast.radio_station.format ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "WSMK",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 5231,
+      "question": "who wrote series of thirty-six views of mount fuji?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :visual_art.visual_artist . \nVALUES ?x1 { :m.0d_x60 } \n?x0 :visual_art.visual_artist.art_series ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Hokusai",
+      "type_label": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 2017,
+      "question": "what is the ship class that has 42.0 as its endurance?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :boats.ship_class . \nVALUES ?x1 { \"42.0\"^^<http://www.w3.org/2001/XMLSchema#float> } \n?x0 :boats.ship_class.endurance_days ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Galicia-class landing platform dock",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 139,
+      "question": "who proposed the first amendment?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :law.constitutional_amendment_proposer . \nVALUES ?x1 { :m.07sgz } \n?x1 :law.constitutional_amendment.proposed_by ?x0 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "James Madison"
+      ],
+      "type_label": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4981,
+      "question": "among the courts that are inferior to supreme court of british columbia, which one is founded first?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :law.court . \n{\nSELECT (MIN(?y1) AS ?x1)  WHERE { \n?y0 :type.object.type :law.court . \nVALUES ?y2 { :m.05sbhb } \n?y0 :law.court.founded ?y1 . \n?y2 :law.court.inferior_courts ?y0 . \nFILTER ( ?y0 != ?y1 && ?y0 != ?y2 && ?y1 != ?y2  )\n}\n}\nVALUES ?x2 { :m.05sbhb } \n?x0 :law.court.founded ?x1 . \n?x2 :law.court.inferior_courts ?x0 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": "Provincial Court of British Columbia",
+      "type_label": [
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4006,
+      "question": "avenger is included in what video game compilation?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :cvg.computer_game_compilation . \nVALUES ?x1 { :m.063sz4s } \n?x0 :cvg.computer_game_compilation.games_included ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "ZX Spectrum: Gremlin Collection Vol. 2",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3215,
+      "question": "how to treat hiv?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :medicine.medical_treatment . \nVALUES ?x1 { :m.0d19y2 } \n?x0 :medicine.medical_treatment.used_to_treat ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Zidovudine",
+        "Enfuvirtide",
+        "Didanosine",
+        "Zalcitabine",
+        "Stavudine",
+        "Lamivudine",
+        "Abacavir",
+        "Atazanavir",
+        "Nevirapine",
+        "Nelfinavir",
+        "Efavirenz",
+        "Saquinavir",
+        "Indinavir",
+        "Abacavir/Lamivudine/Zidovudine",
+        "Lamivudine/Zidovudine",
+        "Lopinavir",
+        "Emtricitabine",
+        "Management of HIV/AIDS",
+        "Delavirdine",
+        "Tenofovir",
+        "Efavirenz/Emtricitabine/Tenofovir",
+        "Emtricitabine/Tenofovir",
+        "Raltegravir",
+        "Aldesleukin",
+        "Amprenavir",
+        "Ritonavir",
+        "Protease inhibitor",
+        "Post-exposure prophylaxis"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 704,
+      "question": "what measurement type uses short ton as mass units?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :measurement_unit.measurement_system . \nVALUES ?x1 { :m.02md_f } \n?x0 :measurement_unit.measurement_system.weight_units ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Avoirdupois",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4350,
+      "question": "what are some sports which have been contested as official in both the 1912 summer olympics and the 2008 summer olympics?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :olympics.olympic_sport . \nVALUES ?x1 { :m.018ljb } \nVALUES ?x2 { :m.0kbws } \n?x1 :olympics.olympic_games.sports ?x0 . \n?x0 :olympics.olympic_sport.olympic_games_contested ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": [
+        "Shooting sport",
+        "Rowing",
+        "Artistic gymnastics",
+        "Track and field athletics"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3792,
+      "question": "what measurement system is newton per metre used as the unit for surface tension?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :measurement_unit.measurement_system . \nVALUES ?x1 { :m.02sj4sk } \n?x0 :measurement_unit.measurement_system.surface_tension_units ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "International System of Units",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 4263,
+      "question": "opry is in the same genre as which other radio programs?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :radio.radio_program . \n?x1 :type.object.type :broadcast.genre . \nVALUES ?x2 { :m.0gg86 } \n?x0 :broadcast.content.genre ?x1 . \n?x2 :broadcast.content.genre ?x1 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": [
+        "A Prairie Home Companion"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 800,
+      "question": "name all cat breeds.",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :base.petbreeds.cat_breed . \nVALUES ?x1 { :m.01yrx } \n?x1 :biology.domesticated_animal.breeds ?x0 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Japanese Bobtail",
+        "Pixie-bob",
+        "Balinese cat",
+        "Abyssinian cat",
+        "American Curl",
+        "Russian Blue",
+        "Munchkin cat",
+        "Ocicat",
+        "Himalayan cat",
+        "Devon Rex",
+        "Birman",
+        "Somali cat",
+        "American Bobtail",
+        "Norwegian Forest cat",
+        "Burmese cat",
+        "Korat",
+        "Cheetoh",
+        "Havana Brown",
+        "California Spangled",
+        "Chartreux",
+        "Javanese cat",
+        "Singapura cat",
+        "Donskoy cat",
+        "Snowshoe cat",
+        "Aegean cat",
+        "Sokoke",
+        "Exotic Longhair",
+        "Japanese Bobtail Longhair",
+        "Munchkin Longhair",
+        "Shorthair Curl",
+        "Minskin",
+        "Savannah cat",
+        "American Wirehair",
+        "Oriental Longhair",
+        "Peterbald",
+        "British Semi-longhair",
+        "Ragamuffin cat",
+        "British Shorthair",
+        "German Rex",
+        "Exotic Shorthair",
+        "Turkish Angora",
+        "Manx cat",
+        "Cymric cat",
+        "Scottish Fold",
+        "Nebelung",
+        "Egyptian Mau",
+        "Tonkinese cat",
+        "Bombay cat",
+        "Oriental Shorthair",
+        "Siberian cat",
+        "Chausie",
+        "Ukrainian Levkoy",
+        "Ojos Azules",
+        "European Shorthair",
+        "Munchkin Shorthair",
+        "Ruffle",
+        "Burmilla",
+        "Kurilian Bobtail",
+        "Serengeti cat",
+        "Toyger",
+        "Ussuri",
+        "Asian Semi-longhair",
+        "LaPerm",
+        "Siamese cat",
+        "Bengal cat",
+        "Selkirk Rex",
+        "Sphynx cat",
+        "Turkish Van",
+        "Persian cat",
+        "Maine Coon",
+        "European Burmese",
+        "American Shorthair",
+        "Ragdoll",
+        "Cornish Rex"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1929,
+      "question": "find bearer of the polish eagle.",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :symbols.coat_of_arms_bearer . \n?x1 :type.object.type :symbols.armorial_grant . \nVALUES ?x2 { :m.02w96d } \n?x1 :symbols.armorial_grant.armiger ?x0 . \n?x1 :symbols.armorial_grant.coat_of_arms ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": [
+        "Poland"
+      ],
+      "type_label": [
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 1124,
+      "question": "which visual artists are from the united states of america?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :base.smarthistory.visual_artist . \nVALUES ?x1 { :m.09c7w0 } \n?x0 :people.person.nationality ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Robert Smithson",
+        "Diane Arbus",
+        "Donald Judd",
+        "Richard Serra",
+        "William Eggleston",
+        "Cindy Sherman",
+        "Sherrie Levine",
+        "Willem de Kooning",
+        "Eva Hesse",
+        "Jasper Johns",
+        "Claes Oldenburg",
+        "Andy Warhol",
+        "George Bellows",
+        "Judy Chicago",
+        "Barnett Newman",
+        "Jackson Pollock",
+        "Mark Rothko",
+        "Thomas Cole",
+        "Roy Lichtenstein",
+        "Marcel Duchamp",
+        "Mary Cassatt",
+        "Sarah Choate Sears"
+      ],
+      "type_label": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3953,
+      "question": "what unit of mass is used in the same measurement system as gray per second?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :measurement_unit.mass_unit . \n?x1 :type.object.type :measurement_unit.measurement_system . \nVALUES ?x2 { :m.02sj5d4 } \n?x1 :measurement_unit.measurement_system.weight_units ?x0 . \n?x1 :measurement_unit.measurement_system.absorbed_dose_rate_units ?x2 . \nFILTER ( ?x0 != ?x1 && ?x0 != ?x2 && ?x1 != ?x2  )\n}\n}",
+      "ans": "Tonne",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 18,
+      "question": "paul the apostle was influenced by who?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :influence.influence_node . \nVALUES ?x1 { :m.060nc } \n?x0 :influence.influence_node.influenced ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": [
+        "Jesus Christ"
+      ],
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 98,
+      "question": "taylor made piano: a jazz history radio program episode was called what?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :radio.radio_program_episode . \nVALUES ?x1 { :m.05v20r_ } \n?x0 :radio.radio_program_episode.program ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Abstract, Stream-of-Consciousness and Free Jazz",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "ID": 3541,
+      "question": "the drug that is semicircle shaped is called?",
+      "sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX : <http://rdf.freebase.com/ns/> \nSELECT (?x0 AS ?value) WHERE {\nSELECT DISTINCT ?x0  WHERE { \n?x0 :type.object.type :medicine.manufactured_drug_form . \nVALUES ?x1 { :m.02x4f6 } \n?x0 :medicine.manufactured_drug_form.shape ?x1 . \nFILTER ( ?x0 != ?x1  )\n}\n}",
+      "ans": "Pepcid Ac Maximum Strength 20 film coated tablet",
+      "type_label": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  ]
+]
