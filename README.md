@@ -76,13 +76,13 @@ We classify the answers of these models for the KBQA dataset according to datase
     <td>QALD-9</td>
     <td style="text-align: center">6045</td>
     <td style="text-align: center">6045</td>
-    <td>EN</td>
+    <td>Mul</td>
   </tr>
   <tr>
     <td>MKQA</td>
     <td style="text-align: center">260000</td>
     <td style="text-align: center">6144</td>
-    <td>EN</td>
+    <td>Mul</td>
   </tr>
   <tr>
     <td  style="text-align: center">Total Collected</td>
