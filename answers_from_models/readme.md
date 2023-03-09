@@ -12,10 +12,22 @@ Each model folder contains answers(responses) to 8 datasets under this model.
 If model's answers file is a txt file, the format of file is :  index '\t' question '\t' answer  
 
 For example:
+8	What has alternative rock in common with Greg Graffin?	Greg Graffin is a musician who is often associated with the alternative rock genre, specifically as the lead singer and songwriter of the punk rock band Bad Religion.
 
 If model's answers file is a json file, the format of file is :  
 
 For example:
+{{
+        "id": "0",
+        "language": "fr",
+        "question": "Quel est le fuseau horaire de Salt Lake City?",
+        "answer": "Le fuseau horaire de Salt Lake City est Mountain Time Zone (MT)."
+    }
+        "id": "0",
+        "language": "fr",
+        "question": "Quel est le fuseau horaire de Salt Lake City?",
+        "answer": "Le fuseau horaire de Salt Lake City est Mountain Time Zone (MT)."
+    }
 
 
 # About Some Answers From Questions With Prompt
