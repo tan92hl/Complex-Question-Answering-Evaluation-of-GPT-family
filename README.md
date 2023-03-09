@@ -29,6 +29,67 @@ We compared the evaluation results of ChatGPT, GPT3.5, GPT3, and T5 to identify 
 We classify the answers of these models for the KBQA dataset according to dataset and model, and release them in this folder.
 
 [answers_from_models](answers_from_models) : The response(answers) of these models(Chatgpt, Gpt3/Gpt3.5, T5) to the KBQA datasets mentioned in [Datasets we use](#Datasets-we-use). 
+<table>
+  <tr>
+    <th>Datasets</th>
+    <th>Size</th>
+    <th>Col.Size</th>
+    <th>Lang</th>
+  </tr>
+  <tr>
+    <td>KQAPro</td>
+    <td style="text-align: center">117970</td>
+    <td style="text-align: center">106173</td>
+    <td>EN</td>
+  </tr>
+  <tr>
+    <td>LC-quad2.0</td>
+    <td style="text-align: center">26975</td>
+    <td style="text-align: center">26975</td>
+    <td>EN</td>
+  </tr>
+  <tr>
+    <td>WQSP</td>
+    <td style="text-align: center">4737</td>
+    <td style="text-align: center">4700</td>
+    <td>EN</td>
+  </tr>
+  <tr>
+    <td>CWQ</td>
+    <td style="text-align: center">31158</td>
+    <td style="text-align: center">31158</td>
+    <td>EN</td>
+  </tr>
+  <tr>
+    <td>GrailQA</td>
+    <td style="text-align: center">64331</td>
+    <td style="text-align: center">6763</td>
+    <td>EN</td>
+  </tr>
+  <tr>
+    <td>GraphQA</td>
+    <td style="text-align: center">4776</td>
+    <td style="text-align: center">4776</td>
+    <td>EN</td>
+  </tr>
+  <tr>
+    <td>QALD-9</td>
+    <td style="text-align: center">6045</td>
+    <td style="text-align: center">6045</td>
+    <td>EN</td>
+  </tr>
+  <tr>
+    <td>MKQA</td>
+    <td style="text-align: center">260000</td>
+    <td style="text-align: center">6144</td>
+    <td>EN</td>
+  </tr>
+  <tr>
+    <td  style="text-align: center">Total Collected</td>
+    <td colspan="3" style="text-align: center">194782</td>
+  </tr>
+</table>
+
 
 
 
@@ -51,6 +112,7 @@ Given that the training data of the Language Model (LLM) covers Wikipedia extens
 | GraphQuestions    | [Download_url](https://github.com/ysu1989/GraphQuestions)     | [Paper_url](https://openreview.net/pdf?id=HyxgBerKwB)     |
 | GrailQA     | [Download_url](https://dki-lab.github.io/GrailQA/)     | [Paper_url](https://arxiv.org/pdf/2011.07743v6.pdf)     |
 | KQApro     | [Download_url](http://thukeg.gitee.io/kqa-pro/leaderboard.html)     | [Paper_url](https://arxiv.org/abs/2007.03875)     |
+| LC-quad2.0     | [Download_url](http://lc-quad.sda.tech/)     | [Paper_url](http://jens-lehmann.org/files/2019/iswc_lcquad2.pdf)     |
 
 Multilingual dataset
 
