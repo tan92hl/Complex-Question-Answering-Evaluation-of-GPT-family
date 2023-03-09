@@ -1,6 +1,6 @@
 # Introduction
 
-Below this folder are answers to questions classified according to models. Our comparison models include davinci1, davinci2, davinci3, and T5 models. Each model folder contains answers to eight data sets under this model. The format of the answers is :  
+Below this folder are answers to questions classified according to models. Our comparison models include Chatgpt, davinci1, davinci2, davinci3 , (from [OpenAI Models](https://platform.openai.com/docs/models/overview)) and T5 models. Each model folder contains answers to eight data sets under this model. The format of the answers is :  
 
 index '\t' question '\t' answer  
 
