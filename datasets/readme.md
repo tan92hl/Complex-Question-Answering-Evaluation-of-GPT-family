@@ -1,9 +1,11 @@
 # Introduction
 
-We choose to evaluate our model using an open-domain complex question answering dataset related to Wikipedia. Specifically, we curated a set of 7 different datasets for this purpose: WebQuestionSP, ComplexWebQuestion, GraphQA, GrailQA, KQApro, QALD-9, MKQA.
+This repository contains a set of seven open-domain complex question answering datasets related to Wikipedia, which were curated for the purpose of evaluating the ChatGPT model. The datasets included are WebQuestionSP, ComplexWebQuestion, GraphQA, GrailQA, KQApro, QALD-9, and MKQA.
 
-This file contains all the dataset files we have compiled, including two files in the CWQ, GrailQA, GraphQuestions, KQApro, QALD-9 and WQSP dataset files. 
+For each dataset, there are two files ending with "_all_question_with_label.json" that contain the question ID, the question text, the SPARQL query corresponding to the question, the answer to the question, and labels for the question and answer. The labels include "type_label" and "type_label" which represent the answer type and question type, respectively. The first dimension of "type_label" represents the answer type from 0-7, while the second dimension of "type_label" represents the question type with each of the 1-8 categories, and a value of 1 indicating that the question belongs to that category. A question may belong to multiple categories at the same time.
 
-The file ending with the "aliase_data.json" file name is the list of aliases in various languages that we obtained on the wikidata website according to groun_truth for answer matching.  
+Additionally, the file ending with "alias_data.json" contains a list of aliases in various languages that were obtained from the Wikidata website for answer matching according to the ground truth.
 
-The data in the file ending with "_all_question_with_label.json" contains "ID", the question "question" of the dataset, the sparql query of the question, the answer "ans" of the question, and the labels "type_label" and "type_label" for the question and answer The first dimension represents the answer type 0-7, and each dimension of the 1-8 latitudes of "type_label" represents a question type, and the number is 1 means that the question belongs to this latitude, and a question may belong to different types at the same time.
+We hope that this repository will be useful for researchers and developers working on open-domain complex question answering. Please feel free to use these datasets for evaluation and improvement of your models.
+
+Thank you for visiting this repository and please let us know if you have any questions or feedback.

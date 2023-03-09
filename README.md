@@ -8,9 +8,11 @@ This repository is a subproject of [KSESEU](https://github.com/KSESEU).
 If you use the code, please cite the following paper:  
 
 
-This repository is mainly contributed  by [Yiming Tan](https://github.com/tan92hl), [Dehai Min](https://github.com/ZhishanQ), [Yu Li](https://github.com/liyu19980601), [Wenbo Li](https://github.com/zhexuezhujiu), [Nan Hu](https://github.com/HuuuNan) Guilin Qi.
+This repository is mainly contributed  by [Yiming Tan](https://github.com/tan92hl), [Dehai Min](https://github.com/ZhishanQ), [Yu Li](https://github.com/liyu19980601), [Wenbo Li](https://github.com/zhexuezhujiu), [Nan Hu](https://github.com/HuuuNan), Guilin Qi.
 
+:fire::tada: We have released the answers of chatgpt and other models to a total of 194,782 questions across 8 datasets, including multiple languages in [Datasets we publish](#Datasets-we-publish).
 
+To our knowledge(2023-3-9), this is the first public release of a large-scale Q&A dataset for chatgpt.
 
 # Overview
 
@@ -22,12 +24,16 @@ We compared the evaluation results of ChatGPT, GPT3.5, GPT3, and T5 to identify 
 
 # Datasets we publish
 
-We release the answers of these models to the KBQA dataset and classify them according to dataset and model.  
+We classify the answers of these models for the KBQA dataset according to dataset and model, and release them in this folder.
 
-[answers_from_models]() : The responses of these models(Chatgpt, Gpt3/Gpt3.5, T5) to the KBQA datasets mentioned in [Datasets we use]().
+[answers_from_models](answers_from_models) : The response(answers) of these models(Chatgpt, Gpt3/Gpt3.5, T5) to the KBQA datasets mentioned in [Datasets we use](#Datasets-we-use). 
 
-[datasets]() : The datasets with unified format for question_id, question, ground_truth, sparql and our added labels. In addition, there are also alias dictionaries for the ground truth of dataset that we used during the evaluation.
 
+
+
+
+[datasets](datasets) : 
+We have processed the KBQA datasets mentioned in [Datasets we use](#Datasets-we-use)  into a unified format and released them in this folder. The datasets in the unified format include the following items: question_id, question, ground_truth, SPARQL, and our added labels. Additionally, we have generated alias dictionaries from Wikipedia for the ground truth, which we can use during the evaluation.
 
 # Datasets we use 
 
