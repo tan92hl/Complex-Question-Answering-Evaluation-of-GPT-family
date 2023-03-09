@@ -30,6 +30,8 @@ Example：
 
 Additionally, the file ending with "alias_data.json" contains a list of aliases in various languages that were obtained from the Wikidata website for answer matching according to the ground truth.
 
+Within the LC-Quad2.0 dataset, there is an "Other_materials" folder containing two subfolders: "question_with_ground_truth_raw" and "question_with_ground_truth_processed." The former likely includes the original training and test data, while the latter may contain processed versions of this data.
+
 We hope that this repository will be useful for researchers and developers working on open-domain complex question answering. Please feel free to use these datasets for evaluation and improvement of your models.
 
 Thank you for visiting this repository and please let us know if you have any questions or feedback.
