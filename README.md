@@ -33,7 +33,7 @@ We classify the answers of these models for the KBQA dataset according to datase
 
 
 [datasets](datasets) : 
-We have processed the KBQA datasets mentioned in [Datasets we use](#Datasets-we-use)  into a unified format and released them in this folder. The datasets in the unified format include the following items: question_id, question, ground_truth, SPARQL, and our added labels. Additionally, we have generated alias dictionaries from Wikipedia for the ground truth, which we can use during the evaluation.
+We have processed the 8 datasets mentioned in [Datasets we use](#Datasets-we-use)  into a unified format and released them in this folder. The datasets in the unified format include the following items: question_id, question, ground_truth, SPARQL, and our added labels. Additionally, we have generated alias dictionaries from Wikipedia for the ground truth, which we can use during the evaluation.
 
 # Datasets we use 
 
