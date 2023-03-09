@@ -3,11 +3,20 @@ A large-scale complex question answering evaluation of ChatGPT and similar large
 
 A framework for detailed evaluation of the ability of ChatGPT and similar large-scale language models to answer complex questions.
 
+This repository is a subproject of [KSESEU](https://github.com/KSESEU).  
+
+If you use the code, please cite the following paper:  
+
+
+This package is mainly contributed  by [Yiming Tan](), [Dehai Min](), [Yu Li](), [Wenbo Li](), Guilin Qi.
+
+
+
 # Overview
 
 To evaluate ChatGPT's ability to answer complex knowledge, we propose an evaluation framework:
 First, we classify the latent features that constitute complex questions, and describe each question under test with multi-labels for identifying combinatorial reasoning.
-Secondly, following the black-box test specification of CheckList proposed by Microsoft, we design an evaluation method that introduces CoT hints to measure the reasoning function and reliability of large language models in answering complex questions.
+Secondly, following the black-box test specification of [CheckList](https://arxiv.org/abs/2005.04118) proposed by Microsoft, we design an evaluation method that introduces [CoT](https://arxiv.org/abs/2201.11903) hints to measure the reasoning function and reliability of large language models in answering complex questions.
 Our evaluation uses 8 real complex question answering datasets, including six English datasets and two multilingual datasets, to further analyze the potential impact of language bias.
 We compared the evaluation results of ChatGPT, GPT3.5, GPT3, and T5 to identify persistent historical issues in LLMs. All data and results are available for further analysis.  
 
