@@ -22,9 +22,9 @@ We compared the evaluation results of ChatGPT, GPT3.5, GPT3, and T5 to identify 
 
 # Datasets we publish
 
-We release the answers of these models to the KBQA dataset mentioned above and classify them according to dataset and model.  
+We release the answers of these models to the KBQA dataset and classify them according to dataset and model.  
 
-[answers_from_models]() : The responses of these models(Chatgpt, Gpt3/Gpt3.5, T5) to the QA datasets mentioned in [Datasets we use]().
+[answers_from_models]() : The responses of these models(Chatgpt, Gpt3/Gpt3.5, T5) to the KBQA datasets mentioned in [Datasets we use]().
 
 [datasets]() : The datasets with unified format for question_id, question, ground_truth, sparql and our added labels. In addition, there are also alias dictionaries for the ground truth of dataset that we used during the evaluation.
 
