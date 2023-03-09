@@ -48,7 +48,7 @@ Given that the training data of the Language Model (LLM) covers Wikipedia extens
 | ---------- | :-----------:  | :-----------: |
 | WebQuestionSP(WQSP) | [download_url](https://www.microsoft.com/en-us/download/details.aspx?id=52763)| [paper_url](https://arxiv.org/pdf/2210.00063.pdf)|
 | ComplexWebQuestion(CWQ)     | [download_url](https://allenai.org/data/complexwebquestions)|[paper_url](https://aclanthology.org/2022.coling-1.145.pdf)|
-| GraphQA    | [download_url](https://github.com/ysu1989/GraphQuestions)     | [paper_url](https://openreview.net/pdf?id=HyxgBerKwB)     |
+| GraphQuestions    | [download_url](https://github.com/ysu1989/GraphQuestions)     | [paper_url](https://openreview.net/pdf?id=HyxgBerKwB)     |
 | GrailQA     | [download_url](https://dki-lab.github.io/GrailQA/)     | [paper_url](https://arxiv.org/pdf/2011.07743v6.pdf)     |
 | KQApro     | [download_url](http://thukeg.gitee.io/kqa-pro/leaderboard.html)     | [paper_url](https://arxiv.org/abs/2007.03875)     |
 
