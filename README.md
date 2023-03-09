@@ -8,7 +8,7 @@ This repository is a subproject of [KSESEU](https://github.com/KSESEU).
 If you use the code, please cite the following paper:  
 
 
-This package is mainly contributed  by [Yiming Tan](), [Dehai Min](), [Yu Li](), [Wenbo Li](), Guilin Qi.
+This repository is mainly contributed  by [Yiming Tan](https://github.com/tan92hl), [Dehai Min](https://github.com/ZhishanQ), [Yu Li](https://github.com/liyu19980601), [Wenbo Li](), [Nan Hu](https://github.com/HuuuNan) Guilin Qi.
 
 
 
@@ -28,7 +28,7 @@ Given that the training data for language models (LLMs) extensively covers Wikip
 | ---------- | :-----------:  | :-----------: |
 | WebQuestionSP(WQSP) | [download_url](https://www.microsoft.com/en-us/download/details.aspx?id=52763)| [paper_url](https://arxiv.org/pdf/2210.00063.pdf)|
 | ComplexWebQuestion(CWQ)     | [download_url](https://allenai.org/data/complexwebquestions)|[paper_url](https://aclanthology.org/2022.coling-1.145.pdf)|
-| GraphQA    | [download_url]     | [paper_url](https://openreview.net/pdf?id=HyxgBerKwB)     |
+| GraphQA    | [download_url](https://github.com/ysu1989/GraphQuestions)     | [paper_url](https://openreview.net/pdf?id=HyxgBerKwB)     |
 | GrailQA     | [download_url](https://dki-lab.github.io/GrailQA/)     | [paper_url](https://arxiv.org/pdf/2011.07743v6.pdf)     |
 | KQApro     | [download_url](http://thukeg.gitee.io/kqa-pro/leaderboard.html)     | [paper_url](https://arxiv.org/abs/2007.03875)     |
 
@@ -36,7 +36,7 @@ Multilingual dataset
 
 | Multilingual datasets      | Source     | Paper     |
 | ---------- | :-----------:  | :-----------: |
-| QALD-9             | [download_url]((https://github.com/ag-sc/QALD))| [paper_url](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9815253)|
+| QALD-9             | [download_url](https://github.com/ag-sc/QALD)| [paper_url](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9815253)|
 | MKQA               | [download_url](https://github.com/apple/ml-mkqa)|[paper_url](https://arxiv.org/pdf/2007.15207v2.pdf)|
 
 We make the resources of datasets public and classify them according to dataset type and model type.  
