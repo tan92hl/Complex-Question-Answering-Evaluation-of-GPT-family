@@ -8,7 +8,7 @@ This repository is a subproject of [KSESEU](https://github.com/KSESEU).
 If you use the code, please cite the following paper:  
 
 
-This repository is mainly contributed  by [Yiming Tan](https://github.com/tan92hl), [Dehai Min](https://github.com/ZhishanQ), [Yu Li](https://github.com/liyu19980601), [Wenbo Li](https://github.com/zhexuezhujiu), [Nan Hu](https://github.com/HuuuNan) Guilin Qi.
+This repository is mainly contributed  by [Yiming Tan](https://github.com/tan92hl), [Dehai Min](https://github.com/ZhishanQ), [Yu Li](https://github.com/liyu19980601), [Wenbo Li](https://github.com/zhexuezhujiu), [Nan Hu](https://github.com/HuuuNan), Guilin Qi.
 
 
 
@@ -24,9 +24,9 @@ We compared the evaluation results of ChatGPT, GPT3.5, GPT3, and T5 to identify 
 
 We release the answers of these models to the KBQA dataset and classify them according to dataset and model.  
 
-[answers_from_models]() : The responses of these models(Chatgpt, Gpt3/Gpt3.5, T5) to the KBQA datasets mentioned in [Datasets we use]().
+[answers_from_models](answers_from_models) : The responses of these models(Chatgpt, Gpt3/Gpt3.5, T5) to the KBQA datasets mentioned in [Datasets we use](#Datasets-we-use).
 
-[datasets]() : The datasets with unified format for question_id, question, ground_truth, sparql and our added labels. In addition, there are also alias dictionaries for the ground truth of dataset that we used during the evaluation.
+[datasets](datasets) : The datasets with unified format for question_id, question, ground_truth, sparql and our added labels. In addition, there are also alias dictionaries for the ground truth of dataset that we used during the evaluation.
 
 
 # Datasets we use 
