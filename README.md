@@ -67,7 +67,7 @@ We classify the answers of these models for the KBQA dataset according to datase
     <td>EN</td>
   </tr>
   <tr>
-    <td>GraphQA</td>
+    <td>GraphQuestions</td>
     <td style="text-align: center">4776</td>
     <td style="text-align: center">4776</td>
     <td>EN</td>
