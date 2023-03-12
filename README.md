@@ -5,7 +5,7 @@ A framework for detailed evaluation of the ability of ChatGPT and similar large-
 
 This repository is a subproject of [KSESEU](https://github.com/KSESEU).  
 
-If you use the code, please cite the following paper: Evaluation of ChatGPT as a Question Answering System for Answering Complex Questions  [（[Arxiv])]()
+If you use the code, please cite the following paper: Evaluation of ChatGPT as a Question Answering System for Answering Complex Questions  [[Arxiv]]()
 ```
 
 ```
