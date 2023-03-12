@@ -1,11 +1,11 @@
 # Complex-Question-Answering-Evaluation-of-ChatGPT
-A large-scale complex question answering evaluation of ChatGPT and similar large-language models
+Evaluation of ChatGPT as a Question Answering System for Answering Complex Questions
 
 A framework for detailed evaluation of the ability of ChatGPT and similar large-scale language models to answer complex questions.
 
 This repository is a subproject of [KSESEU](https://github.com/KSESEU).  
 
-If you use the code, please cite the following paper:  
+If you use the code, please cite the following paper: Evaluation of ChatGPT as a Question Answering System for Answering Complex Questions  [（[Arxiv])]()
 ```
 
 ```
