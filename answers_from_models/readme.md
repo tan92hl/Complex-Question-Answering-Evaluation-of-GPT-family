@@ -15,9 +15,9 @@ For example:
 <pre><code>
 8	What has alternative rock in common with Greg Graffin?	Greg Graffin is a musician who is often associated with the alternative rock genre, specifically as the lead singer and songwriter of the punk rock band Bad Religion.
 </code></pre>
-If model's answers file is a json file, the format of file is :  
 
-For example:  
+If the file is a json file, an example of the format of the file is as follows:  
+
 <pre><code>
 {
         "id": "0",  
