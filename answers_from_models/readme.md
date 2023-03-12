@@ -3,7 +3,7 @@
 Below this folder are answers to questions classified according to models. 
 
 Our comparison models include Chatgpt, davinci1, davinci2, davinci3 (from [OpenAI Models](https://platform.openai.com/docs/models/overview)) 
-and T5 models (From [google/flan-t5-xxl](https://huggingface.co/google/flan-t5-xxl)). 
+and FLAN-T5 models (From [google/flan-t5-xxl](https://huggingface.co/google/flan-t5-xxl)). 
 
 Each model folder contains answers(responses) to 8 datasets under this model. 
 
@@ -29,7 +29,7 @@ If the file is a json file, an example of the format of the file is as follows:
 
 # About Some Answers From Questions With Prompt
 
-For the davinci3, davinci2 and T5 models, we made an English prompt on the QALD-9 dataset for comparison, and the file name ends with "QALD-9_en_prompt.json".  
+For the davinci3, davinci2 and FLAN-T5 models, we made an English prompt on the QALD-9 dataset for comparison, and the file name ends with "QALD-9_en_prompt.json".  
 
 On the davinci1 model, we did not handle the English prompt.  
 
