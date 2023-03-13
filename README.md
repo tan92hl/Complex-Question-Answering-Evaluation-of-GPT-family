@@ -130,9 +130,9 @@ Multilingual dataset
 
 We assess the LLM's ability to handle each feature in the CQA scenario through the Minimal Functional Test (MFT); we classify the answer types into 9 categories, respectively Mixed fact (MISC);Reason (WHY);Location (LOC);Time (DATE/TIME);Character (PER);Yes or no (Boolean);Number (NUM);Organization (ORG);Unable to answer (UNA)  
 
-At the same time, we divide the labels of "reasoning type" into eight categories, which are: SetOperation;Filtering;Counting;The most valuable;Sort  ;Single-hop;Multi-hop;Star-shape  
+At the same time, we divide the labels of "reasoning type" into eight categories, which are: SetOperation; Filtering; Counting; The most valuable; Sort;  Single-hop; Multi-hop; Star-shape  
 
-We also take into account the "language type" label that may have an impact on model performance: de;ru;pt;hi_IN;en;Fa;it;fr;ro;es;nl;pt_BR  
+We also take into account the "language type" label that may have an impact on model performance: de; ru; pt; hi_IN; en; Fa; it; fr; ro; es; nl; pt_BR; zh cn 
 
 We adopted a simple idea of expanding the matching range to strengthen the generalization of answer matching, including the following two operations:  
 
