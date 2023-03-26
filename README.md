@@ -123,6 +123,8 @@ Multilingual dataset
 | MKQA               | [Download_url](https://github.com/apple/ml-mkqa)|[Paper_url](https://arxiv.org/pdf/2007.15207v2.pdf)|
 
 
+# Code for ChatGPT API
+We have published the official [API](ChatGPT_API.py) code used to test ChatGPT on GitHub, complete with detailed code comments. For any inquiries regarding the usage of the API, please refer to the official website: https://platform.openai.com/docs/guides/chat.
 
 # CheckList Model
 
