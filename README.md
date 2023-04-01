@@ -124,7 +124,7 @@ Multilingual dataset
 
 
 # Code for ChatGPT API
-We have uploaded the [code](ChatGPT_API.py) for using ChatGPT to collect answers to questions in datasets. The code uses the official OpenAI's API and includes comments. If you want to learn more about APl, see OpenAI's official website for more information: https://platform.openai.com/docs/guides/chat.
+We have uploaded our [code](ChatGPT_API.py) for using ChatGPT to collect answers to questions in datasets. The code uses the official OpenAI's API. If you want to learn more about APl, see OpenAI's official website for more information: https://platform.openai.com/docs/guides/chat.
 
 # CheckList Model
 
