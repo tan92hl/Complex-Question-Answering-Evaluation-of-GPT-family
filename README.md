@@ -23,13 +23,13 @@ To evaluate ChatGPT's ability to answer complex knowledge, we propose an evaluat
 First, we classify the latent features that constitute complex questions, and describe each question under test with multi-labels for identifying combinatorial reasoning.
 Secondly, following the black-box test specification of [CheckList](https://arxiv.org/abs/2005.04118) proposed by Microsoft, we design an evaluation method that introduces [CoT](https://arxiv.org/abs/2201.11903) hints to measure the reasoning function and reliability of large language models in answering complex questions.
 Our evaluation uses 8 real complex question answering datasets, including six English datasets and two multilingual datasets, to further analyze the potential impact of language bias.
-We compared the evaluation results of ChatGPT, GPT3.5, GPT3, and FLAN-T5 to identify persistent historical issues in LLMs. All data and results are available for further analysis.  
+We compared the evaluation results of ChatGPT, GPT3.5, GPT3, FLAN-T5 and GPT-4 to identify persistent historical issues in LLMs. All data and results are available for further analysis.  
 
 # Datasets we publish
 
 We classify the answers of these models for the KBQA dataset according to dataset and model, and release them in this folder.
 
-[answers_from_models](answers_from_models) : The response(answers) of these models(Chatgpt, Gpt3/Gpt3.5, FLAN-T5) to the KBQA datasets mentioned in [Datasets we use](#Datasets-we-use). 
+[answers_from_models](answers_from_models) : The response(answers) of these models(Chatgpt, Gpt3/Gpt3.5, FLAN-T5, GPT-4) to the KBQA datasets mentioned in [Datasets we use](#Datasets-we-use). 
 <table>
   <tr>
     <th>Datasets</th>
