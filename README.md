@@ -17,6 +17,9 @@ This repository is mainly contributed  by [Yiming Tan](https://github.com/tan92h
 
 To our knowledge(2023-3-9), this is the first public release of a large-scale Q&A dataset for chatgpt.
 
+😊 Updated on April 12, 2023: We have uploaded the Q&A dataset for GPT-4.
+
+
 #  Overview
 
 To evaluate ChatGPT's ability to answer complex knowledge, we propose an evaluation framework:
