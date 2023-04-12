@@ -37,4 +37,4 @@ For the ChatGPT model, we have done multiple comparison experiments. On the WQSP
 
 Additionally, for the QALD-9 and GraphQuestions datasets, we used Chinese prompts and English prompts for comparison, ending with "zh_cn_prompt.txt" and "en_prompt.txt" respectively.  
 
-At the same time, we also tested on the newly released GPT-4. Due to the limitation of OpenAI, we extracted 500 data from each data set for testing. The format of the test data results is the same as that of ChatGPT.
+:fire:At the same time, we also tested on the newly released GPT-4. Due to the limitation of OpenAI, we extracted 500 data from each data set for testing. The format of the test data results is the same as that of ChatGPT.
