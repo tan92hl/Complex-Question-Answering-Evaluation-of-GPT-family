@@ -3,7 +3,7 @@
 Below this folder are answers to questions classified according to models. 
 
 Our comparison models include Chatgpt, davinci1, davinci2, davinci3 (from [OpenAI Models](https://platform.openai.com/docs/models/overview)) 
-and FLAN-T5 models (From [google/flan-t5-xxl](https://huggingface.co/google/flan-t5-xxl)). 
+, FLAN-T5 (From [google/flan-t5-xxl](https://huggingface.co/google/flan-t5-xxl)) and GPT-4 models. 
 
 Each model folder contains answers(responses) to 8 datasets under this model. 
 
