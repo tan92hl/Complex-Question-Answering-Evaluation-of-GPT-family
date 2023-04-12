@@ -7,6 +7,8 @@ We hope that these experimental results will be useful for researchers and devel
 
 Please feel free to use the data contained in this repository for your own experiments and research purposes. If you have any questions or feedback, please do not hesitate to reach out to us.  
 
+Recently, we have also tested on the newly released GPT-4, and the format of the test data results is the same as that of ChatGPT.
+
 ## Invariance test (INV)
 
 
