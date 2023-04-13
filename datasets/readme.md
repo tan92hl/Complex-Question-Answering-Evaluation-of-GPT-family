@@ -2,7 +2,10 @@
 
 This repository contains a set of eight open-domain complex question answering datasets related to Wikipedia, which were curated for the purpose of evaluating the ChatGPT model. The datasets included are WebQuestionSP, ComplexWebQuestion, GraphQuestions, GrailQA, KQApro, QALD-9, LC-quad2.0 and MKQA.
 
-For each dataset, there are two files ending with "_all_question_with_label.json" that contain the question ID, the question text, the SPARQL query corresponding to the question, the answer to the question, and labels for the question and answer. Labels include "type_label" for questions and "type_label" for answers. The first dimension of "type_label" represents the answer type from 0-7, while the second dimension of "type_label" represents the question type with each of the 1-8 categories, and a value of 1 indicating that the question belongs to that category. A question may belong to multiple categories at the same time.
+For each dataset, there are two files ending with "_all_question_with_label.json" that contain the question ID, the question text, the SPARQL query corresponding to the question, the answer to the question, and labels for the question and answer. Labels include "type_label" for questions and "type_label" for answers.The first dimension of "type_label" represents the answer type of 0-7. Specifically, the meaning of each number is:   
+0: mixed fact (MISC); 1: reason (Why); 2: location (LOC); 3: Time (DATE/TIME); 4: Character (PER); 5: Right and wrong (Boolean); 6: Number (NUM); 7: Organization (ORG).  
+The second dimension of "type_label" represents the type of the question. There are 1-8 categories, and a value of 1 indicates that the question belongs to this category. A question may belong to multiple categories at the same time. Specifically, the meaning of each dimension is:   
+1: Collection; 2: Condition; 3: Count; 4: Most Value; 5: Sorting; 6: Single Hop; 7: Multi Hop, 8: Star.
 
 Example：
 <pre><code>
