@@ -35,7 +35,6 @@ The following table shows the performance of evaluated models on different datas
 
 (When evaluating answers, we only consider two situations: answering correctly or answering incorrectly. Therefore, our Acc score is the same as our F1 score.)
 
-<img width="970" alt="image" src="https://github.com/AnonymousgitT/complex-question-answering-evaluation-of-GPT-family/assets/97523884/fe28b569-963e-4532-bbec-58985eded3c1">
 <img width="549" alt="overall result" src="https://github.com/tan92hl/Complex-Question-Answering-Evaluation-of-GPT-family/assets/47051778/32b20566-0ce3-4792-97dd-5f24e8ad03d7">
 
 # Datasets we publish
