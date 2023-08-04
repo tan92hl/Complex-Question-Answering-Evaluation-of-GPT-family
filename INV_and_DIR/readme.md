@@ -1,18 +1,18 @@
 
 # Introduction
 
-This repository serves as a record of the results generated during the invariance test and directional expectation test experiments we conducted on the KQApro dataset. We chose to primarily focus our experiments on the KQApro dataset because it contains all the necessary types of data we required.  
+The repository is our record of invariance test and directional extensten test of Davinci1, Davinci2, Davinci3, and ChatGPT on the KQAPRO dataset. We chose to focus mainly on the KQAPRO dataset because it contains all the necessary types of data we need.
 
 We hope that these experimental results will be useful for researchers and developers working on open-domain complex question answering models, and that this repository will provide a valuable resource for evaluating and improving those models.  
 
 Please feel free to use the data contained in this repository for your own experiments and research purposes. If you have any questions or feedback, please do not hesitate to reach out to us.  
 
-:fire:Recently, we have also tested on the newly released GPT-4, and the format of the test data results is the same as that of ChatGPT.
+:fire:Recently, we have also tested on the newly released GPT-4, and the format of the test data results is the same as that of Davinci1, Davinci2, Davinci3, and ChatGPT.
 
 ## Invariance test (INV)
 
 
-This repository contains the results of our invariance test experiments on the KQApro dataset. We primarily used methods such as changing sentence expressions and modifying words (through letter repetition and omission) for this test. We sampled 100 pieces of data on the answer type and question type for the experiment.  
+This repository contains the results of our invariance test experiments on the KQApro dataset. We primarily used methods such as changing sentence expressions and modifying words (through letter repetition and omission) for this test. Each type of answer type and question type has extracted 100 data for experiments.  
 
 The "word_change.json" file located under the INV folder contains the results of our word-changing experiments. It includes the "original_question," which is the original question, "question," which is the question after changing the word, "answer," which is the ChatGPT-generated answer, and "ground_truth," which is the actual answer to the question.  
 Example：
