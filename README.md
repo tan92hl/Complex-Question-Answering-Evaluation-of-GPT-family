@@ -1,15 +1,12 @@
-# Complex-Question-Answering-Evaluation-of-ChatGPT
-Evaluation of ChatGPT as a Question Answering System for Answering Complex Questions
+# Complex-question-answering-evaluation-of-GPT-family
 
-A framework for detailed evaluation of the ability of ChatGPT and similar large-scale language models to answer complex questions.
+Can ChatGPT Replace Traditional KBQA Models? An In-depth Analysis of the Question Answering Performance of the GPT LLM Family
 
 This repository is a subproject of [KSESEU](https://github.com/KSESEU).  
 
-If you use the code, please cite the following paper:   
+A framework for detailed evaluation of the ability of ChatGPT and similar large language models to answer complex questions.
 
-**Evaluation of ChatGPT as a Question Answering System for Answering Complex Questions**  [[Arxiv]](https://arxiv.org/abs/2303.07992)
-
----
+We have released the answers of chatgpt and other models to a total of 194,782 questions across 8 datasets, including multiple languages in [Datasets we publish](answers_from_LLMs).
 
 This repository is mainly contributed  by [Yiming Tan](https://github.com/tan92hl), [Dehai Min](https://github.com/ZhishanQ), [Yu Li](https://github.com/liyu19980601), [Wenbo Li](https://github.com/zhexuezhujiu), [Nan Hu](https://github.com/HuuuNan), Guilin Qi.
 
@@ -19,20 +16,33 @@ To our knowledge(2023-3-9), this is the first public release of a large-scale Q&
 
 😊 Updated on April 12, 2023: We have uploaded the Q&A dataset for GPT-4.
 
-
 #  Overview
+![Framework_simple](https://user-images.githubusercontent.com/97523884/236836915-3e7042fb-b445-42be-b907-da0afe4b338b.png)
 
-To evaluate ChatGPT's ability to answer complex knowledge, we propose an evaluation framework:
-First, we classify the latent features that constitute complex questions, and describe each question under test with multi-labels for identifying combinatorial reasoning.
-Secondly, following the black-box test specification of [CheckList](https://arxiv.org/abs/2005.04118) proposed by Microsoft, we design an evaluation method that introduces [CoT](https://arxiv.org/abs/2201.11903) hints to measure the reasoning function and reliability of large language models in answering complex questions.
-Our evaluation uses 8 real complex question answering datasets, including six English datasets and two multilingual datasets, to further analyze the potential impact of language bias.
-We compared the evaluation results of ChatGPT, GPT3.5, GPT3, FLAN-T5 and GPT-4 to identify persistent historical issues in LLMs. All data and results are available for further analysis.  
+To evaluate the ability of large language models such as ChatGPT to answer KB-based complex question answering (KB-based CQA), we proposed an evaluation framework:
+
+First, we designed multiple labels to describe the answer type, reasoning operations required to answer the question, and language type of each test question.
+
+Second, based on the black-box testing specifications proposed by Microsoft's [CheckList](https://arxiv.org/abs/2005.04118), we designed an evaluation method that introduces [CoT](https://arxiv.org/abs/2201.11903) prompts to measure the reasoning capability and reliability of large language models when answering complex questions.
+
+Our evaluation used eight real and complex QA datasets, including six English datasets and two multilingual datasets, to further analyze the potential impact of language type on the performance of large language models.
+
+We compared the evaluation results of FLAN-T5, ChatGPT, GPT3, GPT3.5 series, and GPT-4 to determine the iterative benefits of different models within the GPT family and some commonalities between GPT family models and other LLMs.
+
+## Overall results
+
+The following table shows the performance of evaluated models on different datasets, and we also compared them with the current SOTA traditional KBQA models (fine-tuned (FT) and zero-shot (ZS)).
+
+(When evaluating answers, we only consider two situations: answering correctly or answering incorrectly. Therefore, our Acc score is the same as our F1 score.)
+
+<img width="970" alt="image" src="https://github.com/AnonymousgitT/complex-question-answering-evaluation-of-GPT-family/assets/97523884/fe28b569-963e-4532-bbec-58985eded3c1">
 
 # Datasets we publish
+<img width="1450" alt="label_statistic" src="https://user-images.githubusercontent.com/97523884/236836031-932a9180-3c12-4f65-8b47-854fd356d2d3.png">
 
 We classify the answers of these models for the KBQA dataset according to dataset and model, and release them in this folder.
 
-[answers_from_models](answers_from_models) : The response(answers) of these models(Chatgpt, Gpt3/Gpt3.5, FLAN-T5, GPT-4) to the KBQA datasets mentioned in [Datasets we use](#Datasets-we-use). 
+[answers_from_LLMs](answers_from_LLMs) : The response(answers) of these models(Chatgpt, Gpt3/Gpt3.5, FLAN-T5, GPT-4) to the KBQA datasets mentioned in [Datasets we use](datasets). 
 <table>
   <tr>
     <th>Datasets</th>
@@ -100,11 +110,11 @@ We classify the answers of these models for the KBQA dataset according to datase
 
 
 [datasets](datasets) : 
-We have processed the 8 datasets mentioned in [Datasets we use](#Datasets-we-use)  into a unified format and released them in this folder. The datasets in the unified format include the following items: question_id, question, ground_truth, SPARQL, and our added labels. Additionally, we have generated alias dictionaries from Wikipedia for the ground truth, which we can use during the evaluation.
+We have processed the 8 datasets mentioned in [Datasets we use](datasets)  into a unified format and released them in this folder. The datasets in the unified format include the following items: question_id, question, ground_truth, SPARQL, and our added labels. Additionally, we have generated alias dictionaries from Wikipedia for the ground truth, which we can use during the evaluation.
 
 # Datasets we use 
 
-Given that the training data of the Language Model (LLM) covers Wikipedia extensively, we have opted to evaluate our model using open-domain complex question-answering datasets related to Wikipedia. Specifically, we have curated a set of 8 distinct datasets for this purpose, as follows:
+To highlight the complexity of the testing questions and the breadth of the testing dataset, after careful consideration, we selected six representative English monolingual KBQA datasets and two multilingual KBQA datasets for evaluation.
 
 :collision: Please note : The links in the `Source` section below refer to the original datasets as published by their respective authors. For our experiments in this paper, we have processed these datasets accordingly, including random sampling and formatting. Please download the datasets used in our experiments from this folder: [datasets](datasets).
 
@@ -129,36 +139,40 @@ Multilingual dataset
 # Code for ChatGPT API
 We have uploaded our [code](ChatGPT_API.py) for using ChatGPT to collect answers to questions in datasets. The code uses the official OpenAI's API. If you want to learn more about APl, see OpenAI's official website for more information: https://platform.openai.com/docs/guides/chat.
 
+# Code for evaluating model performance
+
+We have released the code for evaluating the EM score（model performance） of the model's answers in our paper, located in the [evaluation_code](evaluation_code).
+We believe it is a good reference for evaluating the correctness of generative language models in question-answering tasks.
+
 # CheckList Model
+
+The data for Invariance test (INV) and Directional Expectation test (DIR) are published at: [INV_and_DIR](#INV_and_DIR)
+
+![INV_DIR](https://user-images.githubusercontent.com/97523884/236835552-62c8b615-a3c2-4b72-83ab-cf8e23d4b9f7.png)
+
 
 ## Minimum Functionality Test (MFT)
 
-We assess the LLM's ability to handle each feature in the CQA scenario through the Minimal Functional Test (MFT); we classify the answer types into 9 categories, respectively Mixed fact (MISC);Reason (WHY);Location (LOC);Time (DATE/TIME);Character (PER);Yes or no (Boolean);Number (NUM);Organization (ORG);Unable to answer (UNA)  
+We assess the LLM's ability to handle each feature in the KB-based CQA scenario through the Minimal Functional Test (MFT); we classify the answer types into 9 categories, respectively Mixed fact (MISC);Reason (WHY);Location (LOC);Time (DATE/TIME);Character (PER);Yes or no (Boolean);Number (NUM);Organization (ORG);Unable to answer (UNA)  
 
-At the same time, we divide the labels of "reasoning type" into eight categories, which are: SetOperation; Filtering; Counting; The most valuable; Sort;  Single-hop; Multi-hop; Star-shape  
+At the same time, we divide the labels of "reasoning type" into eight categories, which are: SetOperation; Filtering; Counting; The most valuable; Sort;  Single-hop; Multi-hop; Star-shape.
 
-We also take into account the "language type" label that may have an impact on model performance: de; ru; pt; hi_IN; en; Fa; it; fr; ro; es; nl; pt_BR; zh cn 
+We also take into account the "language type" label that may have an impact on model performance: de; ru; pt; hi_IN; en; Fa; it; fr; ro; es; nl; pt_BR; zh cn.
 
-We adopted a simple idea of expanding the matching range to strengthen the generalization of answer matching, including the following two operations:  
-
-1. Subtree marking method provided by constituent tree.  
-
-2. A strategy of exact matching between the noun phrase list and the answer list is employed.  
-
-For the samples that did not complete the matching, we set a threshold based on the cosine similarity between phrase vectors to obtain potential correct matches. The parts above the threshold are manually judged whether the answer is right or wrong.  
 
 ## Invariance test (INV)
 
-Invariance test means adding perturbations to the original sentence that should not change the output of the model. The main purpose of this test is to verify that ChatGPT maintains the invariance of the answer in the case of increasing disturbance. We mainly use two methods to perform the invariance test:
-1. To change the spelling of words in a sentence, we imitate the habit of humans when typing sentences, and perform random letter repetition and random letter omission and stemming methods on words.  
-2. Rewrite the sentence, paraphrasing the sentence without changing the original meaning of the sentence, and evaluate whether the result has changed.  
+We have designed 2 methods to generate test cases for INV:
 
+1. Randomly introducing spelling errors into the original problem sentence.
+2. Generating a question that is semantically equivalent (paraphrased) to the original problem sentence.
+
+Then, we evaluate the invariance of the LLMs by checking the consistency of their correctness in the outputs generated from 3 inputs (The above two methods generate the question sentence and the original question).
 
 ## Directional Expectation test (DIR)
 
-Directional Expectation test refers to perturbing the input with known expected results to evaluate whether the final result is developing in the direction we expect. We mainly conduct directional expectation tests from three aspects:
-1. Conduct experiments on "reasoning types", mainly on SetOperation types, Filtering types, counting types, and comparison (most value and sorting) types.   
-2. Use the type of answer to guide, what type of answer we prompt to the question, and then evaluate whether the type of answer matches the type we prompt.  
-3. Using a step-by-step guidance method, ask each noun or noun phrase in the sentence again, and finally ask the question again to evaluate whether the accuracy of the answer has improved. 
-
+We created three modes to generate DIR test cases: 
+1. replacing reasoning operation-related phrases in questions to observe LLMs' output. 
+2. adding prompts for answer types to test LLMs' control over output.
+3. using multi-round questioning inspired by CoT to observe LLMs' sensitivity and effectiveness with CoT prompts for different question types.
 
