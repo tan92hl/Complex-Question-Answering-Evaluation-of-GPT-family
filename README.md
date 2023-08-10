@@ -2,7 +2,17 @@
 
 Can ChatGPT Replace Traditional KBQA Models? An In-depth Analysis of the Question Answering Performance of the GPT LLM Family
 
-This repository is a subproject of [KSESEU](https://github.com/KSESEU).  
+## Citation
+
+If you find our code, data and paper useful, please kindly cite:
+```bash
+@article{tan2023evaluation,
+  title={Evaluation of ChatGPT as a question answering system for answering complex questions},
+  author={Tan, Yiming and Min, Dehai and Li, Yu and Li, Wenbo and Hu, Nan and Chen, Yongrui and Qi, Guilin},
+  journal={arXiv preprint arXiv:2303.07992},
+  year={2023}
+}
+```
 
 A framework for detailed evaluation of the ability of ChatGPT and similar large language models to answer complex questions.
 
@@ -12,9 +22,6 @@ This repository is mainly contributed  by [Yiming Tan](https://github.com/tan92h
 
 :fire::tada: We have released the answers of chatgpt and other models to a total of 194,782 questions across 8 datasets, including multiple languages in [Datasets we publish](#Datasets-we-publish).
 
-To our knowledge(2023-3-9), this is the first public release of a large-scale Q&A dataset for chatgpt.
-
-😊 Updated on April 12, 2023: We have uploaded the Q&A dataset for GPT-4.
 
 #  Overview
 ![Framework_simple](https://user-images.githubusercontent.com/97523884/236836915-3e7042fb-b445-42be-b907-da0afe4b338b.png)
