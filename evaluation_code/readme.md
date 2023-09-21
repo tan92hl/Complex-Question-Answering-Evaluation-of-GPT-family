@@ -1,7 +1,8 @@
 ## Introduction
 The code here is used to evaluate the correctness of Chatgpt and other models' answers to KB-CQA questions. As introduced in the paper, we used an enhanced exact match algorithm, and its algorithm framework diagram is as follows:
 
-![image](https://github.com/AnonymousgitT/complex-question-answering-evaluation-of-GPT-family/assets/97523884/1303b81a-b7ef-41c1-9809-b0b13497d3a5)
+![image](https://github.com/tan92hl/Complex-Question-Answering-Evaluation-of-GPT-family/assets/47051778/2598d6ce-fe2d-430d-ae30-ba5be3dd87a6)
+
 
 ## Install required packages
 
