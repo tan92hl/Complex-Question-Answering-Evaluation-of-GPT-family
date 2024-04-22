@@ -6,10 +6,13 @@ Can ChatGPT Replace Traditional KBQA Models? An In-depth Analysis of the Questio
 
 If you find our code, data and paper useful, please kindly cite:
 ```bash
-@article{tan2023evaluation,
-  title={Evaluation of ChatGPT as a question answering system for answering complex questions},
+@inproceedings{TanMLLHCQ23,
+  title={Can ChatGPT Replace Traditional {KBQA} Models? An In-Depth Analysis of the Question Answering Performance of the {GPT} {LLM} Family},
   author={Tan, Yiming and Min, Dehai and Li, Yu and Li, Wenbo and Hu, Nan and Chen, Yongrui and Qi, Guilin},
-  journal={arXiv preprint arXiv:2303.07992},
+  journal={The Semantic Web - {ISWC} 2023 - 22nd International Semantic Web Conference, Athens, Greece, November 6-10, 2023, Proceedings, Part {I}},
+  volume={14265},
+  pages ={348--367},
+  publisher={Springer},
   year={2023}
 }
 ```
