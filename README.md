@@ -27,8 +27,7 @@ This repository is mainly contributed  by [Yiming Tan](https://github.com/tan92h
 
 
 #  Overview
-![Framework_simple]<img width="1588" alt="ELLMKGQA_framework" src="https://github.com/tan92hl/Complex-Question-Answering-Evaluation-of-GPT-family/assets/47051778/f3e65b7d-be50-42df-806b-08630db31bc3">
-
+<img width="1588" alt="ELLMKGQA_framework" src="https://github.com/tan92hl/Complex-Question-Answering-Evaluation-of-GPT-family/assets/47051778/f3e65b7d-be50-42df-806b-08630db31bc3">
 
 To evaluate the ability of large language models such as ChatGPT to answer KB-based complex question answering (KB-based CQA), we proposed an evaluation framework:
 
