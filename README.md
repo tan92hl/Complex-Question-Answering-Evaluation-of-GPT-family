@@ -46,7 +46,7 @@ The following table shows the performance of evaluated models on different datas
 
 (When evaluating answers, we only consider two situations: answering correctly or answering incorrectly. Therefore, our Acc score is the same as our F1 score.)
 
-<img width="549" alt="overall result" src="https://github.com/tan92hl/Complex-Question-Answering-Evaluation-of-GPT-family/assets/47051778/32b20566-0ce3-4792-97dd-5f24e8ad03d7">
+<img width="835" alt="overallresults" src="https://github.com/tan92hl/Complex-Question-Answering-Evaluation-of-GPT-family/assets/47051778/0c51f717-8460-4d78-b3dd-f8b73623ba1a">
 
 # Datasets we publish
 <img width="1450" alt="label_statistic" src="https://user-images.githubusercontent.com/97523884/236836031-932a9180-3c12-4f65-8b47-854fd356d2d3.png">
@@ -114,9 +114,6 @@ We classify the answers of these models for the KBQA dataset according to datase
     <td colspan="3" style="text-align: center">194782</td>
   </tr>
 </table>
-
-
-
 
 
 
