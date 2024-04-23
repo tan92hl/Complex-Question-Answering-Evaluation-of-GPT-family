@@ -17,9 +17,9 @@ If you find our code, data and paper useful, please kindly cite:
 }
 ```
 
-A framework for detailed evaluation of the ability of ChatGPT and similar large language models to answer complex questions.
+A framework for detailed evaluation of the ability of GPT family and popular open-source large language models to answer complex questions using their inherent knowledge.
 
-We have released the answers of chatgpt and other models to a total of 194,782 questions across 8 datasets, including multiple languages in [Datasets we publish](answers_from_LLMs).
+We have released the answers of chatgpt and other models to a total of 194,782 questions across 8 datasets (6 English datasets, 2 multilingual datasets), including multiple languages in [Datasets we publish](answers_from_LLMs).
 
 This repository is mainly contributed  by [Yiming Tan](https://github.com/tan92hl), [Dehai Min](https://github.com/ZhishanQ), [Yu Li](https://github.com/liyu19980601), [Wenbo Li](https://github.com/zhexuezhujiu), [Nan Hu](https://github.com/HuuuNan), Guilin Qi.
 
@@ -27,7 +27,8 @@ This repository is mainly contributed  by [Yiming Tan](https://github.com/tan92h
 
 
 #  Overview
-![Framework_simple](https://user-images.githubusercontent.com/97523884/236836915-3e7042fb-b445-42be-b907-da0afe4b338b.png)
+![Framework_simple]<img width="1588" alt="ELLMKGQA_framework" src="https://github.com/tan92hl/Complex-Question-Answering-Evaluation-of-GPT-family/assets/47051778/f3e65b7d-be50-42df-806b-08630db31bc3">
+
 
 To evaluate the ability of large language models such as ChatGPT to answer KB-based complex question answering (KB-based CQA), we proposed an evaluation framework:
 
